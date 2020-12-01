@@ -18,7 +18,7 @@
 # category6 = Category.create!(name: "2D")
 # category7 = Category.create!(name: "Aventure")
 # category8 = Category.create!(name: "Casual")
-# category9 = Category.create!(name: "Indépendant")
+# category9 = Category.create!(name: "FPS")
 
 # Action
 
