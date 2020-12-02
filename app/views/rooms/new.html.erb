@@ -1,1 +1,22 @@
 <h1>new room</h1>
+<%# <div class="form-group">
+    <label for="exampleSelectLanguage">Nombre de joueur(s) : </label>
+    <select class="custom-select" id="exampleSelectLanguage" required>
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5</option>
+    </select>
+    <div class="invalid-feedback">Please provide a valid value.</div>
+    <div class="valid-feedback">Looks good!</div>
+    <small class="form-text text-muted">Collection select example</small>
+  </div> %>
+
+<div class="new_room">
+<%= simple_form_for @room do |f| %>
+  <%= f.input :player_number, collection: 1..8, label: "Nombre de joueur(s) :" %>
+  <%= f.input :price_filter, collection: ["Gratuit", "€", "€€", "€€€"], label: "Préférence de prix"%>
+  <%= f.submit "Création de la room", class: "btn btn-primary" %>
+<% end %>
+</div>
