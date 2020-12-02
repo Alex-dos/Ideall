@@ -10,7 +10,7 @@
 # user2 = User.create!(email: "jaja@jaja.com", password: "password")
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
-# category1 = Category.create!(name: "action") #id 1
+category1 = Category.create!(name: "action") #id 1
 # category2 = Category.create!(name: "Survie")
 # category3 = Category.create!(name: "RPG")
 # category4 = Category.create!(name: "Stratégie")
@@ -21,9 +21,8 @@
 # category9 = Category.create!(name: "FPS")
 
 # Action
-
-# game1 = Game.create!(name: "Dark souls", price: 14.99, category: (Category.where("name = 'action'")))
-# game2 = Game.create!(name: "Doom", price: 50.00, category_id: 1)
+game1 = Game.create!(name: "Dark souls", price: 14.99, category_id: Category.where(name: :action).ids[0])
+game2 = Game.create!(name: "Doom", price: 50.00, category_id: Category.where(name: :action).ids[0])
 # game3 = Game.create!(name: "Red Dead Redemption", price: 50.00, category_id: 1)
 # game4 = Game.create!(name: "Borderlands 3", price: 50.00, category_id: 1)
 # game5 = Game.create!(name: "Assassin's Creed", price: 60.00, category_id: 1)
