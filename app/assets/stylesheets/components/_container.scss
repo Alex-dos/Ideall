@@ -6,6 +6,8 @@
   width: 100%;
 }
 
+// Container home
+
 .container-home {
   display: flex;
   position: relative;
@@ -40,6 +42,22 @@
   padding: 50px;
 }
 
-.container-new {
+// Container rooms/new
 
+.container-rooms-new-titre {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+.container-rooms-new {
+  display: flex;
+  justify-content: center;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
 }
