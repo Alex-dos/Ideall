@@ -1,34 +1,15 @@
-<h1 class="text-center">Show</h1>
-<%= @room.id  %>
+<h1 class="text-center">Show <%= @room.id %></h1>
 
 <br>
 <br>
 <br>
-<div class="row">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
 
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+<div class="d-flex flex-wrap" style="max-width:100vw">
+  <% @categories.each do |category| %>
+    <div class="col-4">
+      <div style="height:200px;border-radius:5px;background-color:wheat" class="p-4 mb-4"><%= category.name %>
+      <div class="d-flex"><%= link_to "1" %><%= link_to "2" %><%= link_to "3" %></div>
+      </div>
+    </div>
+  <% end %>
 </div>

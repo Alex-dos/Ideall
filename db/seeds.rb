@@ -10,15 +10,15 @@
 # user2 = User.create!(email: "jaja@jaja.com", password: "password")
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
-# category1 = Category.create!(name: "Survie")
-# category2 = Category.create!(name: "Action")
-# category3 = Category.create!(name: "RPG")
-# category4 = Category.create!(name: "Stratégie")
-# category5 = Category.create!(name: "Simulation")
-# category6 = Category.create!(name: "2D")
-# category7 = Category.create!(name: "Aventure")
-# category8 = Category.create!(name: "Casual")
-# category9 = Category.create!(name: "FPS")
+category1 = Category.create!(name: "Survie")
+category2 = Category.create!(name: "Action")
+category3 = Category.create!(name: "RPG")
+category4 = Category.create!(name: "Stratégie")
+category5 = Category.create!(name: "Simulation")
+category6 = Category.create!(name: "2D")
+category7 = Category.create!(name: "Aventure")
+category8 = Category.create!(name: "Casual")
+category9 = Category.create!(name: "FPS")
 
 # Action
 

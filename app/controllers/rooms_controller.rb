@@ -6,14 +6,24 @@ class RoomsController < ApplicationController
   def create
     @room = Room.new(room_params)
     if @room.save
-      redirect_to room_path
+      RoomUser.create(room: @room, user: current_user)
+      Category.all.each do |category|
+        ChoiceCategory.create(category: category, room: @room, rank: 0)
+      end
+      redirect_to room_path(@room)
+
     else
       render :new
     end
   end
+
+  def create_room_user
+
+  end
   
   def show
     @room = Room.find(params[:id])
+    @categories = Category.all
   end
   
   private
