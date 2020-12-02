@@ -1,4 +1,6 @@
 class Room < ApplicationRecord
-  has_many :RoomUsers
-  has_many :ChoiceCategories
+  has_one :room_user, dependent: :destroy
+  has_many :choice_categories, dependent: :destroy
+  validates :password, :price_filter, :player_number, presence: true
 end
+
