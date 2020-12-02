@@ -6,29 +6,15 @@
   transition: 0.5s ease;
   font-size: 40px;
   &:hover {
-      color: white;
-      text-shadow: 1px 0px 0px $bleu-ideal;
-      background-color: #6ae0ed;
+      color: $bleu-ideal;
+      background-color: white;
       box-shadow: 0px 0px 20px #efeb69;
       border: 1px solid $bleu-ideal;
-      transition: 0.5s ease;
+      animation: 1s brillance 1s linear infinite;
   }
 }
 
 .nav-link {
   display: flex;
   justify-content: center;
-}
-
-.bienvenu {
-  display: flex;
-  justify-content: center;
-  color: #f2f2f2;
-  text-shadow: 2px 2px 0px black;
-  transition: 0.5s ease;
-  animation: 5s ideall 1s linear infinite;
-  &:hover {
-    text-shadow: 5px 2px 0px black;
-    transition: 0.5s ease;
-  }
 }
