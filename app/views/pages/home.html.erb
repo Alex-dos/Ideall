@@ -1,8 +1,19 @@
 <div class="container">
-<h1>Bienvenue sur Ideall</h1>
+  <div class="container-home">
+    <div class="container-ideall">
+      <h1 class="bienvenu">Ideeall</h1>
+     </div>
 
+        <div class="container-create">
+           <%= link_to new_room_path, class: "nav-link" do %>
+            <div class="btn btn-primary">Créer une room</div>
+           <% end  %>
+        </div>
 
-<%= link_to new_room_path, class: "nav-link" do %>
-    <div class="btn btn-primary">Créer une room</div>
-<% end  %>
+       <div class="container-join">
+        <%= link_to new_room_path, class: "nav-link" do %>
+          <div class="btn btn-primary">Joindre une room</div>
+        <% end  %>
+      </div>
+  </div>
 </div>
