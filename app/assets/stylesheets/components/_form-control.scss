@@ -6,9 +6,11 @@
 .form-control {
   width: 500px;
   transition: 0.5s ease;
+  color: black;
   &:hover {
       box-shadow: 0px 0px 20px #efeb69;
       transition: 0.5s ease;
+      color: black;
   }
 }
 
@@ -19,13 +21,14 @@
 
 .select {
   padding-right: 50px;
-  color: white;
+  color: black;
   text-decoration: none;
   list-style: none;
   font-size: 30px;
 }
 
 .select.room_player_number {
+  color: black;
   width: 25%;
 }
 
