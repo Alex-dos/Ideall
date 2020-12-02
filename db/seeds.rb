@@ -10,6 +10,7 @@
 # user2 = User.create!(email: "jaja@jaja.com", password: "password")
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
+
 category1 = Category.create!(name: "Action")
 category2 = Category.create!(name: "Survie")
 category3 = Category.create!(name: "RPG")
