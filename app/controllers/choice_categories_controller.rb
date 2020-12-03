@@ -1,18 +1,21 @@
 class ChoiceCategoriesController < ApplicationController
   def update
-    # @choice_category = ChoiceCategory.find(1).id
-    # @category = Category.find(1).id
-    # @room = Room.find(params[:room_id]).id
+    @room = Room.find(params[:room_id])
+    @choice_category = ChoiceCategory.find(params[:id])
     @rank = params[:rank]
-    if @choice_category = ChoiceCategory.update(rank: @rank)
-    else
-      render :edit
-    end
+    @choice_category.rank += @rank.to_i
+    @choice_category.save
+    redirect_to room_ecran1_path(@room)
+    console
   end
-
-  # private
-
-  # def choice_category_params
-  #   params.require(:choice_category).permit(:rank, :room, :category)
-  # end
 end
+
+
+  # def update
+  #   @choice_category = ChoiceCategory.find(params[:id])
+  #   @rank = params[:rank]
+  #   if @choice_category.update(rank: @rank)
+  #   else
+  #     render
+  #   end
+  # end
