@@ -1,10 +1,9 @@
 <div class="container-rooms-new-titre">
   <h1>Room <%= @room.id %></h1>
-  </div>
+</div>
+<div class="container-letsgo">
+<%= link_to room_ecran1_path(@room), class: "nav-link" do %>
+  <div class="btn btn-primary">C'est parti !</div>
+  <% end  %>
+</div>
 
-<br>
-<br>
-<br>
-
-
-<h2><%= link_to "C'est parti !", room_ecran1_path(@room) %></h2>

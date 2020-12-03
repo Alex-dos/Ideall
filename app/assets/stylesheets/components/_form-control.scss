@@ -25,12 +25,11 @@
   color: black;
   text-decoration: none;
   list-style: none;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .select.room_player_number {
   color: black;
-  width: 25%;
 }
 
 abbr {
@@ -39,6 +38,7 @@ abbr {
 
 label.string.required {
   display: none;
+  width: 140px;
 }
 
 input.btn {

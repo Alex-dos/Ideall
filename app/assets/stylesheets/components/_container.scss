@@ -46,7 +46,6 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  margin-bottom: 70px;
 }
 
 .container-rooms-new {
@@ -70,4 +69,15 @@
 .container-formulaire-login {
   position: absolute;
   top: 50vh;
+}
+
+.container-rooms-join-titre {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+.container_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
 }
