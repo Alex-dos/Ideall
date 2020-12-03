@@ -6,12 +6,4 @@
 <br>
 <br>
 
-<div class="d-flex flex-wrap" style="max-width:100vw">
-  <% @categories.each do |category| %>
-    <div class="col-4">
-      <div style="height:200px;border-radius:5px;background-color:wheat" class="p-4 mb-4"><%= category.name %>
-      <div class="d-flex"><%= link_to "1" %><%= link_to "2" %><%= link_to "3" %></div>
-      </div>
-    </div>
-  <% end %>
-</div>
+<h2><%= link_to "C'est parti !", room_ecran1_path(@room) %></h2>
