@@ -11,7 +11,7 @@
 .container-home {
   display: flex;
   position: relative;
-  display:inline-block;
+  display: inline-block;
   justify-content: center;
   // border: 1px solid black;
   top: 10vh;
@@ -23,7 +23,7 @@
   justify-content: center;
   padding: 50px;
   width: 100%;
-  }
+}
 
 .container-create {
   position: absolute;
@@ -48,7 +48,7 @@
   margin-top: 50px;
 }
 
-.container-rooms-new {
+.container-rooms-new  {
   display: flex;
   justify-content: center;
 }
@@ -75,6 +75,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
 
 .container_cards {
   display: grid;
