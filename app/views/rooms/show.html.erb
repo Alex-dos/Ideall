@@ -6,4 +6,23 @@
 <br>
 <br>
 
+
 <h2><%= link_to "C'est parti !", room_ecran1_path(@room) %></h2>
+
+  <% @categories.each do |category| %>
+    <div class="col-4">
+      <div class="card">
+        <img class="card_img"
+          src="https://i.pinimg.com/originals/c1/c5/3c/c1c53cda4fa51316d942ca91cf0d40ac.jpg">
+        <div class="card_title"><%= category.name %>Category Name </div>
+          <div class="card_description">
+            <p>Lorem Ipsum copy in various charsets and languages for layouts. ... by this text-generator is
+              suitable for greeking, typesetting, layouts for websites, and ... Using dummy content or fake
+            </p>
+          </div>
+      <div class="card_vote"><%= link_to image_tag("heart1.png")%> <%= link_to image_tag("heart2.png")%><%= link_to image_tag("skull.png")%>
+</div>
+      </div>
+  <% end %>
+</div>
+
