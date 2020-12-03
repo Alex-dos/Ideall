@@ -11,8 +11,8 @@
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
 
-# category1 = Category.create!(name: "Action")
-# category2 = Category.create!(name: "Survie")
+category1 = Category.create!(name: "Action")
+category2 = Category.create!(name: "Survie")
 category3 = Category.create!(name: "RPG")
 category4 = Category.create!(name: "Stratégie")
 category5 = Category.create!(name: "Simulation")
@@ -34,7 +34,7 @@ category9 = Category.create!(name: "FPS")
 # game9 = Game.create!(name: "Brawlhala", price: nil, player_number: 4, category_id: Category.where(name: :Action).ids[0])
 # game10 = Game.create!(name: "World of tanks", price: nil, player_number: 4, category_id: Category.where(name: :Action).ids[0])
 
-# # Survie
+# Survie
 
 # game11 = Game.create!(name: "Don't Starve Together", price: 14.99, player_number_min: 2, player_number_max: 4, category_id: Category.where(name: :Survie).ids[0])
 # game12 = Game.create!(name: "Rust", price: 33.99, player_number_min: 1, player_number_max: 100, category_id: Category.where(name: :Survie).ids[0])
