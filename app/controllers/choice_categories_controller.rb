@@ -6,7 +6,6 @@ class ChoiceCategoriesController < ApplicationController
     @choice_category.rank += @rank.to_i
     @choice_category.save
     redirect_to room_ecran1_path(@room)
-    console
   end
 end
 
