@@ -10,5 +10,4 @@ class RoomUsersController < ApplicationController
       end
     end
   end
-
 end
