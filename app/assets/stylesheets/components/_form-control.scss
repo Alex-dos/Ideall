@@ -35,3 +35,22 @@
 abbr {
   display: none;
 }
+
+label.string.required {
+  display: none;
+}
+
+input.btn {
+  color: white;
+  border-radius: 0 15px 15px 0px;
+  background-color: $bleu-ideal;
+  border: 1px solid white;
+  transition: 0.5s ease;
+  &:hover {
+      color: $bleu-ideal;
+      background-color: white;
+      box-shadow: 0px 0px 20px #efeb69;
+      border: 1px solid $bleu-ideal;
+      animation: 1s brillance 1s linear infinite;
+  }
+}
