@@ -1,6 +1,13 @@
-<div class="join_room">
-<%= simple_form_for :test, method: "get" do |f| %>
-  <%= f.input :room_id %>
-  <%= f.submit "Valider l'ID", class: "btn btn-primary" %>
-<% end %>
+<div class="container-rooms-join-titre">
+  <h1>Rentre le n° de Room</h1>
+  </div>
+    <div class="container-rooms-new">
+      <div class="join_room">
+      <%= simple_form_for :test, method: "get" do |f| %>
+      <%= f.input :room_id %>
+      <div class="container-btn">
+      <%= f.submit "Valider l'ID", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+    </div>
 </div>
