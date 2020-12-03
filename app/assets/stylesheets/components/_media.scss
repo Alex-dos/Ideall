@@ -1,4 +1,3 @@
-
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .container_cards {
@@ -28,12 +27,6 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .container_cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
