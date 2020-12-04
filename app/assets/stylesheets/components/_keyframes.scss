@@ -42,3 +42,19 @@
   box-shadow: 0px 0px 10px #efeb69;
   }
 }
+
+@keyframes pointpoint {
+  0%
+  {
+  opacity: 0;
+  }
+  50%
+  {
+  opacity: 1;
+  }
+  100%
+  {
+  opacity: 0;
+  }
+}
+
