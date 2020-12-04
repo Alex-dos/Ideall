@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_12_02_225650) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 2020_12_02_225650) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "player_number_min"
     t.integer "player_number_max"
+    t.integer "appid"
     t.index ["category_id"], name: "index_games_on_category_id"
   end
 
