@@ -1,9 +1,13 @@
 <div class="container-rooms-new-titre">
   <h3>Room <%= @room.id %></h3>
 </div>
+<div class="container">
+<div class="container-description-room">
 <p class="text-center">Nom de l'hôte : <%= @room.room_user.user.name %><br>
  Préférence de prix : <%= @room.price_filter %><br>
  Nombre de joueur(s) : 1/<%= @room.player_number %> </p>
+ </div>
+ </div>
 <br>
 <br>
 <div class="container-letsgo">
