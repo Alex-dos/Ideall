@@ -5,9 +5,36 @@
 <div class="container-description-room">
 <p class="text-center">Nom de l'hôte : <%= @room.room_user.user.name %><br>
  Préférence de prix : <%= @room.price_filter %><br>
- Nombre de joueur(s) : 1/<%= @room.player_number %> </p>
- </div>
- </div>
+ Nombre de joueur(s) :
+<div class="perso text-center">
+<% if @room.player_number == 1 %>
+  <%= image_tag("PERSO2.png") %>
+<% end %>
+<% if @room.player_number == 2 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+<% if @room.player_number == 3 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+<% if @room.player_number == 4 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+<% if @room.player_number == 5 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+<% if @room.player_number == 6 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+<% if @room.player_number == 7 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+<% if @room.player_number == 8 %>
+  <%= image_tag("PERSO2.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %><%= image_tag("PERSO.png") %>
+<% end %>
+</div>
+</p>
+</div>
+</div>
 <br>
 <br>
 <div class="container-letsgo">
