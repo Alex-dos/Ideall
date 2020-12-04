@@ -65,10 +65,16 @@
   top: 50vh;
 }
 
-.container-rooms-join-titre {
+.container-rooms-join-titre-preference {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.container-rooms-join-titre {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 .container_cards {
@@ -96,4 +102,8 @@
 .perso img {
   height: 50px;
   width: 20px;
+}
+
+.container-btn-valider {
+  justify-content: center;
 }

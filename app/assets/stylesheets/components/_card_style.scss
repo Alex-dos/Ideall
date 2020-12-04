@@ -45,6 +45,19 @@
   margin: 20px 10px 0 10px;
 }
 
+.card_vote {
+  display: flex;
+  border: 1px solid white;
+  align-items: center;
+  text-align: center;
+}
+
+.card_vote p {
+  margin: auto;
+  padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .card_vote img {
   position: relative;
   margin: 0 20px 0 20px;
