@@ -18,3 +18,35 @@
   display: flex;
   justify-content: center;
 }
+
+.btn-primary-home {
+  color: white;
+  border-radius: 15px;
+  background-color: $bleu-ideal;
+  border: 1px solid white;
+  border-radius: 0px 0px 15px 15px;
+  transition: 0.5s ease;
+  font-size: 40px;
+  padding: 0px 7px 0px 7px;
+  &:hover {
+      color: $bleu-ideal;
+      background-color: white;
+      box-shadow: 0px 0px 20px #efeb69;
+      border: 1px solid $bleu-ideal;
+      animation: 1s brillance 0s linear infinite;
+  }
+}
+
+.btn-primary-home h4 {
+  padding-bottom: 0px;
+}
+
+a.nav-link {
+  padding: 0;
+}
+
+.container-btn-room {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
