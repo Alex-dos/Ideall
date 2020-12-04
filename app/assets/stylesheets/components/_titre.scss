@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   color: #f2f2f2;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 4s ideall 1s linear infinite;
   &:hover {
-    text-shadow: 5px 2px 0px black;
+    text-shadow: 5px 2px 0px $bleu-ombre-ideal;
     transition: 0.5s ease;
   }
 }
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   color: #f2f2f2;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 5s ideall 1s linear infinite;
 }
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   color: #f2f2f2;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 5s ideall 1s linear infinite;
 }
@@ -35,11 +35,11 @@
   display: flex;
   justify-content: center;
   color: #f2f2f2;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 4s ideall 1s linear infinite;
   &:hover {
-    text-shadow: 5px 2px 0px black;
+    text-shadow: 5px 2px 0px $bleu-ombre-ideal;
     transition: 0.5s ease;
 }
 }
@@ -49,5 +49,23 @@
   font-size: 70px;
   justify-content: center;
   color: #f2f2f2;
-  text-shadow: 2px 2px 0px black;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+}
+
+.container-rooms-join-titre-preference h1 {
+  display: flex;
+  font-size: 70px;
+  justify-content: center;
+  color: #f2f2f2;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+}
+
+.attente {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #f2f2f2;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+  transition: 0.5s ease;
+  animation: 5s ideall 1s linear infinite;
 }
