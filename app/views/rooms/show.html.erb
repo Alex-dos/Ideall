@@ -1,6 +1,11 @@
 <div class="container-rooms-new-titre">
   <h3>Room <%= @room.id %></h3>
 </div>
+<p class="text-center">Nom de l'hôte : <%= @room.room_user.user.name %><br>
+ Préférence de prix : <%= @room.price_filter %><br>
+ Nombre de joueur(s) : 1/<%= @room.player_number %> </p>
+<br>
+<br>
 <div class="container-letsgo">
 <%= link_to room_ecran1_path(@room), class: "nav-link" do %>
   <div class="btn btn-primary">C'est parti !</div>
