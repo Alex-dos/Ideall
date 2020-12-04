@@ -1,3 +1,8 @@
+<div class="container-login">
+  <div class="container-pseudo">
+    <h1>Choisi ton pseudo :</h1>
+  </div>
+  <div class="container-formulaire-login">
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
@@ -10,4 +15,5 @@
     <%= f.button :submit, "Ok !" %>
   </div>
 <% end %>
-
+</div>
+</div>

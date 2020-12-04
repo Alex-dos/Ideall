@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container-rooms-new-titre">
   <h1>new room</h1>
-    <div class="container-home">
+  </div>
+    <div class="container-rooms-new">
 <%# <div class="form-group">
     <label for="exampleSelectLanguage">Nombre de joueur(s) : </label>
     <select class="custom-select" id="exampleSelectLanguage" required>
@@ -15,12 +16,18 @@
     <small class="form-text text-muted">Collection select example</small>
   </div> %>
 
-      <div class="new_room">
-      <%= simple_form_for @room do |f| %>
-        <%= f.input :player_number, collection: 1..8, label: "Nombre de joueur(s) :" %>
-        <%= f.input :price_filter, collection: ["Gratuit", "€", "€€", "€€€"], label: "Préférence de prix"%>
-        <%= f.submit "Création de la room", class: "btn btn-primary" %>
-      <% end %>
+        <div class="new_room">
+        <%= simple_form_for @room do |f| %>
+          <%= f.input :player_number, collection: 1..8, label: "Nombre de joueur(s) " %>
+          </div>
+          <div class="new_room">
+          <%= f.input :price_filter, collection: ["Gratuit", "€", "€€", "€€€"], label: "Préférence de prix"%>
+          </div>
+          <div class="container-btn">
+          <%= f.submit "Création de la room", class: "btn btn-primary" %>
+        <% end %>
+        </div>
       </div>
     </div>
-</div>
+<!-- <div class="image-bonhomme"></div>
+<div class="image-euro"></div> -->

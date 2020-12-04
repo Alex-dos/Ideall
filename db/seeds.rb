@@ -20,7 +20,7 @@
 # category8 = Category.create!(name: "Casual")
 # category9 = Category.create!(name: "FPS")
 
-# # Action
+# Action
 
 # game1 = Game.create!(name: "Dark souls", price: 14.99, player_number_min: 4, player_number_max: 4, category_id: Category.where(name: :Action).ids[0])
 # game2 = Game.create!(name: "Doom", price: 50.00, player_number_min: 4, player_number_max: 4, category_id: Category.where(name: :Action).ids[0])
@@ -33,7 +33,7 @@
 # game9 = Game.create!(name: "Brawlhala", price: nil, player_number: 4, category_id: Category.where(name: :Action).ids[0])
 # game10 = Game.create!(name: "World of tanks", price: nil, player_number: 4, category_id: Category.where(name: :Action).ids[0])
 
-# # Survie
+# Survie
 
 # game11 = Game.create!(name: "Don't Starve Together", price: 14.99, player_number_min: 2, player_number_max: 4, category_id: Category.where(name: :Survie).ids[0])
 # game12 = Game.create!(name: "Rust", price: 33.99, player_number_min: 1, player_number_max: 100, category_id: Category.where(name: :Survie).ids[0])
@@ -138,7 +138,6 @@
 # game79 = Game.create!(name: "Stay Out", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 # game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 
-
 # require "json"
 # require "rest-client"
 
@@ -151,8 +150,6 @@
 require "json"
 require "rest-client"
 
-
-
 url = 'http://api.steampowered.com/ISteamApps/GetAppList/v0002/'
 response = RestClient.get(url)
 response = JSON.parse(response)
@@ -161,10 +158,8 @@ appidlist = []
     appidlist << f["appid"]
   end
 
-
 appidlist[0..500].each do |appid|
 url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
-# url = "https://store.steampowered.com/api/appdetails?appids=57690"
   response2 = RestClient.get(url)
   response2 = JSON.parse(response2)
   data = response2["#{appid}"]["data"]
@@ -176,10 +171,9 @@ url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
     #   pricefinal = free
     # else
   free = data["is_free"] == true ? "Gratuite" : nil
-    
   
-  # if genres = "Free to Play"
   category = Category.find_by(name: genres)
   category = Category.create!(name: genres) if category.nil?
   Game.create!(name: name, appid: appid, category_id: category.id, price: free)
 end
+

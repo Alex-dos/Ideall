@@ -6,13 +6,15 @@
   width: 100%;
 }
 
+// Container home
+
 .container-home {
   display: flex;
   position: relative;
-  display:inline-block;
+  display: inline-block;
   justify-content: center;
   // border: 1px solid black;
-  top: 20vh;
+  top: 10vh;
   width: 100%;
 }
 
@@ -21,14 +23,13 @@
   justify-content: center;
   padding: 50px;
   width: 100%;
-  }
+}
 
 .container-create {
   position: absolute;
   // border: 1px solid blue;
   width: 50%;
   left: 0;
-  padding: 50px;
 }
 
 .container-join {
@@ -37,9 +38,47 @@
   width: 50%;
   right: 0;
   align-items: center;
-  padding: 50px;
 }
 
-.container-new {
+// Container rooms/new
 
+.container-rooms-new-titre {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-rooms-new  {
+  display: flex;
+  justify-content: center;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+// container login
+
+.container-login {
+  display: flex;
+  justify-content: center;
+}
+
+.container-formulaire-login {
+  position: absolute;
+  top: 50vh;
+}
+
+.container-rooms-join-titre {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
 }

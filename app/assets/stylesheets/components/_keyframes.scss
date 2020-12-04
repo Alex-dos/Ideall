@@ -5,10 +5,40 @@
   }
   50%
   {
-  text-shadow: 5px 2px 0px black;
+  text-shadow: 7px 2px 0px black;
   }
   100%
   {
   text-shadow: 0px 2px 0px black;
+  }
+}
+
+@keyframes ideallbrillant {
+  0%
+  {
+  filter: drop-shadow(0px 2px 0px #efeb69);
+  }
+  50%
+  {
+  filter: drop-shadow(0px 2px 100px #efeb69);
+  }
+  100%
+  {
+  filter: drop-shadow(0px 2px 0px #efeb69);
+  }
+}
+
+@keyframes brillance {
+  0%
+  {
+  box-shadow: 0px 0px 10px #efeb69;
+  }
+  50%
+  {
+  box-shadow: 0px 0px 100px #efeb69;
+  }
+  100%
+  {
+  box-shadow: 0px 0px 10px #efeb69;
   }
 }

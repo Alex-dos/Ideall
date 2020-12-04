@@ -4,5 +4,58 @@
 }
 
 .form-control {
-  width: 500px;
+  width: 200px;
+  transition: 0.5s ease;
+  color: black;
+  &:hover {
+      box-shadow: 0px 0px 20px #efeb69;
+      transition: 0.5s ease;
+      color: black;
+  }
+}
+
+.simple_form.new_room {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.select.required {
+  padding-right: 10px;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+
+.select.room_player_number {
+  color: black;
+}
+
+abbr {
+  display: none;
+}
+
+label.string.required {
+  display: none;
+  width: 140px;
+}
+
+input.btn {
+  color: white;
+  background-color: $bleu-ideal;
+  border: 1px solid white;
+  transition: 0.5s ease;
+  &:hover {
+      color: $bleu-ideal;
+      background-color: white;
+      box-shadow: 0px 0px 20px #efeb69;
+      border: 1px solid $bleu-ideal;
+      animation: 1s brillance 1s linear infinite;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
 }

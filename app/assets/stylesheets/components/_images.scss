@@ -1,0 +1,39 @@
+.image-ampoule  {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("IDEE.png");
+  height: 400px;
+  width: 400px;
+  z-index: -1;
+}
+
+// .image-bonhomme {
+//   display: flex;
+//   position: absolute;
+//   bottom: 306px;
+//   left: 240px;
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: none;
+//   box-sizing: border-box;
+//   background-image: url("PERSO.png");
+//   height: 100px;
+//   width: 200px;
+// }
+
+// .image-euro {
+//   height: 100px;
+//   width: 85px;
+//  background-image: url("prix.png");
+//   display: flex;
+//   position: absolute;
+//   bottom: 306px;
+//   right: 400px;
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: none;
+//   box-sizing: border-box;
+// }
