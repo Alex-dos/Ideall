@@ -1,6 +1,8 @@
-<div class="container-rooms-join-titre">
-  <h1>Quelles sont tes preferences ?</h1>
+<% if @choice_categories[0] %>
+  <div class="container-rooms-join-titre">
+    <h1>Quelles sont tes preferences ?</h1>
   </div>
+<% end %>
   <br>
 <div class="container">
 <div class="container_cards">
@@ -33,7 +35,18 @@
 <% unless @choice_categories[0] %>
   <h1 style="font-size:80px">PATIENTEZ</h1>
   <% @choice_categories_with_votes.each do |choice_cat| %>
-  <p><%= choice_cat.category.name %>= <%= choice_cat.rank %> </p> 
+  <div class="card_vote">
+  <p><%= choice_cat.category.name %> :
+  <% if choice_cat.rank == 3 %>
+  <%= image_tag("heart1.png") %>
+  <% end %>
+  <% if choice_cat.rank == 1 %>
+  <%= image_tag("heart2.png") %>
+  <% end %>
+  <% if choice_cat.rank == -100 %>
+  <%= image_tag("skull.png") %> </p>
+  <% end %>
+  </div>
   <% end %>
 <% end %>
 </div>
