@@ -10,15 +10,48 @@
 # user2 = User.create!(email: "jaja@jaja.com", password: "password")
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
-# category1 = Category.create!(name: "Action")
-# category2 = Category.create!(name: "Survie")
-# category3 = Category.create!(name: "RPG")
-# category4 = Category.create!(name: "Stratégie")
-# category5 = Category.create!(name: "Simulation")
-# category6 = Category.create!(name: "2D")
-# category7 = Category.create!(name: "Aventure")
-# category8 = Category.create!(name: "Casual")
-# category9 = Category.create!(name: "FPS")
+
+Category.destroy_all
+
+require "open-uri"
+
+file1 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/action_ibektv.jpg')
+file2 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/survie_etreyj.jpg')
+file3 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/rpg_mkkbt2.jpg')
+file4 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/Strat%C3%A9gie_czf2t8.jpg')
+file5 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/simulation_snaro0.jpg')
+file6 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/2d_kmmpky.webp')
+file7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/Aventure_yc83os.jpg')
+file8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/casual_v992bk.png')
+file9 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/fps_welwgz.jpg')
+
+category1 = Category.create!(name: "Action")
+category1.photo.attach(io: file1, filename: 'Action.png', content_type: 'image/png')
+
+category2 = Category.create!(name: "Survie")
+category2.photo.attach(io: file2, filename: 'Survie.png', content_type: 'image/png')
+
+category3 = Category.create!(name: "RPG")
+category3.photo.attach(io: file3, filename: 'RPG.png', content_type: 'image/png')
+
+category4 = Category.create!(name: "Stratégie")
+category4.photo.attach(io: file4, filename: 'Stratégie.png', content_type: 'image/png')
+
+category5 = Category.create!(name: "Simulation")
+category5.photo.attach(io: file5, filename: 'Simulation.png', content_type: 'image/png')
+
+category6 = Category.create!(name: "2D")
+category6.photo.attach(io: file6, filename: '2D.png', content_type: 'image/png')
+
+category7 = Category.create!(name: "Aventure")
+category7.photo.attach(io: file7, filename: 'Aventure.png', content_type: 'image/png')
+
+category8 = Category.create!(name: "Casual")
+category8.photo.attach(io: file8, filename: 'Casual.png', content_type: 'image/png')
+
+category9 = Category.create!(name: "FPS")
+category9.photo.attach(io: file9, filename: 'FPS.png', content_type: 'image/png')
+
 
 # Action
 
@@ -147,33 +180,33 @@
 # name = response["1172470"]["data"]["name"]
 # Game.create!(name: name)
 
-require "json"
-require "rest-client"
+# require "json"
+# require "rest-client"
 
-url = 'http://api.steampowered.com/ISteamApps/GetAppList/v0002/'
-response = RestClient.get(url)
-response = JSON.parse(response)
-appidlist = []
-  response["applist"]["apps"].each do |f|
-    appidlist << f["appid"]
-  end
+# url = 'http://api.steampowered.com/ISteamApps/GetAppList/v0002/'
+# response = RestClient.get(url)
+# response = JSON.parse(response)
+# appidlist = []
+#   response["applist"]["apps"].each do |f|
+#     appidlist << f["appid"]
+#   end
 
-appidlist[0..500].each do |appid|
-url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
-  response2 = RestClient.get(url)
-  response2 = JSON.parse(response2)
-  data = response2["#{appid}"]["data"]
-  next if data.nil? || data["genres"].nil?
-  genres = data["genres"][0]["description"]
-  name = data["name"]
-  # pricefinal = data["price_overview"]["final"] / 100
-    # if pricefinal.exists?
-    #   pricefinal = free
-    # else
-  free = data["is_free"] == true ? "Gratuite" : nil
-  
-  category = Category.find_by(name: genres)
-  category = Category.create!(name: genres) if category.nil?
-  Game.create!(name: name, appid: appid, category_id: category.id, price: free)
-end
+# appidlist[0..500].each do |appid|
+# url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
+#   response2 = RestClient.get(url)
+#   response2 = JSON.parse(response2)
+#   data = response2["#{appid}"]["data"]
+#   next if data.nil? || data["genres"].nil?
+#   genres = data["genres"][0]["description"]
+#   name = data["name"]
+#   # pricefinal = data["price_overview"]["final"] / 100
+#     # if pricefinal.exists?
+#     #   pricefinal = free
+#     # else
+#   free = data["is_free"] == true ? "Gratuite" : nil
+
+#   category = Category.find_by(name: genres)
+#   category = Category.create!(name: genres) if category.nil?
+#   Game.create!(name: name, appid: appid, category_id: category.id, price: free)
+# end
 
