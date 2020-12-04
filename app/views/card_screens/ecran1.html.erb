@@ -5,7 +5,6 @@
 <div class="container">
 <div class="container_cards">
   <% @choice_categories.each do |choice_category| %>
-  <% if choice_category.rank == 0 %>
     <div class="col-4">
       <div class="card">
         <img class="card_img"
@@ -22,7 +21,6 @@
       </div>
     </div>
   <% end %>
-  <% end %>
 </div>
 </div>
 <br>
@@ -30,9 +28,12 @@
 <br>
 <br>
 <br>
+
 <div class="container">
-<% unless @choice_categories[0].rank == 0 %>
-<h1 style="font-size:80px">TO BE CONTINUED</h1>
-<%# <%= @choice_categories[0].rank + 1 %> %>
+<% unless @choice_categories[0] %>
+  <h1 style="font-size:80px">PATIENTEZ</h1>
+  <% @choice_categories_with_votes.each do |choice_cat| %>
+  <p><%= choice_cat.category.name %>= <%= choice_cat.rank %> </p> 
+  <% end %>
 <% end %>
 </div>
