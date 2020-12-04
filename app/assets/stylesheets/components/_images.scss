@@ -1,12 +1,90 @@
-.image-ampoule  {
+.image-ampoule {
   display: flex;
   position: absolute;
   bottom: 0px;
   background-size: cover;
   background-position: center;
   background-image: url("IDEE.png");
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+.image-puzzle {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("puzzle2.png");
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+
+.image-manette {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("manette.png");
+  height: 200px;
+  width: 131px;
+  z-index: -1;
+}
+
+.image-musique {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 170px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("musique.png");
+  height: 80px;
+  width: 80px;
+  z-index: -1;
+}
+
+.image-wifi {
+  display: flex;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("connect.png");
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+}
+
+.image-lieu {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  right: 200px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("lieu.png");
+  height: 75px;
+  width: 50px;
+  z-index: -1;
+}
+
+.image-pc {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("pc.png");
+  height: 100px;
+  width: 128px;
   z-index: -1;
 }
 
