@@ -58,3 +58,50 @@
   }
 }
 
+.point::after {
+  content:" ";
+  background: $bleu-ideal;
+  width: 25%;
+  height: 10%;
+  display: block;
+  position: absolute;
+  top: 44%;
+  right: 17%;
+  animation: 2s translation 2s linear infinite;
+}
+
+@keyframes translation {
+  0%
+  {
+  content:" ";
+  background: $bleu-ideal;
+  width: 25%;
+  height: 10%;
+  display: block;
+  position: absolute;
+  top: 44%;
+  right: 17%;
+  }
+  50%
+  {
+  content:" ";
+  background: $bleu-ideal;
+  width: 23%;
+  height: 10%;
+  display: block;
+  position: absolute;
+  top: 44%;
+  right: 17%;
+  }
+  100%
+  {
+  content:" ";
+  background: $bleu-ideal;
+  width: 20%;
+  height: 10%;
+  display: block;
+  position: absolute;
+  top: 44%;
+  right: 17%;
+  }
+}
