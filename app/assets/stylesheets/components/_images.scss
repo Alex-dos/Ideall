@@ -17,9 +17,35 @@
   right: 0px;
   background-size: cover;
   background-position: center;
-  background-image: url("puzzle2.png");
+  background-image: url("puzzle.png");
   height: 200px;
   width: 200px;
+  z-index: -1;
+}
+
+.image-among {
+  display: flex;
+  position: absolute;
+  top: 62px;
+  right: 245px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("among.png");
+  height: 80px;
+  width: 66px;
+  z-index: -1;
+}
+
+.image-blabla {
+  display: flex;
+  position: absolute;
+  top: 29px;
+  right: 192px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("blabla.png");
+  height: 53px;
+  width: 66px;
   z-index: -1;
 }
 
@@ -32,7 +58,7 @@
   background-position: center;
   background-image: url("manette.png");
   height: 200px;
-  width: 131px;
+  width: 134px;
   z-index: -1;
 }
 
@@ -45,19 +71,32 @@
   background-position: center;
   background-image: url("musique.png");
   height: 80px;
-  width: 80px;
+  width: 85px;
   z-index: -1;
 }
 
 .image-wifi {
   display: flex;
   position: absolute;
-  bottom: 120px;
-  right: 140px;
+  bottom: 132px;
+  right: 135px;
   background-size: cover;
   background-position: center;
   background-image: url("connect.png");
   height: 40px;
+  width: 42px;
+  z-index: -1;
+}
+
+.image-tel {
+  display: flex;
+  position: absolute;
+  bottom: 140px;
+  right: 37px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("tel.png");
+  height: 79px;
   width: 40px;
   z-index: -1;
 }
