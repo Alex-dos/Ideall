@@ -83,6 +83,12 @@
   grid-gap: 60px;
 }
 
+.container_cards02 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+}
+
 .container-description-room {
   display: flex;
   display: inline-block;
@@ -106,4 +112,19 @@
 
 .container-btn-valider {
   justify-content: center;
+}
+
+.container-barre-progression {
+  width: 900px;
+  border: solid 2px white;
+  display: flex;
+  justify-content: left;
+  padding: 0 0;
+  height: 30px;
+}
+
+.container-case-progression {
+  width: 100px;
+  color: green;
+  background-color: green;
 }
