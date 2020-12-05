@@ -2,42 +2,17 @@
   <div class="container-rooms-join-titre-preference">
     <h1>Quelles sont tes preferences ?</h1>
   </div>
-  <div class="container">
-    <% unless @choice_categories2[9] %>
-    <p>.
-    <% end %>
-    <% unless @choice_categories2[8] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[7] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[6] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[5] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[4] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[3] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[2] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[1] %>
-    -
-    <% end %>
-    <% unless @choice_categories2[0] %>
-    -</p>
+  <div class="container container-barre-progression">
+    <% @choice_categories_with_votes.each do |card| %>
+      <% unless card.rank == 0 %>
+      <div class="container-case-progression"></div>
+      <% end %>
     <% end %>
   </div>
 <% end %>
   <br>
 <div class="container">
-<div class="container_cards">
+<div class="<%= !@choice_categories[1] ? 'container_cards02' : 'container_cards' %>">
   <% @choice_categories.each do |choice_category| %>
     <div class="col-4">
       <div class="card">
