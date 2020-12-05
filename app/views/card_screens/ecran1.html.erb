@@ -2,6 +2,38 @@
   <div class="container-rooms-join-titre-preference">
     <h1>Quelles sont tes preferences ?</h1>
   </div>
+  <div class="container">
+    <% unless @choice_categories2[9] %>
+    <p>.
+    <% end %>
+    <% unless @choice_categories2[8] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[7] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[6] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[5] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[4] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[3] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[2] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[1] %>
+    -
+    <% end %>
+    <% unless @choice_categories2[0] %>
+    -</p>
+    <% end %>
+  </div>
 <% end %>
   <br>
 <div class="container">
@@ -45,11 +77,9 @@
         <p><%= choice_cat.category.name%>
         <% if choice_cat.rank == 3 %>
         <%= image_tag("heart1.png") %>
-        <% end %>
-        <% if choice_cat.rank == 1 %>
+        <% elsif choice_cat.rank == 1 %>
         <%= image_tag("heart2.png") %>
-        <% end %>
-        <% if choice_cat.rank == -100 %>
+        <% elsif choice_cat.rank == -100 %>
         <%= image_tag("skull.png") %> </p>
         <% end %>
         </div>
