@@ -8,9 +8,9 @@
   transition: 0.5s ease;
   color: black;
   &:hover {
-      box-shadow: 0px 0px 20px #efeb69;
-      transition: 0.5s ease;
-      color: black;
+    box-shadow: 0px 0px 20px #efeb69;
+    transition: 0.5s ease;
+    color: black;
   }
 }
 
@@ -43,15 +43,20 @@ label.string.required {
 
 input.btn {
   color: white;
-  background-color: $bleu-ideal;
-  border: 1px solid white;
-  transition: 0.5s ease;
+  border: 3px solid #ffffff00;
+  border-radius: 5px;
+  background-color: #68c5e7d3;
+  font-size: 20px;
+  font-family: "Do Hyeon";
+  font-weight: regular;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   &:hover {
-      color: $bleu-ideal;
-      background-color: white;
-      box-shadow: 0px 0px 20px #efeb69;
-      border: 1px solid $bleu-ideal;
-      animation: 1s brillance 1s linear infinite;
+    color: #ffffff;
+    background-color: #2bb4e6;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #f2f2f2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
 }
 

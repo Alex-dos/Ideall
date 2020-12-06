@@ -68,7 +68,7 @@
 .container-rooms-join-titre-preference {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .container-rooms-join-titre {
@@ -114,8 +114,9 @@
   justify-content: center;
 }
 
-
 .container-barre-progression {
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 900px;
   border: solid 2px white;
   display: flex;
@@ -132,5 +133,4 @@
 
 .container-letsgo {
   text-align: center;
-
 }
