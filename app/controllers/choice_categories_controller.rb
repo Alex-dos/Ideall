@@ -4,6 +4,7 @@ class ChoiceCategoriesController < ApplicationController
     @choice_category = ChoiceCategory.find(params[:id])
     @rank = params[:rank]
     @choice_category.rank += @rank.to_i
+    @choice_category.update_by << current_user.name
     @choice_category.save
     redirect_to room_ecran1_path(@room)
   end
