@@ -2,10 +2,17 @@
   <div class="container-rooms-join-titre-preference">
     <h1>Quelles sont tes preferences ?</h1>
   </div>
+  <div class="container container-barre-progression">
+    <% @choice_categories_with_votes.each do |card| %>
+      <% unless card.rank == 0 %>
+      <div class="container-case-progression"></div>
+      <% end %>
+    <% end %>
+  </div>
 <% end %>
   <br>
 <div class="container">
-<div class="container_cards">
+<div class="<%= !@choice_categories[1] ? 'container_cards02' : 'container_cards' %>">
   <% @choice_categories.each do |choice_category| %>
     <div class="col-4">
       <div class="card">
@@ -45,11 +52,9 @@
         <p><%= choice_cat.category.name%>
         <% if choice_cat.rank == 3 %>
         <%= image_tag("heart1.png") %>
-        <% end %>
-        <% if choice_cat.rank == 1 %>
+        <% elsif choice_cat.rank == 1 %>
         <%= image_tag("heart2.png") %>
-        <% end %>
-        <% if choice_cat.rank == -100 %>
+        <% elsif choice_cat.rank == -100 %>
         <%= image_tag("skull.png") %> </p>
         <% end %>
         </div>
