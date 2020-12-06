@@ -4,7 +4,7 @@
   </div>
   <div class="container container-barre-progression">
     <% @choice_categories_with_votes.each do |card| %>
-      <% unless card.rank == 0 %>
+      <% unless card.update_by[0] == current_user || card.update_by[1] == current_user || card.update_by[2] == current_user || card.update_by[3] == current_user %>
       <div class="container-case-progression"></div>
       <% end %>
     <% end %>
