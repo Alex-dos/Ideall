@@ -7,6 +7,9 @@ class CardScreensController < ApplicationController
   end
 
   def ecran2
+    @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
+    @choice_categories_with_votes = @choice_categories
+    # @choice_categories = @choice_categories.select {|choice_category| choice_category unless choice_category.update_by[0] == current_user.name || choice_category.update_by[1] == current_user.name || choice_category.update_by[2] == current_user.name || choice_category.update_by[3] == current_user.name}[0..2]
   end
 
 end
