@@ -9,8 +9,6 @@ class CardScreensController < ApplicationController
       result.category.games.where(price: nil).map {|game| game.name}
     end
     @result1
-
-    raise
     # @choice_categories2 = @choice_categories_with_votes.select {|choice_category| choice_category if choice_category.rank == 0}
   end
 
