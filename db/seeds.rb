@@ -26,31 +26,32 @@ file7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/
 file8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/casual_v992bk.png')
 file9 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/fps_welwgz.jpg')
 
-category1 = Category.create!(name: "Action", description: 'Des jeux qui bougent')
+
+category1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
 category1.photo.attach(io: file1, filename: 'Action.png', content_type: 'image/png')
 
-category2 = Category.create!(name: "Survie")
+category2 = Category.create!(name: "Survie", description: "Le jeu de survie est un sous-genre du jeu d'action où généralement le joueur démarre avec un minimum de ressources dans un monde ouvert hostile, et a pour mission de collecter des ressources, fabriquer des outils, des armes, s'abriter, afin de survivre le plus longtemps possible.")
 category2.photo.attach(io: file2, filename: 'Survie.png', content_type: 'image/png')
 
-category3 = Category.create!(name: "RPG")
+category3 = Category.create!(name: "RPG", description: "Un jeu vidéo de rôle ou simplement jeu de rôle, couramment abrégé en RPG, est un genre de jeu vidéo s'inspirant des codes et du principe des jeux de rôle sur table. Le joueur y incarne un ou plusieurs personnages qu'il fait évoluer au fil d'une quête.")
 category3.photo.attach(io: file3, filename: 'RPG.png', content_type: 'image/png')
 
-category4 = Category.create!(name: "Stratégie")
+category4 = Category.create!(name: "Stratégie", description: "Un jeu de stratégie peut être un jeu de société ou un jeu vidéo. Le but est de réaliser un objectif connu : augmenter sa domination spatiale, combattre un ou plusieurs ennemis sur un terrain de jeu, faire prospérer une entité… ")
 category4.photo.attach(io: file4, filename: 'Stratégie.png', content_type: 'image/png')
 
-category5 = Category.create!(name: "Simulation")
+category5 = Category.create!(name: "Simulation", description: "Un jeu de simulation est un jeu qui reproduit une activité ou une action dans divers environnements.")
 category5.photo.attach(io: file5, filename: 'Simulation.png', content_type: 'image/png')
 
-category6 = Category.create!(name: "2D")
+category6 = Category.create!(name: "2D", description: "Les jeux 2D utilisent des graphismes plats, appelés sprites, sans dimension tridimensionnelle.")
 category6.photo.attach(io: file6, filename: '2D.png', content_type: 'image/png')
 
-category7 = Category.create!(name: "Aventure")
+category7 = Category.create!(name: "Aventure", description: "Le jeu d'aventure est un genre de jeu vidéo dont l'intérêt prédominant se focalise sur la narration plutôt que sur les réflexes et l'action. Plus précisément, les jeux d'aventure mettent le plus souvent l'accent sur l'exploration, les dialogues, la résolution d'énigmes.")
 category7.photo.attach(io: file7, filename: 'Aventure.png', content_type: 'image/png')
 
-category8 = Category.create!(name: "Casual")
+category8 = Category.create!(name: "Casual", description: "Le casual game (littéralement « jeu occasionnel ») est un jeu vidéo destiné au large public des joueurs occasionnels (casual gamer).")
 category8.photo.attach(io: file8, filename: 'Casual.png', content_type: 'image/png')
 
-category9 = Category.create!(name: "FPS")
+category9 = Category.create!(name: "FPS", description: "Jeu de tir fondé sur des combats en vision subjective,le joueur voit l'action à travers des yeux du protagoniste.")
 category9.photo.attach(io: file9, filename: 'FPS.png', content_type: 'image/png')
 
 
