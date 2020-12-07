@@ -12,9 +12,10 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
+
+<% if user_signed_in? %>
       <%= link_to destroy_user_session_path, method: :delete, class: "nav-link" do %>
-        <div class="btn-primary-home"><div class="btn-log-in"><h4>Home</h4></div></div>
+        <div class="btn-primary-home"><h4 class="picto">k</h4><p>Home</p></div>
       <% end %>
     <% end %>
     <%= render 'shared/flashes' %>
