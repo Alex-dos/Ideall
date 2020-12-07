@@ -37,10 +37,14 @@
 
 <div class="container">
 <% unless @choice_categories[0] %>
-  <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
+<div class="container-joueurs-pret"><%=current_user.name%></div>
 </div>
-<div class="container">
-<div class="logo-chargement"></div>
+  <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
+
+<div class="container-pacman">
+<h4 class="picto2"><div class="game">C</div></h4><h4 class="picto2"><div class="pc">G</div></h4><h4 class="picto2"><div class="joy">Z</div></h4><h4 class="picto2"><div class="fantome">.</div></h4>
+<!-- <div class="pacman"></div>
+<div class="dot"></div> -->
 </div>
 <br>
 <br>

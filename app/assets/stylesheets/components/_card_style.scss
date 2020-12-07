@@ -44,6 +44,37 @@
   margin: 20px 10px 0 10px;
 }
 
+.card_vote_2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card_vote_2 p {
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card_vote_2 img {
+  position: relative;
+  margin: 0 20px 0 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.card_vote_2 img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.card_vote_2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .card_vote {
   display: flex;
   align-items: center;
@@ -70,9 +101,11 @@
 
 .card_vote {
   display: flex;
-  position: relative;
+  position: absolute;
   justify-content: center;
   margin-top: 30px;
+  bottom: 10px;
+  right: 30px;
 }
 
 @keyframes shake {
