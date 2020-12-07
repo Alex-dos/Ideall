@@ -4,6 +4,13 @@ class CardScreensController < ApplicationController
     @choice_categories_with_votes = @choice_categories
     @choice_categories = @choice_categories.select {|choice_category| choice_category unless choice_category.update_by[0] == current_user.name || choice_category.update_by[1] == current_user.name || choice_category.update_by[2] == current_user.name || choice_category.update_by[3] == current_user.name || choice_category.update_by[4] == current_user.name || choice_category.update_by[5] == current_user.name || choice_category.update_by[6] == current_user.name || choice_category.update_by[7] == current_user.name}[0..2]
     # Tiens c'est pour toi Matéo
+    @result_category = @choice_categories_with_votes.sort_by{|choice_category| choice_category.rank }[7..8]
+    @result1 = @result_category.map do |result|
+      result.category.games.where(price: nil).map {|game| game.name}
+    end
+    @result1
+
+    raise
     # @choice_categories2 = @choice_categories_with_votes.select {|choice_category| choice_category if choice_category.rank == 0}
   end
 
