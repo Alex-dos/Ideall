@@ -4,7 +4,7 @@
   </div>
   <div class="container container-barre-progression">
     <% @choice_categories_with_votes.each do |card| %>
-      <% if card.update_by[0] == current_user.name || card.update_by[1] == current_user.name || card.update_by[2] == current_user.name || card.update_by[3] == current_user.name %>
+      <% if card.update_by[0] == current_user.name || card.update_by[1] == current_user.name || card.update_by[2] == current_user.name || card.update_by[3] == current_user.name || card.update_by[4] == current_user.name || card.update_by[5] == current_user.name || card.update_by[6] == current_user.name || card.update_by[7] == current_user.name || card.update_by[8] == current_user.name %>
       <div class="container-case-progression"></div>
       <% end %>
     <% end %>
@@ -21,8 +21,8 @@
         <div class="card_title"><%= choice_category.category.name %></div>
           <div class="card_description"><%= choice_category.category.description%>
           </div>
-        <div class="card_vote"><%= link_to image_tag("heart1.png"), room_choice_category_path(id: choice_category.id, :rank => 3), :method => :patch%>
-        <%= link_to image_tag("heart2.png"), room_choice_category_path(id: choice_category.id, :rank => 1), :method => :patch%>
+        <div class="card_vote"><%= link_to image_tag("heart1.png"), room_choice_category_path(id: choice_category.id, :rank => 3), :method => :patch %>
+        <%= link_to image_tag("heart2.png"), room_choice_category_path(id: choice_category.id, :rank => 1), :method => :patch %>
         <%= link_to image_tag("skull.png"), room_choice_category_path(id: choice_category.id, :rank => -100), :method => :patch %></div>
       </div>
     </div>
@@ -50,19 +50,15 @@
 <br>
 <h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
 <div class="container">
-  <% @choice_categories_with_votes.each do |choice_cat| %>
-    <div class="card_vote_2">
-      <div class="container">
-        <p><%= choice_cat.category.name%>
-        <% if choice_cat.rank == 3 %>
-        <%= image_tag("heart1.png") %>
-        <% elsif choice_cat.rank == 1 %>
-        <%= image_tag("heart2.png") %>
-        <% elsif choice_cat.rank == -100 %>
-        <%= image_tag("skull.png") %> </p>
-        <% end %>
-        </div>
-    </div>
-  <% end %>
-<% end %>
+    <% @choice_categories_with_votes.each do |choice_cat| %>
+    <div id="results" data-room-id="<%= choice_cat.room.id %>">
+      <div class="card_vote" >
+        <i class="author">
+          <span><%= choice_cat.category.name %> :</span>
+        </i>
+        <p id="result-<%= choice_cat.category.id %>"><%= choice_cat.rank %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
+<% end %>
