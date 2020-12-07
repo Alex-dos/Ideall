@@ -41,7 +41,7 @@
 </div>
   <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
 
-<div class="container-pacman">
+<div class="container-loading">
 <h4 class="picto2"><div class="game">C</div></h4><h4 class="picto2"><div class="pc">G</div></h4><h4 class="picto2"><div class="joy">Z</div></h4><h4 class="picto2"><div class="fantome">.</div></h4>
 <!-- <div class="pacman"></div>
 <div class="dot"></div> -->
@@ -52,10 +52,8 @@
 <div class="container">
     <% @choice_categories_with_votes.each do |choice_cat| %>
     <div id="results" data-room-id="<%= choice_cat.room.id %>">
-      <div class="card_vote" >
-        <i class="author">
-          <span><%= choice_cat.category.name %> :</span>
-        </i>
+      <div class="card_vote_2" >
+        <%= choice_cat.category.name %>
         <p id="result-<%= choice_cat.category.id %>"><%= choice_cat.rank %></p>
       </div>
     <% end %>
