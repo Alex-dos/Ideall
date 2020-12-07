@@ -10,9 +10,8 @@
 # user2 = User.create!(email: "jaja@jaja.com", password: "password")
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
-
-Category.destroy_all
 Game.destroy_all
+Category.destroy_all
 
 require "open-uri"
 
