@@ -26,6 +26,7 @@ file7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/
 file8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/casual_v992bk.png')
 file9 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/fps_welwgz.jpg')
 
+
 category1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
 category1.photo.attach(io: file1, filename: 'Action.png', content_type: 'image/png')
 

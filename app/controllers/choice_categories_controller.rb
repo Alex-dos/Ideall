@@ -6,6 +6,10 @@ class ChoiceCategoriesController < ApplicationController
     @choice_category.rank += @rank.to_i
     @choice_category.update_by << current_user.name
     @choice_category.save
+    data = {category: @choice_category.category.id, rank: @choice_category.rank }
+    RoomChannel.broadcast_to(
+      @room, data.to_json
+      )
     redirect_to room_ecran1_path(@room)
   end
 end
