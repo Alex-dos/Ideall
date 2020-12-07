@@ -5,7 +5,7 @@ const initRoomCable = () => {
   const persoContainer = document.querySelector('.perso')
   if (resultsContainer) {
     const id = resultsContainer.dataset.roomId;
-    
+
     consumer.subscriptions.create({ channel: "RoomChannel", id: id }, {
       received(data) {
         const json = JSON.parse(data)
