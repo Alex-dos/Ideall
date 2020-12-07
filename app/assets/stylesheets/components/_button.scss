@@ -20,22 +20,26 @@
 }
 
 .btn-primary-home {
-  color: white;
-  border-radius: 15px;
-  background-color: $bleu-ideal;
-  border: 1px solid white;
-  border-radius: 0px 0px 15px 15px;
+  color: #363e41;
   transition: 0.5s ease;
   font-size: 40px;
-  padding: 0px 7px 0px 7px;
+  position: fixed;
+  left: 10px;
   &:hover {
-    color: $bleu-ideal;
-    background-color: white;
-    box-shadow: 0px 0px 20px #efeb69;
-    border: 1px solid $bleu-ideal;
-    animation: 1s brillance 0s linear infinite;
+    color: white;
   }
 }
+
+.btn-primary-home p {
+  color: #363e41;
+  transition: 0.5s ease;
+  font-size: 27px;
+  font-family: 'East Sea Dokdo', cursive;
+  position: fixed;
+  left: 36px;
+  top: 75px;
+}
+
 
 .btn-primary-home h4 {
   padding-bottom: 0px;
