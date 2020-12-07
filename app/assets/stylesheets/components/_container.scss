@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.container-pacman {
+.container-loading {
   position: relative;
   display: flex;
   display: shrink;
@@ -185,6 +185,7 @@
   color: black;
   background-color: #00ec3e61;
   text-align: center;
+}
 
 .container-joueurs-pret {
   display: flex;
