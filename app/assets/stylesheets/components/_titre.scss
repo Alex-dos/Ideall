@@ -60,6 +60,15 @@
   text-shadow: 2px 2px 0px $bleu-ombre-ideal;
 }
 
+.container-result-title h1 {
+  display: flex;
+  font-size: 70px;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+}
+
+
 .attente {
   text-align: center;
   display: flex;
