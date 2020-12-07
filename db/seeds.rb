@@ -11,8 +11,8 @@
 # user3 = User.create!(email: "jiji@jiji.com", password: "password")
 
 
-Category.destroy_all
 Game.destroy_all
+Category.destroy_all
 
 require "open-uri"
 
@@ -173,17 +173,20 @@ category9.photo.attach(io: file9, filename: 'FPS.png', content_type: 'image/png'
 # game79 = Game.create!(name: "Stay Out", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 # game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 
-# require "json"
-# require "rest-client"
-
-# url = 'https://store.steampowered.com/api/appdetails?appids=1172470'
-# response = RestClient.get(url)
-# response = JSON.parse(response)
-# name = response["1172470"]["data"]["name"]
-# Game.create!(name: name)
+#---------------------------------------------------------------------
 
 # require "json"
 # require "rest-client"
+# require 'open-uri'
+# require 'nokogiri'
+
+
+# def scrapingmethod(appid)
+#   url = "https://store.steampowered.com/app/#{appid}"
+#   html_file = open(url).read
+#   html_doc = Nokogiri::HTML(html_file)
+#   html_doc.search('.game_purchase_price').first.text.strip
+# end
 
 # url = 'http://api.steampowered.com/ISteamApps/GetAppList/v0002/'
 # response = RestClient.get(url)
@@ -193,22 +196,19 @@ category9.photo.attach(io: file9, filename: 'FPS.png', content_type: 'image/png'
 #     appidlist << f["appid"]
 #   end
 
-# appidlist[0..500].each do |appid|
+# appidlist[200..300].each do |appid|
 # url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
 #   response2 = RestClient.get(url)
 #   response2 = JSON.parse(response2)
 #   data = response2["#{appid}"]["data"]
-#   next if data.nil? || data["genres"].nil?
+#   next if data.nil? || data["genres"].nil? || data["metacritic"].nil?
 #   genres = data["genres"][0]["description"]
 #   name = data["name"]
-#   # pricefinal = data["price_overview"]["final"] / 100
-#     # if pricefinal.exists?
-#     #   pricefinal = free
-#     # else
-#   free = data["is_free"] == true ? "Gratuite" : nil
-
+#   free = data["is_free"] == true ? "Gratuit" : scrapingmethod(appid)
+#   photosteam = data["header_image"]
+ 
 #   category = Category.find_by(name: genres)
 #   category = Category.create!(name: genres) if category.nil?
 #   Game.create!(name: name, appid: appid, category_id: category.id, price: free)
+#   sleep(2)
 # end
-
