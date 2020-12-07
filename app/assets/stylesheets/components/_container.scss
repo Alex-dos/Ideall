@@ -6,6 +6,16 @@
   width: 100%;
 }
 
+.container-pacman {
+  position: relative;
+  display: flex;
+  display: shrink;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+
 // Container home
 
 .container-home {
@@ -133,4 +143,21 @@
 
 .container-letsgo {
   text-align: center;
+}
+
+.container-joueurs-pret {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  display: inline-block;
+  border: 1px solid #2bb4e6;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s ease;
+  align-content: center;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 20px #2bb4e6;
+  }
 }

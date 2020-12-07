@@ -43,20 +43,6 @@
   }
 }
 
-@keyframes pointpoint {
-  0%
-  {
-  opacity: 0;
-  }
-  50%
-  {
-  opacity: 1;
-  }
-  100%
-  {
-  opacity: 0;
-  }
-}
 
 h1 .attente {
   position: absolute;
@@ -110,10 +96,98 @@ h1 .attente {
   }
 }
 
-@keyframes spin
-{
+@keyframes pointpointgame {
   0%
-  { transform: rotate(0deg);   opacity: 0.2; }
-  50%  { transform: rotate(180deg); opacity: 1.0; }
-  100%   { transform: rotate(360deg); opacity: 0.2; }
+  {
+  opacity: 0;
+  }
+  25%
+  {
+  opacity: 1;
+  }
+  50%
+  {
+  opacity: 0;
+  }
+  75%
+  {
+  opacity: 0;
+  }
+  100%
+  {
+  opacity: 0;
+  }
+}
+
+@keyframes pointpointpc {
+  0%
+  {
+  opacity: 0;
+  }
+  25%
+  {
+  opacity: 0;
+  }
+  50%
+  {
+  opacity: 1;
+  }
+  75%
+  {
+  opacity: 0;
+  }
+  100%
+  {
+  opacity: 0;
+  }
+}
+
+@keyframes pointpointjoy {
+  0%
+  {
+  opacity: 0;
+  }
+  25%
+  {
+  opacity: 0;
+  }
+  50%
+  {
+  opacity: 0;
+  }
+  75%
+  {
+  opacity: 1;
+  }
+  100%
+  {
+  opacity: 0;
+  }
+}
+
+@keyframes pointpointfantome {
+  0%
+  {
+  opacity: 0;
+  }
+  25%
+  {
+  opacity: 0;
+  }
+  50%
+  {
+  opacity: 0;
+  }
+  75%
+  {
+  opacity: 0;
+  }
+  95%
+  {
+  opacity: 1;
+  }
+  100%
+  {
+  opacity: 0;
+  }
 }

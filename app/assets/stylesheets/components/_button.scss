@@ -25,10 +25,14 @@
   font-size: 40px;
   position: fixed;
   left: 10px;
+  text-decoration: none;
   &:hover {
     color: white;
+    & p {
+      color:white;
+        }
+    }
   }
-}
 
 .btn-primary-home p {
   color: #363e41;
