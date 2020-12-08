@@ -192,13 +192,13 @@
   display: flex;
   border: 1px solid #2bb4e6;
   border-radius: 15px;
-  background-color: rgba(104,198,231,1);
+  background-color: rgba(104, 198, 231, 1);
   transition: 0.5s ease;
   align-content: center;
   padding: 10px;
   margin: 40px;
   &:hover {
-    background-color: rgba(104,198,231,1);
+    background-color: rgba(104, 198, 231, 1);
     transition: 0.5s ease;
     box-shadow: 0px 0px 20px #2bb4e6;
   }
@@ -206,5 +206,10 @@
 
 .container-player-on {
   padding: 10px;
- text-align: center;
+  text-align: center;
+}
+
+.skifetch {
+  height: 20px;
+  background-color: red;
 }
