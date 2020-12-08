@@ -2,13 +2,6 @@
   <div class="container-rooms-join-titre-preference">
     <h1>Quelles sont tes preferences ?</h1>
   </div>
-  <div class="container container-barre-progression">
-    <% @choice_categories_with_votes.each do |card| %>
-      <% if card.update_by[0] == current_user.name || card.update_by[1] == current_user.name || card.update_by[2] == current_user.name || card.update_by[3] == current_user.name || card.update_by[4] == current_user.name || card.update_by[5] == current_user.name || card.update_by[6] == current_user.name || card.update_by[7] == current_user.name || card.update_by[8] == current_user.name %>
-      <div class="container-case-progression"></div>
-      <% end %>
-    <% end %>
-  </div>
 <% end %>
   <br>
 <div class="container">
@@ -30,6 +23,21 @@
 </div>
 </div>
 <br>
+
+<% if @choice_categories[0] %>
+  <div class="container container-barre-progression">
+    <% @choice_categories_with_votes.each do |card| %>
+      <% if card.update_by[0] == current_user.name || card.update_by[1] == current_user.name || card.update_by[2] == current_user.name || card.update_by[3] == current_user.name || card.update_by[4] == current_user.name || card.update_by[5] == current_user.name || card.update_by[6] == current_user.name || card.update_by[7] == current_user.name || card.update_by[8] == current_user.name %>
+      <div class="container-case-progression"></div>
+      <% end %>
+    <% end %>
+  </div>
+  <% end %>
+<br>
+<br>
+<br>
+<br>
+
 <% unless @choice_categories[0] %>
   <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
 
