@@ -125,7 +125,6 @@
 }
 
 .container-barre-progression {
-  margin-top: 5%;
   margin-bottom: 10px;
   width: 900px;
   border: solid 2px white;
@@ -215,4 +214,12 @@
   top: 0;
   left: 0;
   background-color: red;
+
+.container-screen4-result {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+  transition: 0.5s ease;
+  animation: 5s ideall 1s linear infinite;
 }

@@ -20,7 +20,11 @@ class CardScreensController < ApplicationController
 
   def ecran2
     @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
-    @list = list_games(@choice_categories)
+    @test = list_games(@choice_categories)
+    @room = Room.find(params[:room_id])
+    @choice_games = ChoiceGame.where(room_id: params[:room_id])
+    @choice_games_with_votes = @choice_games
+    @choice_games = @choice_games.select {|choice_category| choice_category unless choice_category.update_by[0] == current_user.name || choice_category.update_by[1] == current_user.name || choice_category.update_by[2] == current_user.name || choice_category.update_by[3] == current_user.name || choice_category.update_by[4] == current_user.name || choice_category.update_by[5] == current_user.name || choice_category.update_by[6] == current_user.name || choice_category.update_by[7] == current_user.name || choice_category.update_by[8] == current_user.name}[0..2]
   end
 
   def ecran3
