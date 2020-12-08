@@ -9,6 +9,8 @@
   <% @choice_games.each do |choice_category| %>
     <div class="col-4">
       <div class="card">
+        <img class="card_img"
+          src="<%= cl_image_path choice_category.game.photo.key, height: 300, width: 400, crop: :fill %>">
         <div class="card_title"><%= choice_category.game.name %></div>
           <div class="card_description"><%= choice_category.game.name%>
           </div>
@@ -58,14 +60,17 @@
   </div>
 <div class="alum"></div>
 </div>
+<h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
 <div class="container">
     <% @choice_games_with_votes.each do |choice_cat| %>
     <div id="results" data-room-id="<%= choice_cat.room.id %>">
-
-        <div style="width: 800px; heigth:20px; display:flex; justify-content: left">
-          <div id="result-<%= choice_cat.game.id %>" class="skifetch" style="<%= choice_cat.rank %>"></div>
-        </div>
+      <div class="card_vote_2" >
+        <%= choice_cat.game.name %>
+        <p id="result-<%= choice_cat.game.id %>"><%= choice_cat.rank %></p>
+      </div>
     <% end %>
   </div>
 </div>
 <% end %>
+
+
