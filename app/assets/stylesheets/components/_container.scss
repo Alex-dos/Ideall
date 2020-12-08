@@ -220,3 +220,11 @@
 .container-screen4-result h3 {
   font-size: 80px;
 }
+
+.container-result {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
