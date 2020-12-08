@@ -129,27 +129,61 @@ action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'im
 
 
 
-# # Aventure
-# #----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
+# Aventure
+#----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
+img_aventure_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg')
+img_aventure_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg')
+img_aventure_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg')
+img_aventure_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/546560/header.jpg')
+img_aventure_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg')
+img_aventure_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
+img_aventure_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
+img_aventure_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/582500/header.jpg')
+img_aventure_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/512470/header.jpg')
+img_aventure_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
+img_aventure_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1394690/header.jpg')
+img_aventure_12 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1444750/header.jpg')
+img_aventure_13 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1427210/header.jpg')
 
+#----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
+aventure_1 = Game.create!(name: "Sea of Thieves", price: 39.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
 
+aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
 
-# #----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
-# game51 = Game.create!(name: "Sea of Thieves", price: 39.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game52 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game53 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game54 = Game.create!(name: "Half-Life: Alyx", price: 49.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game55 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game56 = Game.create!(name: "Neverwinter", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game57 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game58 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game59 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
 
+aventure_4 = Game.create!(name: "Half-Life: Alyx", price: 49.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_4.photo.attach(io: img_aventure_4, filename: 'half_life.png', content_type: 'image/png')
 
+aventure_5 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_5.photo.attach(io: img_aventure_5, filename: 'Warhammer.png', content_type: 'image/png')
+
+aventure_6 = Game.create!(name: "Neverwinter", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_6.photo.attach(io: img_aventure_6, filename: 'Neverwinter.png', content_type: 'image/png')
+
+aventure_7 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_7.photo.attach(io: img_aventure_7, filename: 'Tera.png', content_type: 'image/png')
+
+aventure_8 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_8.photo.attach(io: img_aventure_8, filename: 'wwh.png', content_type: 'image/png')
+
+aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
+
+aventure_10 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
+
+aventure_11 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
+
+aventure_12 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
+
+aventure_13 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
 
 
 
