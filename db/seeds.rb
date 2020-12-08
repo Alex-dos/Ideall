@@ -145,6 +145,9 @@ game57 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_num
 game58 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
 game59 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
 game60 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+game60 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+game60 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+game60 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
 
 # Casual
 
@@ -171,18 +174,30 @@ game77 = Game.create!(name: "Paladins", price: nil, player_number_min: 1, player
 game78 = Game.create!(name: "Black Squad", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 game79 = Game.create!(name: "Stay Out", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Fortnite", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Warframe", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Destiny 2", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "PlanetSide Arena", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Apex", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Paladins", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Team Fortress 2", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+
+#---------------------------------------------------------------------
 
 # require "json"
 # require "rest-client"
+# require 'open-uri'
+# require 'nokogiri'
 
-# url = 'https://store.steampowered.com/api/appdetails?appids=1172470'
-# response = RestClient.get(url)
-# response = JSON.parse(response)
-# name = response["1172470"]["data"]["name"]
-# Game.create!(name: name)
 
-# require "json"
-# require "rest-client"
+# def scrapingmethod(appid)
+#   url = "https://store.steampowered.com/app/#{appid}"
+#   html_file = open(url).read
+#   html_doc = Nokogiri::HTML(html_file)
+#   html_doc.search('.game_purchase_price').first.text.strip
+# end
 
 # url = 'http://api.steampowered.com/ISteamApps/GetAppList/v0002/'
 # response = RestClient.get(url)
@@ -192,22 +207,20 @@ game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1,
 #     appidlist << f["appid"]
 #   end
 
-# appidlist[0..500].each do |appid|
+# appidlist[400..500].each do |appid|
 # url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
 #   response2 = RestClient.get(url)
 #   response2 = JSON.parse(response2)
 #   data = response2["#{appid}"]["data"]
-#   next if data.nil? || data["genres"].nil?
+#   next if data.nil? || data["genres"].nil? || data["metacritic"].nil?
 #   genres = data["genres"][0]["description"]
 #   name = data["name"]
-#   # pricefinal = data["price_overview"]["final"] / 100
-#     # if pricefinal.exists?
-#     #   pricefinal = free
-#     # else
-#   free = data["is_free"] == true ? "Gratuite" : nil
+#   free = data["is_free"] == true ? "Gratuit" : scrapingmethod(appid)
+#   photosteam = data["header_image"].delete_prefix('"').delete_suffix('"')
 
+#   solo = data["categories"][0]["description"] == "Single-player" ? "Un joueur" : "Multijoueur"
+#   multi = data["categories"][1]["description"] == "Multi-player" ? "Multi-player" : "Indéfini"
 #   category = Category.find_by(name: genres)
 #   category = Category.create!(name: genres) if category.nil?
-#   Game.create!(name: name, appid: appid, category_id: category.id, price: free)
+#   Game.create!(name: name, appid: appid, category_id: category.id, price: free, photo: photosteam, solo: solo, multi: multi)
 # end
-

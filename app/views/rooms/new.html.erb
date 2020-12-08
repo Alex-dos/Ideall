@@ -21,7 +21,7 @@
           <%= f.input :player_number, collection: 1..8, label: "Nombre de joueur(s) " %>
           </div>
           <div class="new_room">
-          <%= f.input :price_filter, collection: ["Gratuit", "€", "€€", "€€€"], label: "Préférence de prix"%>
+          <%= f.input :price_filter, collection: ["Gratuit", "Payant"], label: "Préférence de prix"%>
           </div>
           <div class="container-btn-room">
           <%= f.submit "Creation de la room", class: "btn btn-julien02" %>

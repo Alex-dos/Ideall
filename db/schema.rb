@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_12_08_125333) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -67,13 +68,16 @@ ActiveRecord::Schema.define(version: 2020_12_08_125333) do
 
   create_table "games", force: :cascade do |t|
     t.string "name"
-    t.float "price"
     t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "player_number_min"
     t.integer "player_number_max"
     t.integer "appid"
+    t.string "price"
+    t.string "photo"
+    t.string "solo"
+    t.string "multi"
     t.index ["category_id"], name: "index_games_on_category_id"
   end
 
