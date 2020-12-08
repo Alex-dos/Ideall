@@ -209,11 +209,23 @@
 }
 
 .rank {
-  height: 20px;
   position: relative;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.377);
+  background-color: #ffffff61;
   top: 0;
   left: 0;
-  background-color: red;
+  text-align: left;
+
+  background-image: -webkit-linear-gradient(
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.4)),
+    -webkit-linear-gradient(left, rgb(108, 198, 226), rgb(245, 245, 245));
 }
 
 .container-screen4-result {

@@ -60,15 +60,15 @@
     <% @choice_categories_with_votes.each do |choice_cat| %>
     <div id="results" data-room-id="<%= choice_cat.room.id %>">
       <div class="card_vote_2" >
-        <%= choice_cat.category.name %>
         <!-- <p id="result-<%= choice_cat.category.id %>"><%= choice_cat.rank %></p> -->
-      </div>
-
-        <div style="width: 500px; heigth:20px; position: relative">
+        
+        <div style="width: 900px">
           <% width_rank = ( choice_cat.rank.to_f / (3 * @room.player_number) ) * 100 %>
           <% width_rank = 0 if width_rank.negative? %>
-          <div id="result-<%= choice_cat.category.id %>" class="rank" style="width: <%= width_rank %>%">lol</div>
+          <div id="result-<%= choice_cat.category.id %>" class="rank" style="width: <%= width_rank %>%"><%= choice_cat.category.name %></div>
         </div>
+      </div>
+
     <% end %>
   </div>
 </div>
