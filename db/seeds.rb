@@ -89,117 +89,130 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 
 
 
-# Action
-#----------------------------------------------- IMG ACTION  ---------------------------------------------------------
-img_action_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/570940/header.jpg')
-img_action_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/379720/header.jpg')
-img_action_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg')
-img_action_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg')
-img_action_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg')
-img_action_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header_french.jpg')
-img_action_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg')
-img_action_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/386360/header_french.jpg')
-img_action_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg')
-img_action_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
+# # Action
+# #----------------------------------------------- IMG ACTION  ---------------------------------------------------------
+# img_action_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/570940/header.jpg')
+# img_action_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/379720/header.jpg')
+# img_action_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg')
+# img_action_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg')
+# img_action_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg')
+# img_action_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header_french.jpg')
+# img_action_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg')
+# img_action_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/386360/header_french.jpg')
+# img_action_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg')
+# img_action_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
 
-#----------------------------------------------- IMG ACTION FIN -----------------------------------------------------
-action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo", link:"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/", description:"Vint alors l'avènement du Feu... Redécouvrez le jeu de référence salué par la critique.
-  Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
-action_1.photo.attach(io: img_action_1, filename: 'dark_souls.png', content_type: 'image/png')
+# #----------------------------------------------- IMG ACTION FIN -----------------------------------------------------
+# action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo", link:"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/", description:"Vint alors l'avènement du Feu... Redécouvrez le jeu de référence salué par la critique.
+#   Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
+# action_1.photo.attach(io: img_action_1, filename: 'dark_souls.png', content_type: 'image/png')
 
-action_2 = Game.create!(name: "Doom", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/379720/DOOM/", description:"Inclut désormais les cartes, modes de jeux, armes et les trois packs de DLC premium (Unto the Evil, Hell Followed, et Bloodfall),
-  ainsi que les modes Arcade et Photo. Inclut également la dernière Mise à jour 6.66 qui vient enrichir le mode multijoueur et qui améliore son mode de progression.", category_id: Category.where(name: :Action).ids[0])
-action_2.photo.attach(io: img_action_2, filename: 'doom.png', content_type: 'image/png')
+# action_2 = Game.create!(name: "Doom", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/379720/DOOM/", description:"Inclut désormais les cartes, modes de jeux, armes et les trois packs de DLC premium (Unto the Evil, Hell Followed, et Bloodfall),
+#   ainsi que les modes Arcade et Photo. Inclut également la dernière Mise à jour 6.66 qui vient enrichir le mode multijoueur et qui améliore son mode de progression.", category_id: Category.where(name: :Action).ids[0])
+# action_2.photo.attach(io: img_action_2, filename: 'doom.png', content_type: 'image/png')
 
-action_3 = Game.create!(name: "Red Dead Redemption 2", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/", description:"Red Dead Redemption 2, le jeu épique en monde ouvert de Rockstar Games acclamé par la critique et
-  le mieux noté de cette génération de consoles, arrive maintenant sur PC avec du contenu inédit pour le mode Histoire, des améliorations graphiques et bien plus.", category_id: Category.where(name: :Action).ids[0])
-action_3.photo.attach(io: img_action_3, filename: 'red_dead.png', content_type: 'image/png')
+# action_3 = Game.create!(name: "Red Dead Redemption 2", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/", description:"Red Dead Redemption 2, le jeu épique en monde ouvert de Rockstar Games acclamé par la critique et
+#   le mieux noté de cette génération de consoles, arrive maintenant sur PC avec du contenu inédit pour le mode Histoire, des améliorations graphiques et bien plus.", category_id: Category.where(name: :Action).ids[0])
+# action_3.photo.attach(io: img_action_3, filename: 'red_dead.png', content_type: 'image/png')
 
-action_4 = Game.create!(name: "Borderlands 3", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/397540/Borderlands_3/", description:"Le tireur-looter original revient, emballant des milliards d'armes à feu et une aventure alimentée par le chaos!
-  Foncez à travers de nouveaux mondes et ennemis et sauvez votre maison des chefs de secte les plus impitoyables de la galaxie.", category_id: Category.where(name: :Action).ids[0])
-action_4.photo.attach(io: img_action_4, filename: 'border3.png', content_type: 'image/png')
+# action_4 = Game.create!(name: "Borderlands 3", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/397540/Borderlands_3/", description:"Le tireur-looter original revient, emballant des milliards d'armes à feu et une aventure alimentée par le chaos!
+#   Foncez à travers de nouveaux mondes et ennemis et sauvez votre maison des chefs de secte les plus impitoyables de la galaxie.", category_id: Category.where(name: :Action).ids[0])
+# action_4.photo.attach(io: img_action_4, filename: 'border3.png', content_type: 'image/png')
 
-action_5 = Game.create!(name: "Assassin's Creed Odyssey", price: 60.00, solo:"Solo", link:"https://store.steampowered.com/app/397540/Borderlands_3/", description:"Forgez votre destin dans Assassin's Creed® Odyssey. Passez du statut de paria à celui de légende vivante au cours
-  d'une véritable odyssée durant laquelle vous lèverez les secrets sur votre passé et changerez le destin de la Grèce antique.
-", category_id: Category.where(name: :Action).ids[0])
-action_5.photo.attach(io: img_action_5, filename: 'assco.png', content_type: 'image/png')
+# action_5 = Game.create!(name: "Assassin's Creed Odyssey", price: 60.00, solo:"Solo", link:"https://store.steampowered.com/app/397540/Borderlands_3/", description:"Forgez votre destin dans Assassin's Creed® Odyssey. Passez du statut de paria à celui de légende vivante au cours
+#   d'une véritable odyssée durant laquelle vous lèverez les secrets sur votre passé et changerez le destin de la Grèce antique.
+# ", category_id: Category.where(name: :Action).ids[0])
+# action_5.photo.attach(io: img_action_5, filename: 'assco.png', content_type: 'image/png')
 
-action_6 = Game.create!(name: "Destiny 2", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1085660/Destiny_2/", description:"Destiny 2 est un MMO d'action avec un monde évolutif unique, auquel vous et vos amis pouvez jouer gratuitement, à tout moment et de n'importe où.", category_id: Category.where(name: :Action).ids[0])
-action_6.photo.attach(io: img_action_6, filename: 'destiny2.png', content_type: 'image/png')
+# action_6 = Game.create!(name: "Destiny 2", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1085660/Destiny_2/", description:"Destiny 2 est un MMO d'action avec un monde évolutif unique, auquel vous et vos amis pouvez jouer gratuitement, à tout moment et de n'importe où.", category_id: Category.where(name: :Action).ids[0])
+# action_6.photo.attach(io: img_action_6, filename: 'destiny2.png', content_type: 'image/png')
 
-action_7 = Game.create!(name: "Apex Legends", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172470/Apex_Legends/", description:"Apex Legends est le jeu de tir d'équipe Battle Royale primé et gratuit de Respawn Entertainment. Maîtrisez une liste toujours
- croissante de personnages légendaires dotés de capacités puissantes et faites l'expérience d'un jeu d'équipe stratégique et d'un gameplay innovant dans la prochaine évolution de Battle Royale.", category_id: Category.where(name: :Action).ids[0])
-action_7.photo.attach(io: img_action_7, filename: 'apexleg.png', content_type: 'image/png')
+# action_7 = Game.create!(name: "Apex Legends", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172470/Apex_Legends/", description:"Apex Legends est le jeu de tir d'équipe Battle Royale primé et gratuit de Respawn Entertainment. Maîtrisez une liste toujours
+#  croissante de personnages légendaires dotés de capacités puissantes et faites l'expérience d'un jeu d'équipe stratégique et d'un gameplay innovant dans la prochaine évolution de Battle Royale.", category_id: Category.where(name: :Action).ids[0])
+# action_7.photo.attach(io: img_action_7, filename: 'apexleg.png', content_type: 'image/png')
 
-action_8 = Game.create!(name: "Smite", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/386360/SMITE/", description:"Rejoignez plus de 35 millions de joueurs sur SMITE, le champ de bataille des dieux ! Brandissez le marteau de Thor et changez vos ennemis en pierre en
-  incarnant Méduse... Au total, il y a plus de cent divinités disponibles. Venez découvrir SMITE gratuitement !", category_id: Category.where(name: :Action).ids[0])
-action_8.photo.attach(io: img_action_8, filename: 'smite.png', content_type: 'image/png')
+# action_8 = Game.create!(name: "Smite", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/386360/SMITE/", description:"Rejoignez plus de 35 millions de joueurs sur SMITE, le champ de bataille des dieux ! Brandissez le marteau de Thor et changez vos ennemis en pierre en
+#   incarnant Méduse... Au total, il y a plus de cent divinités disponibles. Venez découvrir SMITE gratuitement !", category_id: Category.where(name: :Action).ids[0])
+# action_8.photo.attach(io: img_action_8, filename: 'smite.png', content_type: 'image/png')
 
-action_9 = Game.create!(name: "Brawlhala", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/291550/Brawlhalla/", description:"Un combattant de plate-forme épique pour jusqu'à 8 joueurs en ligne ou localement. Essayez des matchs gratuits, des matchs classés ou invitez des amis dans une salle privée.
-  Et c'est gratuit! Jouez sur plusieurs plates-formes avec des millions de joueurs sur PS4, Xbox One, Nintendo Switch, iOS, Android et Steam! Mises à jour fréquentes. Plus de cinquante légendes.", category_id: Category.where(name: :Action).ids[0])
-action_9.photo.attach(io: img_action_9, filename: 'brawlhala.png', content_type: 'image/png')
+# action_9 = Game.create!(name: "Brawlhala", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/291550/Brawlhalla/", description:"Un combattant de plate-forme épique pour jusqu'à 8 joueurs en ligne ou localement. Essayez des matchs gratuits, des matchs classés ou invitez des amis dans une salle privée.
+#   Et c'est gratuit! Jouez sur plusieurs plates-formes avec des millions de joueurs sur PS4, Xbox One, Nintendo Switch, iOS, Android et Steam! Mises à jour fréquentes. Plus de cinquante légendes.", category_id: Category.where(name: :Action).ids[0])
+# action_9.photo.attach(io: img_action_9, filename: 'brawlhala.png', content_type: 'image/png')
 
-action_10 = Game.create!(name: "World of tanks", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/291550/Brawlhalla/", description:"World of Tanks est un jeu vidéo biélorusse développé par Wargaming.net. Il est publié pour Windows en 2010 en tant que free-to-play.
-  Il s’agit d’un jeu de simulation de char de combat massivement multijoueur. ", category_id: Category.where(name: :Action).ids[0])
-action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'image/png')
+# action_10 = Game.create!(name: "World of tanks", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/291550/Brawlhalla/", description:"World of Tanks est un jeu vidéo biélorusse développé par Wargaming.net. Il est publié pour Windows en 2010 en tant que free-to-play.
+#   Il s’agit d’un jeu de simulation de char de combat massivement multijoueur. ", category_id: Category.where(name: :Action).ids[0])
+# action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'image/png')
 
 
 
-# # Aventure
-# #----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
-# img_aventure_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg')
-# img_aventure_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg')
-# img_aventure_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg')
-# img_aventure_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/546560/header.jpg')
-# img_aventure_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg')
-# img_aventure_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
+# Aventure
+#----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
+img_aventure_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg')
+img_aventure_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg')
+img_aventure_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg')
+img_aventure_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg')
+img_aventure_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg')
+img_aventure_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
 # img_aventure_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
-# img_aventure_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/582500/header.jpg')
-# img_aventure_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/512470/header.jpg')
-# img_aventure_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
-# img_aventure_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1394690/header.jpg')
-# img_aventure_12 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1444750/header.jpg')
-# img_aventure_13 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1427210/header.jpg')
+img_aventure_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/582500/header.jpg')
+img_aventure_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/512470/header.jpg')
+img_aventure_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
+img_aventure_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1394690/header.jpg')
+img_aventure_12 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1444750/header.jpg')
+img_aventure_13 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1427210/header.jpg')
 
-# #----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
-# aventure_1 = Game.create!(name: "Sea of Thieves", price: 39.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
+#----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
+aventure_1 = Game.create!(name: "Sea of Thieves", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172620/Sea_of_Thieves/", description:"Sea of Thieves vous propose une aventure de pirate ultime avec un gameplay directement issu de l'imaginaire de la piraterie :
+  de la navigation, de l'exploration et des chasses aux trésors. Comme les rôles ne sont pas prédéfinis, vous pourrez contribuer à ce monde comme il vous plaira.", category_id: Category.where(name: :Aventure).ids[0])
+aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
 
-# aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
+aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order/", description:"Une aventure galactique vous attend dans STAR WARS Jedi: Fallen Order, un nouveau jeu d'action-aventure à la 3e personne, développé par Respawn Entertainment.
+  Un Padawan abandonné doit terminer son entraînement, développer de nouvelles capacités de la Force et apprendre à maîtriser son sabre laser.", category_id: Category.where(name: :Aventure).ids[0])
+aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
 
-# aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
+aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/", description:"Embarquez pour une nouvelle aventure dans un monde vaste et dépaysant où vous rencontrerez des ennemis
+  gigantesques et des énigmes ardues dans votre quête pour révéler la destinée d'Ori.", category_id: Category.where(name: :Aventure).ids[0])
+aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
 
-# aventure_4 = Game.create!(name: "Half-Life: Alyx", price: 49.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_4.photo.attach(io: img_aventure_4, filename: 'half_life.png', content_type: 'image/png')
+aventure_4 = Game.create!(name: "Half-Life", price: 49.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/70/HalfLife/", description:"Nommé « Jeu de l'année » par plus de 50 magazines, ce titre de Valve mêle action et aventure grâce à une
+  technologie primée et crée un monde au réalisme effrayant, où la survie des joueurs dépend de leur faculté de réflexion.", category_id: Category.where(name: :Aventure).ids[0])
+aventure_4.photo.attach(io: img_aventure_4, filename: 'half_life.png', content_type: 'image/png')
 
-# aventure_5 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_5.photo.attach(io: img_aventure_5, filename: 'Warhammer.png', content_type: 'image/png')
+aventure_5 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"Encensé par la critique, Vermintide revient dans un jeu de mêlée révolutionnaire et visuellement étonnant,
+  repoussant les limites du jeu d'action coopératif à la première personne. Rejoignez le combat dès maintenant !
+", category_id: Category.where(name: :Aventure).ids[0])
+aventure_5.photo.attach(io: img_aventure_5, filename: 'Warhammer.png', content_type: 'image/png')
 
-# aventure_6 = Game.create!(name: "Neverwinter", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+#----Merge mmo----
+# aventure_6 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"", category_id: Category.where(name: :Aventure).ids[0])
 # aventure_6.photo.attach(io: img_aventure_6, filename: 'Neverwinter.png', content_type: 'image/png')
 
 # aventure_7 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
 # aventure_7.photo.attach(io: img_aventure_7, filename: 'Tera.png', content_type: 'image/png')
 
-# aventure_8 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_8.photo.attach(io: img_aventure_8, filename: 'wwh.png', content_type: 'image/png')
+aventure_8 = Game.create!(name: "We where Here", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Perdu dans un terrain vague gelé et séparé de votre partenaire dans un château abandonné,
+  le seul bien qui vous reste est un talkie-walkie avec une voix familière à l'autre bout. Pouvez-vous tous les deux trouver votre chemin à temps?", category_id: Category.where(name: :Aventure).ids[0])
+aventure_8.photo.attach(io: img_aventure_8, filename: 'wwh.png', content_type: 'image/png')
 
-# aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
+aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/512470/The_Pirate_Caribbean_Hunt/", description:"Salutations Capitaine!  Naviguez au cœur des Caraïbes dans l'ère de la piraterie - le temps des drapeaux noirs et des crânes blancs,
+  des vagues et des occasions en or. Hissez le Jolly Roger et saisissez la barre pour naviguer à travers des combats et des raids, rançons et trésors...", category_id: Category.where(name: :Aventure).ids[0])
+aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
 
-# aventure_10 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
+aventure_10 = Game.create!(name: "Dark Deception", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/332950/Dark_Deception/", description:"La mort vous attend dans Dark Deception, un jeu de labyrinthe d'horreur à la première personne axé sur l'histoire.
+  Il n'y a nulle part où se cacher et nulle part où reprendre son souffle. Courez ou mourez - c'est votre choix. Pris au piège dans un royaume de labyrinthes cauchemardesques avec une femme mystérieuse, votre seul espoir de survie est de trouver un moyen d'échapper à l'obscurité.", category_id: Category.where(name: :Aventure).ids[0])
+aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
 
-# aventure_11 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
+aventure_11 = Game.create!(name: "Kaku", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1394690/KAKU_Ancient_Seal_Alpha/", description:"Kaku Ancient Seal est un jeu d'aventure facile et amusant. Vous deviendrez un adolescent avec un adorable animal de compagnie, explorerez et aventurerez dans un monde
+  fantastique ouvert. Dans ce jeu, nous avons un style artistique unique, un design de puzzle intéressant et un voyage tortueux et heureux, êtes-vous prêt pour l'Oraka", category_id: Category.where(name: :Aventure).ids[0])
+aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
 
-# aventure_12 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
+aventure_12 = Game.create!(name: "DreamWatcher", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"Bienvenue dans la Grande Bibliothèque des Rêves, où le chaos s’est déchaîné! Incarnez l'agente dans ce Metroidvania 3D rempli de secrets surprenants,
+  de parcours audacieux, d'énigmes déroutantes et de singes menaçants. Votre objectif : Explorer et ramener l'ordre dans la Grande Bibliothèque!", category_id: Category.where(name: :Aventure).ids[0])
+aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
 
-# aventure_13 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
+aventure_13 = Game.create!(name: "From the Shadows", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"From the Shadows est un jeu de plateforme de puzzle coopératif dans lequel les joueurs doivent se frayer un chemin à travers un manoir mystérieux
+  en résolvant des énigmes qui tournent autour des mécanismes de la lumière et de l'ombre.", category_id: Category.where(name: :Aventure).ids[0])
+aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
 
 
 
@@ -297,7 +310,11 @@ action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'im
 
 #----------------------------------------------- IMG MMO FIN -----------------------------------------------------
 
+# mmo_1 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :mmo).ids[0])
+# mmo_1.photo.attach(io: img_mmo_1, filename: 'Tera.png', content_type: 'image/png')
 
+# mmo_2 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"", category_id: Category.where(name: :Aventure).ids[0])
+# mmo_2.photo.attach(io: img_mmo_2, filename: 'Neverwinter.png', content_type: 'image/png')
 
 
 
@@ -311,7 +328,7 @@ action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'im
 
 
 # # RPG
-# #----------------------------------------------- IMG RPG MMO ---------------------------------------------------------
+# #----------------------------------------------- IMG RPG ---------------------------------------------------------
 
 
 
