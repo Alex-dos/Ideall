@@ -145,6 +145,9 @@ game57 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_num
 game58 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
 game59 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
 game60 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+game60 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+game60 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+game60 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
 
 # Casual
 
@@ -171,6 +174,15 @@ game77 = Game.create!(name: "Paladins", price: nil, player_number_min: 1, player
 game78 = Game.create!(name: "Black Squad", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 game79 = Game.create!(name: "Stay Out", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Fortnite", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Warframe", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Destiny 2", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "PlanetSide Arena", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Apex", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Paladins", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
+game80 = Game.create!(name: "Team Fortress 2", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :FPS).ids[0])
 
 #---------------------------------------------------------------------
 

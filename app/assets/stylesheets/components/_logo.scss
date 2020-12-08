@@ -32,3 +32,14 @@
   color: white;
   animation: 5s pointpointfantome 1s linear infinite;
 }
+
+.container-player-on i span {
+  font-size: 10px;
+  color: black;
+  text-shadow: 0px 0px 10px black;
+  animation: 2s allumage 1s linear forwards;
+}
+
+.container-player-on i span {
+    font-size: 30px;
+}
