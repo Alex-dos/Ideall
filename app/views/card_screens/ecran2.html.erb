@@ -1,2 +1,71 @@
-<p>Hello</p>
-<%= @list %>
+<% if @choice_games[0] %>
+  <div class="container-rooms-join-titre-preference">
+    <h1>A quoi veux-tu jouer ?</h1>
+  </div>
+<% end %>
+  <br>
+<div class="container">
+<div class="<%= !@choice_games[1] ? 'container_cards02' : 'container_cards' %>">
+  <% @choice_games.each do |choice_category| %>
+    <div class="col-4">
+      <div class="card">
+        <div class="card_title"><%= choice_category.game.name %></div>
+          <div class="card_description"><%= choice_category.game.name%>
+          </div>
+        <div class="card_vote"><%= link_to image_tag("heart1.png"), room_choice_game_path(id: choice_category.id, :rank => 3), :method => :patch %>
+        <%= link_to image_tag("heart2.png"), room_choice_game_path(id: choice_category.id, :rank => 1), :method => :patch %>
+        <%= link_to image_tag("skull.png"), room_choice_game_path(id: choice_category.id, :rank => -100), :method => :patch %></div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+<br>
+
+<% if @choice_games[0] %>
+  <div class="container container-barre-progression">
+    <% @choice_games_with_votes.each do |card| %>
+      <% if card.update_by[0] == current_user.name || card.update_by[1] == current_user.name || card.update_by[2] == current_user.name || card.update_by[3] == current_user.name || card.update_by[4] == current_user.name || card.update_by[5] == current_user.name || card.update_by[6] == current_user.name || card.update_by[7] == current_user.name || card.update_by[8] == current_user.name %>
+      <div class="container-case-progression"></div>
+      <% end %>
+    <% end %>
+  </div>
+  <% end %>
+<br>
+<br>
+<br>
+<br>
+
+<% unless @choice_games[0] %>
+  <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
+
+<div class="container-loading">
+<h4 class="picto2"><div class="game">C</div></h4><h4 class="picto2"><div class="pc">G</div></h4><h4 class="picto2"><div class="joy">z</div></h4><h4 class="picto2"><div class="fantome">Z</div></h4>
+<!-- <div class="pacman"></div>
+<div class="dot"></div> -->
+</div>
+<h1 class = "attente" style="font-size:40px">Joueurs ayant fini la selection :</h1>
+<div class="container">
+  <div class="container-joueurs-pret">
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%= current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%= current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
+  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%= current_user.name%></div></div>
+  </div>
+<div class="alum"></div>
+</div>
+<div class="container">
+    <% @choice_games_with_votes.each do |choice_cat| %>
+    <div id="results" data-room-id="<%= choice_cat.room.id %>">
+
+        <div style="width: 800px; heigth:20px; display:flex; justify-content: left">
+          <div id="result-<%= choice_cat.game.id %>" class="skifetch" style="<%= choice_cat.rank %>"></div>
+        </div>
+    <% end %>
+  </div>
+</div>
+<% end %>

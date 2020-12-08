@@ -14,7 +14,6 @@ const initRoomCable = () => {
           const categoryId = `#result-${json.category}`
           console.log(categoryId)
           document.querySelector(categoryId).innerText = json.rank
-          // document.querySelector(categoryId).style.backgroundColor = json.rank
         }
         if (json.head == 302 && json.path) {
           window.location.pathname = json.path;

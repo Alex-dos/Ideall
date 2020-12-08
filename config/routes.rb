@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :rooms, only: [:show, :new, :create] do
     resources :room_users, only: [:new, :create]
     resources :choice_categories, only: [:edit, :update]
+    resources :choice_games, only: [:edit, :update]
     get 'ecran1', to: 'card_screens#ecran1'
     get 'ecran2', to: 'card_screens#ecran2'
     get 'ecran3', to: 'card_screens#ecran3'
