@@ -208,23 +208,4 @@
  text-align: center;
 }
 
-.container-screen4-result {
-  display: flex;
-  justify-content: center;
-  color: white;
-  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
-  transition: 0.5s ease;
-  animation: 5s ideall 1s linear infinite;
-}
 
-.container-screen4-result h3 {
-  font-size: 80px;
-}
-
-.container-result {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}

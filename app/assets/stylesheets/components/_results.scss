@@ -21,6 +21,27 @@
 
 }
 
+.container-screen4-result {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+  transition: 0.5s ease;
+  animation: 5s ideall 1s linear infinite;
+}
+
+.container-screen4-result h3 {
+  font-size: 80px;
+}
+
+.container-result {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 .loading {
   display: flex;
   z-index: 2;
@@ -34,7 +55,7 @@
   font-size: 40px;
   text-align: center;
   line-height: 45px;
-  animation: 6s chargement 0s linear;
+  animation: 3s chargement 0s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
 }
@@ -52,7 +73,7 @@
   font-size: 40px;
   text-align: center;
   line-height: 45px;
-  animation: 2s chargementc 6s linear;
+  animation: 2s chargementc 3s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
   opacity: 0;
