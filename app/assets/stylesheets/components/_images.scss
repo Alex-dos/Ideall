@@ -130,6 +130,51 @@
   z-index: -1;
 }
 
+
+
+.image-bulle {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle.png");
+  height: 390px;
+  width: 386px;
+  // z-index: -1;
+}
+
+
+.image-bulle2 {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle2.png");
+  height: 390px;
+  width: 386px;
+  // z-index: -1;
+}
+
+
+.image-bulle3 {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle3.png");
+  height: 390px;
+  width: 386px;
+  // z-index: -1;
+}
+
+
+
 // .image-bonhomme {
 //   display: flex;
 //   position: absolute;
