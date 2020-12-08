@@ -208,10 +208,12 @@
   text-align: center;
 }
 
-.skifetch {
+.rank {
   height: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
   background-color: red;
-}
 
 .container-screen4-result {
   display: flex;

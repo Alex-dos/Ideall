@@ -11,9 +11,16 @@ const initRoomCable = () => {
         const json = JSON.parse(data)
         // console.log(typeof data)
         if (json.category) { 
-          const categoryId = `#result-${json.category}`
-          console.log(categoryId)
-          document.querySelector(categoryId).innerText = json.rank
+          const categoryId = `result-${json.category}`
+          const nbPlayer = json.player_number
+          // console.log(json)
+          // document.querySelector(categoryId).innerText = json.rank
+          let widthRank = ( json.rank / ( 3 * nbPlayer ) ) * 100
+          if ( Math.sign(widthRank) === -1 ){
+            widthRank = 0
+          }
+          console.log(widthRank)
+          document.getElementById(categoryId).style.width = `${widthRank}%`;
         }
         if (json.head == 302 && json.path) {
           window.location.pathname = json.path;
