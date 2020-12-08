@@ -352,15 +352,15 @@ h1 .attente {
     box-shadow: 30px 30px 20px #353535,
   }
   40% {
-    transform: translate(0px, 10px) rotate(0deg);
+    transform: translate(0px, 5px) rotate(0deg);
     box-shadow: 40px 40px 30px #353535
   }
   50% {
     transform: translate(0px, 5px) rotate(0deg);
-    box-shadow: 50px 50px 40px #353535,
+    box-shadow: 40px 40px 30px #353535,
   }
   60% {
-    transform: translate(0px, 10px) rotate(0deg);
+    transform: translate(0px, 5px) rotate(0deg);
     box-shadow: 40px 40px 30px #353535
   }
   70% {
@@ -476,5 +476,47 @@ h1 .attente {
   position: absolute;
   right: 0%;
   bottom: 0%;
+  }
+}
+
+@keyframes chargement {
+  0%
+  {
+  opacity: 1;
+  }
+  20%
+  {
+  opacity: 0;
+  }
+  40%
+  {
+  opacity: 1;
+  }
+  60%
+  {
+  opacity: 0;
+  }
+  80%
+  {
+  opacity: 1;
+  }
+  100%
+  {
+  opacity: 0;
+  }
+}
+
+@keyframes chargementc {
+  0%
+  {
+  opacity: 0;
+  }
+  50%
+  {
+  opacity: 1;
+  }
+  100%
+  {
+  opacity: 0;
   }
 }
