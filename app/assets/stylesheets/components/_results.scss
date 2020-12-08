@@ -20,3 +20,40 @@
   // display: flex;
 
 }
+
+.loading {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family:'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 45px;
+  animation: 6s chargement 0s linear;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+}
+
+.loading2 {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family:'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 45px;
+  animation: 2s chargementc 6s linear;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  opacity: 0;
+}
