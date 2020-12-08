@@ -3,10 +3,14 @@
 </div>
 <div class="container">
 <div class="container-description-room">
-<p class="text-center">Nom de l'hôte : <%= @room.room_user.user.name %><br>
+<p class="text-center">Nom de l'hôte : <%= @room.room_users.first.user.name %><br>
  Préférence de prix : <%= @room.price_filter %><br>
  Nombre de joueur(s) :
 <div class="perso text-center" data-room-id="<%= @room.id %>">
+<p id="name" style="margin-bottom: 0px"><% @room.room_users.each do |room_user| %>
+<%= room_user.user.name %>
+<% end %></p>
+<br>
 <% if @room.player_number == 1 %>
   <%= image_tag("PERSO2.png") %>
 <% end %>

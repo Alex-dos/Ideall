@@ -1,26 +1,48 @@
 class CardScreensController < ApplicationController
   def ecran1
+    @room = Room.find(params[:room_id])
     @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
     @choice_categories_with_votes = @choice_categories
     @choice_categories = @choice_categories.select {|choice_category| choice_category unless choice_category.update_by[0] == current_user.name || choice_category.update_by[1] == current_user.name || choice_category.update_by[2] == current_user.name || choice_category.update_by[3] == current_user.name || choice_category.update_by[4] == current_user.name || choice_category.update_by[5] == current_user.name || choice_category.update_by[6] == current_user.name || choice_category.update_by[7] == current_user.name}[0..2]
-    # Tiens c'est pour toi Matéo
-    @result_category = @choice_categories_with_votes.sort_by{|choice_category| choice_category.rank }[7..8]
-    @result1 = @result_category.map do |result|
-      result.category.games.where(price: nil).map {|game| game.name}
+
+    if all_voted(@choice_categories_with_votes)
+      list_games(@choice_categories_with_votes).each do |game|
+        ChoiceGame.create!(game: game, room: @room, rank: 0, update_by: [])
+      end
     end
-    @result1
-    # @choice_categories2 = @choice_categories_with_votes.select {|choice_category| choice_category if choice_category.rank == 0}
+
+    redirect_to room_ecran2_path(@room) if all_voted(@choice_categories_with_votes)
+
   end
 
   def ecran2
     @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
+    @list = list_games(@choice_categories)
+  end
+
+  def ecran3
+    @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
     @choice_categories_with_votes = @choice_categories
-    # @choice_categories = @choice_categories.select {|choice_category| choice_category unless choice_category.update_by[0] == current_user.name || choice_category.update_by[1] == current_user.name || choice_category.update_by[2] == current_user.name || choice_category.update_by[3] == current_user.name}[0..2]
+  end
+
+  private
+
+  def all_voted(choice_array)
+    @all_voted = []
+    choice_array.each do |choice_category|
+      if choice_category.update_by.length ==  choice_category.room.player_number
+        @all_voted << true
+      end
+    end
+    @all_voted.length == choice_array.length
+  end
+
+  def list_games(choice_array)
+    @result_category = choice_array.sort_by{|choice_category| choice_category.rank }[7..8]
+    @result1 = @result_category.map do |result|
+      result.category.games.where(price: nil).map {|game| game}
+    end
+    return @result1.flatten
   end
 
 end
-
-
-    # @choice_categories = @choice_categories.select do |choice_category|
-    #   choice_category unless choice_category.update_by.each {|update_by| update_by == current_user }
-    # end

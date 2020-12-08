@@ -146,13 +146,13 @@
 }
 
 .container_results {
-    margin-top: 60px;
-    margin-bottom: 0px;
-    width: 900px;
-    border: solid 1px white;
-    justify-content: left;
-    height: 42px;
-    background-color: #ffffff61;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  width: 900px;
+  border: solid 1px white;
+  justify-content: left;
+  height: 42px;
+  background-color: #ffffff61;
 }
 
 .container-case-progression-result {
@@ -161,6 +161,7 @@
   color: black;
   background-color: #00000061;
   text-align: center;
+  display: inline-block;
 }
 
 .container-case-progression-result2 {

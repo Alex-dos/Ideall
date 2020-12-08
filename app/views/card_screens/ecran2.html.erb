@@ -1,23 +1,2 @@
-  <div class="container-result-title">
-    <h1>Resultat</h1>
-  </div>
-
-<div class="container">
-  <% @choice_categories.each do |category| %>
-      <div class="container_results">
-        <% if category.rank == 1  %>
-        <div class="container-case-progression-result2"><%= category.category.name %> = <%= category.rank %></div>
-         <% elsif category.rank == 3  %>
-         <div class="container-case-progression-result4"><%= category.category.name %> = <%= category.rank %></div>
-         <% else category.rank >= -100  %>
-         <%= category.category.name %> = <%= category.rank %>
-        <% end %>
-        <% end %>
-     </div>
-</div>
-
-
-
-
-
-
+<p>Hello</p>
+<%= @list %>
