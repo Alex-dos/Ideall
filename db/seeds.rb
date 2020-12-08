@@ -208,6 +208,6 @@ game80 = Game.create!(name: "Quake Champions", price: nil, player_number_min: 1,
  
 #   category = Category.find_by(name: genres)
 #   category = Category.create!(name: genres) if category.nil?
-#   Game.create!(name: name, appid: appid, category_id: category.id, price: free)
+#   Game.create!(name: name, appid: appid, category_id: category.id, price: free, photo: photosteam, solo: solo, multi: multi)
 #   sleep(2)
 # end
