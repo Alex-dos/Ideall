@@ -9,6 +9,7 @@
 .container-loading {
   position: relative;
   display: flex;
+  display: shrink;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -205,4 +206,13 @@
 .container-player-on {
   padding: 10px;
  text-align: center;
+}
+
+.container-screen4-result {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 0px $bleu-ombre-ideal;
+  transition: 0.5s ease;
+  animation: 5s ideall 1s linear infinite;
 }
