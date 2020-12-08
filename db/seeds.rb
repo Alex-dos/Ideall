@@ -188,23 +188,48 @@ aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type:
 
 
 
-# # Casual
-# #----------------------------------------------- IMG CASUAL  ---------------------------------------------------------
+# Casual
+#----------------------------------------------- IMG CASUAL  ---------------------------------------------------------
+img_casual_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg')
+img_casual_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/535930/header.jpg')
+img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/420560/header.jpg')
+img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
+img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
+img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
+img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
+img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
+img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
+img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
+#----------------------------------------------- IMG CASUAL FIN -----------------------------------------------------
+casual_1 = Game.create!(name: "Overcooked! 2", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_1.photo.attach(io: img_casual_1, filename: 'Overcooked2.png', content_type: 'image/png')
 
+casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
 
+casual_3 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_3.photo.attach(io: img_casual_3, filename: 'Firefighting.png', content_type: 'image/png')
 
-# #----------------------------------------------- IMG CASUAL FIN -----------------------------------------------------
-# game61 = Game.create!(name: "Overcooked! 2", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game62 = Game.create!(name: "Two Point Hospital", price: 34.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game63 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game64 = Game.create!(name: "PC Building Simulator", price: 19.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game65 = Game.create!(name: "Slay the Spire", price: 20.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game66 = Game.create!(name: "SMITE", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game67 = Game.create!(name: "RuneScape", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game68 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game69 = Game.create!(name: "Mr.Mine", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# game70 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
 
+casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
+
+casual_6 = Game.create!(name: "Worms Rumble", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_6.photo.attach(io: img_casual_6, filename: 'womsr.png', content_type: 'image/png')
+
+casual_7 = Game.create!(name: "RuneScape", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_7.photo.attach(io: img_casual_7, filename: 'runescape.png', content_type: 'image/png')
+
+casual_8 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_8.photo.attach(io: img_casual_8, filename: 'freestyle2bask.png', content_type: 'image/png')
+
+casual_9 = Game.create!(name: "Mr.Mine", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
+
+casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
+casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
 
 
 
