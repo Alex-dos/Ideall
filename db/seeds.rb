@@ -35,7 +35,7 @@ img_category_10 = URI.open('https://image.jeuxvideo.com/medias-md/160474/1604743
 category_1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
 category_1.photo.attach(io: img_category_1, filename: 'Action.png', content_type: 'image/png')
 
-category_2 = Category.create!(name: "Course Automobile", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
+category_2 = Category.create!(name: "Course_Automobile", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
 category_2.photo.attach(io: img_category_2, filename: 'Course_automobile.png', content_type: 'image/png')
 
 category_3 = Category.create!(name: "RPG", description: "Un jeu vidéo de rôle ou simplement jeu de rôle, couramment abrégé en RPG, est un genre de jeu vidéo s'inspirant des codes et du principe des jeux de rôle sur table. Le joueur y incarne un ou plusieurs personnages qu'il fait évoluer au fil d'une quête.")
@@ -215,79 +215,119 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 # aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
 
 
+
+# # Casual
+# #----------------------------------------------- IMG CASUAL  ---------------------------------------------------------
+# img_casual_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg')
+# img_casual_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/535930/header.jpg')
+# img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/420560/header.jpg')
+# img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
+# img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
+# img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
+# img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
+# img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
+# img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
+# img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
+# #----------------------------------------------- IMG CASUAL FIN -----------------------------------------------------
+
+# casual_1 = Game.create!(name: "Overcooked! 2", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/728880/Overcooked_2/", description:"Overcooked revient avec une toute nouvelle portion d'action culinaire chaotique ! Retournez dans le royaume Oignon et réunissez votre équipe de chefs
+#   dans ce jeu de coopération locale ou en ligne jusqu'à 4 joueurs. À vos tabliers... il est l'heure de sauver le monde.", category_id: Category.where(name: :Casual).ids[0])
+# casual_1.photo.attach(io: img_casual_1, filename: 'Overcooked2.png', content_type: 'image/png')
+
+# casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, solo:"Solo", link:"https://store.steampowered.com/app/535930/Two_Point_Hospital/", description:"Concevez de splendides hôpitaux, soignez d'étranges maladies et gérez des employés difficiles tandis que vous étendez votre organisation naissante
+#   dans tout le Two Point County.", category_id: Category.where(name: :Casual).ids[0])
+# casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
+
+# casual_3 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/420560/Firefighting_Simulator__The_Squad/", description:"Firefighting Simulator vous permet de découvrir la sensation de combattre le feu de près en tant que membre actif d'une équipe de pompiers
+#  située dans une grande ville des États-Unis – ensemble avec jusqu'à trois amis en coopération multijoueur – ou en mode solo.", category_id: Category.where(name: :Casual).ids[0])
+# casual_3.photo.attach(io: img_casual_3, filename: 'Firefighting.png', content_type: 'image/png')
+
+# casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/621060/PC_Building_Simulator/", description:"Créez et développez votre propre entreprise de réparation d’ordinateurs, puis découvrez comment diagnostiquer, remettre en état et assembler des PC. À l’aide de composants
+#   agréés et d’une simulation complète des matériels et logiciels, imaginez et construisez le PC ultime dont vous rêvez.", category_id: Category.where(name: :Casual).ids[0])
+# casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
+
+# casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/646570/Slay_the_Spire/", description:"En fusionnant les jeux de cartes avec les roguelikes, nous sommes arrivés à créer le jeu de cartes solo le plus intéressant possible. Construisez votre deck, rencontrez toutes sortes
+#   d'ennemis bizarres, découvrez des reliques aux pouvoirs immenses, et éradiquez la tour!", category_id: Category.where(name: :Casual).ids[0])
+# casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
+
+# casual_6 = Game.create!(name: "Worms Rumble", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1186040/Worms_Rumble/", description:"Worms Rumble est un jeu de combat multiplateforme en arène à 32 joueurs en temps réel qui va révolutionner la série Worms. Préparez-vous à combattre dans les modes Mort aux asticots et
+#   Dernier ver debout dans lesquels une seule sainte grenade sacrée peut vous condamner !", category_id: Category.where(name: :Casual).ids[0])
+# casual_6.photo.attach(io: img_casual_6, filename: 'womsr.png', content_type: 'image/png')
+
+# casual_7 = Game.create!(name: "Scribble It!", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1088150/Scribble_It/", description:"Action de dessin rapide et alimentée en adrénaline. Dessinez vite, tapez plus vite et gagnez tout! DES MILLIERS de mots officiels dans 12 langues différentes + INFINIMENT plus de la communauté.
+#   4 modes de jeu multijoueur et un mode solo. Nous vous ramènerons aux jeux picturaux animés que tout le monde avait à l'école!", category_id: Category.where(name: :Casual).ids[0])
+# casual_7.photo.attach(io: img_casual_7, filename: 'runescape.png', content_type: 'image/png')
+
+# casual_8 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/339610/Freestyle_2_Street_Basketball/", description:"FreeStyle2, le MMO de Streetball, se distingue par son gameplay unique et ses graphismes dernier cri. Les joueurs choisissent leur position et s’affrontent à l’aide de mouvements
+#   freestyles. Rejoignez le rang des meilleurs et poussez votre équipe à la victoire !", category_id: Category.where(name: :Casual).ids[0])
+# casual_8.photo.attach(io: img_casual_8, filename: 'freestyle2bask.png', content_type: 'image/png')
+
+# casual_9 = Game.create!(name: "Mr.Mine", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1397920/MrMine/", description:"Gérez un groupe de mineurs et améliorez votre foret pour vous frayer un chemin à travers les mines et découvrir des mystères et des trésors dans
+#   les profondeurs ci-dessous.", category_id: Category.where(name: :Casual).ids[0])
+# casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
+
+# casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"L'évolution ne finit jamais. Simulez l'extraordinaire histoire de l'évolution dans ce jeu de clicker cosmique.
+# ", category_id: Category.where(name: :Casual).ids[0])
+# casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
+
+
 # multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"",
-
-# Casual
-#----------------------------------------------- IMG CASUAL  ---------------------------------------------------------
-img_casual_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg')
-img_casual_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/535930/header.jpg')
-img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/420560/header.jpg')
-img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
-img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
-img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
-img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
-img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
-img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
-img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
-#----------------------------------------------- IMG CASUAL FIN -----------------------------------------------------
-
-casual_1 = Game.create!(name: "Overcooked! 2", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/728880/Overcooked_2/", description:"Overcooked revient avec une toute nouvelle portion d'action culinaire chaotique ! Retournez dans le royaume Oignon et réunissez votre équipe de chefs
-  dans ce jeu de coopération locale ou en ligne jusqu'à 4 joueurs. À vos tabliers... il est l'heure de sauver le monde.", category_id: Category.where(name: :Casual).ids[0])
-casual_1.photo.attach(io: img_casual_1, filename: 'Overcooked2.png', content_type: 'image/png')
-
-casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, solo:"Solo", link:"https://store.steampowered.com/app/535930/Two_Point_Hospital/", description:"Concevez de splendides hôpitaux, soignez d'étranges maladies et gérez des employés difficiles tandis que vous étendez votre organisation naissante
-  dans tout le Two Point County.", category_id: Category.where(name: :Casual).ids[0])
-casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
-
-casual_3 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/420560/Firefighting_Simulator__The_Squad/", description:"Firefighting Simulator vous permet de découvrir la sensation de combattre le feu de près en tant que membre actif d'une équipe de pompiers
- située dans une grande ville des États-Unis – ensemble avec jusqu'à trois amis en coopération multijoueur – ou en mode solo.", category_id: Category.where(name: :Casual).ids[0])
-casual_3.photo.attach(io: img_casual_3, filename: 'Firefighting.png', content_type: 'image/png')
-
-casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/621060/PC_Building_Simulator/", description:"Créez et développez votre propre entreprise de réparation d’ordinateurs, puis découvrez comment diagnostiquer, remettre en état et assembler des PC. À l’aide de composants
-  agréés et d’une simulation complète des matériels et logiciels, imaginez et construisez le PC ultime dont vous rêvez.", category_id: Category.where(name: :Casual).ids[0])
-casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
-
-casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/646570/Slay_the_Spire/", description:"En fusionnant les jeux de cartes avec les roguelikes, nous sommes arrivés à créer le jeu de cartes solo le plus intéressant possible. Construisez votre deck, rencontrez toutes sortes
-  d'ennemis bizarres, découvrez des reliques aux pouvoirs immenses, et éradiquez la tour!", category_id: Category.where(name: :Casual).ids[0])
-casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
-
-casual_6 = Game.create!(name: "Worms Rumble", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1186040/Worms_Rumble/", description:"Worms Rumble est un jeu de combat multiplateforme en arène à 32 joueurs en temps réel qui va révolutionner la série Worms. Préparez-vous à combattre dans les modes Mort aux asticots et
-  Dernier ver debout dans lesquels une seule sainte grenade sacrée peut vous condamner !", category_id: Category.where(name: :Casual).ids[0])
-casual_6.photo.attach(io: img_casual_6, filename: 'womsr.png', content_type: 'image/png')
-
-casual_7 = Game.create!(name: "Scribble It!", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1088150/Scribble_It/", description:"Action de dessin rapide et alimentée en adrénaline. Dessinez vite, tapez plus vite et gagnez tout! DES MILLIERS de mots officiels dans 12 langues différentes + INFINIMENT plus de la communauté.
-  4 modes de jeu multijoueur et un mode solo. Nous vous ramènerons aux jeux picturaux animés que tout le monde avait à l'école!", category_id: Category.where(name: :Casual).ids[0])
-casual_7.photo.attach(io: img_casual_7, filename: 'runescape.png', content_type: 'image/png')
-
-casual_8 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/339610/Freestyle_2_Street_Basketball/", description:"FreeStyle2, le MMO de Streetball, se distingue par son gameplay unique et ses graphismes dernier cri. Les joueurs choisissent leur position et s’affrontent à l’aide de mouvements
-  freestyles. Rejoignez le rang des meilleurs et poussez votre équipe à la victoire !", category_id: Category.where(name: :Casual).ids[0])
-casual_8.photo.attach(io: img_casual_8, filename: 'freestyle2bask.png', content_type: 'image/png')
-
-casual_9 = Game.create!(name: "Mr.Mine", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1397920/MrMine/", description:"Gérez un groupe de mineurs et améliorez votre foret pour vous frayer un chemin à travers les mines et découvrir des mystères et des trésors dans
-  les profondeurs ci-dessous.", category_id: Category.where(name: :Casual).ids[0])
-casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
-
-casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"L'évolution ne finit jamais. Simulez l'extraordinaire histoire de l'évolution dans ce jeu de clicker cosmique.
-", category_id: Category.where(name: :Casual).ids[0])
-casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
-
-
 
 
 
 # Course Automobile
-#----------------------------------------------- IMG COURSE AUTOMOBILE  ---------------------------------------------------------
+# ----------------------------------------------- IMG COURSE AUTOMOBILE  ---------------------------------------------------------
+img_course_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/244210/header.jpg')
+img_course_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/244210/header.jpg')
+img_course_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646910/header.jpg')
+img_course_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/228380/header.jpg')
+img_course_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/690790/header.jpg')
+img_course_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/386180/header.jpg')
+img_course_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1302110/header.jpg')
+img_course_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/457330/header.jpg')
+img_course_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1112400/header.jpg')
+img_course_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/11020/header.jpg')
+# ----------------------------------------------- IMG COURSE AUTOMOBILE FIN -----------------------------------------------------
 
+course_1 = Game.create!(name: "Assetto Corsa", price: 19.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/244210/Assetto_Corsa/", description:"Jeu de simulation de courses sur PC, Assetto Corsa se démarque par son contenu exclusif notamment pour les voitures proposées.
+  Le joueur pourra y retrouver les plus célèbres circuits dans un environnement toujours plus réaliste.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_1.photo.attach(io: img_course_1, filename: 'Assetto_Corsa.png', content_type: 'image/png')
 
+course_2 = Game.create!(name: "F1 2020", price: 54.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1080110/F1_2020/", description:"F1 2020 vous permet pour la 1re fois de créer votre écurie de F1 et d’affronter les écuries et pilotes officiels.
+  Défiez aussi vos amis en écran partagé lors de courses personnalisables, juste pour le plaisir. Affrontez 22 circuits, avec du contenu classique et actualisé.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_2.photo.attach(io: img_course_2, filename: 'f1.png', content_type: 'image/png')
 
-#----------------------------------------------- IMG COURSE AUTOMOBILE FIN -----------------------------------------------------
+course_3 = Game.create!(name: "The Crew 2", price: 49.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/646910/The_Crew_2/", description:"Bienvenue à Motornation ! Relevez le challenge sur terre, sur l’eau et dans les airs et jouez dans un gigantesque monde ouvert entièrement
+  réimaginé ! À vous la gloire !", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_3.photo.attach(io: img_course_3, filename: 'tc2.png', content_type: 'image/png')
 
+course_4 = Game.create!(name: "Wreckfest", price: 29.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/228380/Wreckfest/", description:"Préparez-vous à des accidents monstrueux, des combats acharnés jusqu'à la ligne d'arrivée et des envolées de tôles froissées ! C'est uniquement possible dans Wreckfest, avec sa simulation physique réaliste
+  proposée par le célèbre développeur Bugbear, créateur du FlatOut 1 et 2 !", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_4.photo.attach(io: img_course_4, filename: 'wreckfest.png', content_type: 'image/png')
 
+course_5 = Game.create!(name: "DiRT Rally 2.0", price: 20.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/690790/DiRT_Rally_20/", description:"DiRT Rally 2.0 vous invite à arpenter les circuits de rallye les plus emblématiques du globe, dans les véhicules tout-terrain les plus puissants jamais conçus.
+  Mais n'oubliez pas que la moindre erreur peut mettre fin à votre étape.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_5.photo.attach(io: img_course_5, filename: 'dr2.png', content_type: 'image/png')
 
+course_6 = Game.create!(name: "Crossout", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/386180/Crossout/", description:"Participez à la bêta de Crossout, le MMO post-apocalyptique! Créez vos machines de combat à partir de dizaines de pièces,
+  combattez avec et détruisez vos adversaires dans des batailles en PvP explosives!", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_6.photo.attach(io: img_course_6, filename: 'Crossout.png', content_type: 'image/png')
 
+course_7 = Game.create!(name: "Inertial Drift: Sunset Prologue", price: nil, solo: "Solo", link:"https://store.steampowered.com/app/1302110/Inertial_Drift_Sunset_Prologue/", description:"Plongé dans l'ambiance rétrofuturiste des années 1990, Inertial Drift propose une expérience de conduite absolument unique en son genre,
+  ainsi que des mécaniques de dérapage à deux joysticks si incroyables qu'elles méritent d'être vécues.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_7.photo.attach(io: img_course_7, filename: 'Inertial_drift.png', content_type: 'image/png')
 
+course_8 = Game.create!(name: "High Octane Drift", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/457330/High_Octane_Drift/", description:"Entrez dans le monde de la compétition professionnelle et gagnez des séries en ligne parmi des centaines d'autres joueurs pour devenir la légende vivante. Achetez, accordez,
+  échangez, unissez et conquérez la scène de la dérive.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_8.photo.attach(io: img_course_8, filename: 'hod.png', content_type: 'image/png')
 
+course_9 = Game.create!(name: "Project Torque", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1112400/Project_Torque__Free_2_Play_MMO_Racing_Game/", description:"Le MMO Racer classique gratuit de la fin des années 2000
+  revient en ligne avec tous vos modes de jeu préférés comme Sim, Drift, Drag, CTF et Thunder Alley.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_9.photo.attach(io: img_course_9, filename: 'project_torque.png', content_type: 'image/png')
 
+course_10 = Game.create!(name: "TrackMania Nations Forever", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/11020/TrackMania_Nations_Forever/", description:"Un jeu gratuit dans le vrai sens du terme, TrackMania Nations Forever vous met aux commandes de bolides surpuissants avec
+  lesquels vous allez défier la gravité et le sens commun en mode solo comme en mode multijoueur.", category_id: Category.where(name: :Course_Automobile).ids[0])
+course_10.photo.attach(io: img_course_10, filename: 'trackmanian.png', content_type: 'image/png')
 
 
 
@@ -296,13 +336,46 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 # # Indépendant
 # #----------------------------------------------- IMG INDEPENDANT ---------------------------------------------------------
 # img_inde_1 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/action_ibektv.jpg')
-
-
+# img_inde_2 = URI.open('')
+# img_inde_3 = URI.open('')
+# img_inde_4 = URI.open('')
+# img_inde_5 = URI.open('')
+# img_inde_6 = URI.open('')
+# img_inde_7 = URI.open('')
+# img_inde_8 = URI.open('')
+# img_inde_9 = URI.open('')
+# img_inde_10 = URI.open('')
 # #----------------------------------------------- IMG INDEPENDANT FIN -----------------------------------------------------
 
 # inde1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
 # inde.photo.attach(io: img_inde_1, filename: 'Action.png', content_type: 'image/png')
 
+# inde_2 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_2.photo.attach(io: img_inde_2, filename: '.png', content_type: 'image/png')
+
+# inde_3 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_3.photo.attach(io: img_inde_3, filename: '.png', content_type: 'image/png')
+
+# inde_4 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_4.photo.attach(io: img_inde_4, filename: '.png', content_type: 'image/png')
+
+# inde_5 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_5.photo.attach(io: img_inde_5, filename: '.png', content_type: 'image/png')
+
+# inde_6 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_6.photo.attach(io: img_inde_6, filename: '.png', content_type: 'image/png')
+
+# inde_7 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_7.photo.attach(io: img_inde_7, filename: '.png', content_type: 'image/png')
+
+# inde_8 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_8.photo.attach(io: img_inde_8, filename: '.png', content_type: 'image/png')
+
+# inde_9 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_9.photo.attach(io: img_inde_9, filename: '.png', content_type: 'image/png')
+
+# inde_10 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# inde_10.photo.attach(io: img_inde_10, filename: '.png', content_type: 'image/png')
 
 
 
@@ -312,14 +385,19 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 
 
 
-
-
-# Mmo
-#----------------------------------------------- IMG MMO ---------------------------------------------------------
-
-
-
-#----------------------------------------------- IMG MMO FIN -----------------------------------------------------
+# # Mmo
+# #----------------------------------------------- IMG MMO ---------------------------------------------------------
+# img_mmo_1 = URI.open('')
+# img_mmo_2 = URI.open('')
+# img_mmo_3 = URI.open('')
+# img_mmo_4 = URI.open('')
+# img_mmo_5 = URI.open('')
+# img_mmo_6 = URI.open('')
+# img_mmo_7 = URI.open('')
+# img_mmo_8 = URI.open('')
+# img_mmo_9 = URI.open('')
+# img_mmo_10 = URI.open('')
+# #----------------------------------------------- IMG MMO FIN -----------------------------------------------------
 
 # mmo_1 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :mmo).ids[0])
 # mmo_1.photo.attach(io: img_mmo_1, filename: 'Tera.png', content_type: 'image/png')
@@ -330,6 +408,26 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 # mmo_3 = Game.create!(name: "RuneScape", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"", category_id: Category.where(name: :Casual).ids[0])
 # mmo_3.photo.attach(io: img_mmo_3, filename: 'runescape.png', content_type: 'image/png')
 
+# mmo_4 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_4.photo.attach(io: img_mmo_4, filename: '.png', content_type: 'image/png')
+
+# mmo_5 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_5.photo.attach(io: img_mmo_5, filename: '.png', content_type: 'image/png')
+
+# mmo_6 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_6.photo.attach(io: img_mmo_6, filename: '.png', content_type: 'image/png')
+
+# mmo_7 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_7.photo.attach(io: img_mmo_7, filename: '.png', content_type: 'image/png')
+
+# mmo_8 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_8.photo.attach(io: img_mmo_8, filename: '.png', content_type: 'image/png')
+
+# mmo_9 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_9.photo.attach(io: img_mmo_9, filename: '.png', content_type: 'image/png')
+
+# mmo_10 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_10.photo.attach(io: img_mmo_10, filename: '.png', content_type: 'image/png')
 
 
 
@@ -342,9 +440,16 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 
 # # RPG
 # #----------------------------------------------- IMG RPG ---------------------------------------------------------
-
-
-
+# img_rpg_1 = URI.open('')
+# img_rpg_2 = URI.open('')
+# img_rpg_3 = URI.open('')
+# img_rpg_4 = URI.open('')
+# img_rpg_5 = URI.open('')
+# img_rpg_6 = URI.open('')
+# img_rpg_7 = URI.open('')
+# img_rpg_8 = URI.open('')
+# img_rpg_9 = URI.open('')
+# img_rpg_10 = URI.open('')
 # #----------------------------------------------- IMG RPG FIN -----------------------------------------------------
 # game11 = Game.create!(name: "Tainted Grail: Conquest", price: 16.79, player_number_min: 1, player_number_max: 4, category_id: Category.where(name: :RPG).ids[0])
 # game12 = Game.create!(name: "Divinity: Original Sin 2", price: 44.99, player_number_min: 1, player_number_max: 4, category_id: Category.where(name: :RPG).ids[0])
@@ -368,9 +473,16 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 
 # # Simulation
 # #----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
-
-
-
+# img_simulation_1 = URI.open('')
+# img_simulation_2 = URI.open('')
+# img_simulation_3 = URI.open('')
+# img_simulation_4 = URI.open('')
+# img_simulation_5 = URI.open('')
+# img_simulation_6 = URI.open('')
+# img_simulation_7 = URI.open('')
+# img_simulation_8 = URI.open('')
+# img_simulation_9 = URI.open('')
+# img_simulation_10 = URI.open('')
 # #----------------------------------------------- IMG SIMULTATION FIN -----------------------------------------------------
 # game31 = Game.create!(name: "EA SPORTS FIFA 21", price: 59.99, player_number_min: 1, player_number_max: 11, category_id: Category.where(name: :Simulation).ids[0])
 # game32 = Game.create!(name: "The Sims 4", price: 39.99, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
@@ -391,10 +503,46 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 
 # # Sport
 # #----------------------------------------------- IMG SPORT ---------------------------------------------------------
-
-
-
+# img_sport_1 = URI.open('')
+# img_sport_2 = URI.open('')
+# img_sport_3 = URI.open('')
+# img_sport_4 = URI.open('')
+# img_sport_5 = URI.open('')
+# img_sport_6 = URI.open('')
+# img_sport_7 = URI.open('')
+# img_sport_8 = URI.open('')
+# img_sport_9 = URI.open('')
+# img_sport_10 = URI.open('')
 # #----------------------------------------------- IMG SPORT FIN -----------------------------------------------------
+# sport_1 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_1.photo.attach(io: img_sport_1, filename: '.png', content_type: 'image/png')
+
+# sport_2 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_2.photo.attach(io: img_sport_2, filename: '.png', content_type: 'image/png')
+
+# sport_3 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_3.photo.attach(io: img_sport_3, filename: '.png', content_type: 'image/png')
+
+# sport_4 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_4.photo.attach(io: img_sport_4, filename: '.png', content_type: 'image/png')
+
+# sport_5 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_5.photo.attach(io: img_sport_5, filename: '.png', content_type: 'image/png')
+
+# sport_6 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_6.photo.attach(io: img_sport_6, filename: '.png', content_type: 'image/png')
+
+# sport_7 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_7.photo.attach(io: img_sport_7, filename: '.png', content_type: 'image/png')
+
+# sport_8 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_8.photo.attach(io: img_sport_8, filename: '.png', content_type: 'image/png')
+
+# sport_9 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_9.photo.attach(io: img_sport_9, filename: '.png', content_type: 'image/png')
+
+# sport_10 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
+# sport_10.photo.attach(io: img_sport_10, filename: '.png', content_type: 'image/png')
 
 
 
@@ -410,9 +558,16 @@ casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 
 
 # # Stratégie
 # #----------------------------------------------- IMG STRATEGIE ---------------------------------------------------------
-
-
-
+# img_strategie_1 = URI.open('')
+# img_strategie_2 = URI.open('')
+# img_strategie_3 = URI.open('')
+# img_strategie_4 = URI.open('')
+# img_strategie_5 = URI.open('')
+# img_strategie_6 = URI.open('')
+# img_strategie_7 = URI.open('')
+# img_strategie_8 = URI.open('')
+# img_strategie_9 = URI.open('')
+# img_strategie_10 = URI.open('')
 # #----------------------------------------------- IMG STRATEGIE FIN -----------------------------------------------------
 # game21 = Game.create!(name: "Total War: WARHAMMER II", price: 59.99, player_number_min: 1, player_number_max: 6, category_id: Category.where(name: :Stratégie).ids[0])
 # game22 = Game.create!(name: "Sid Meier's Civilization VI", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Stratégie).ids[0])
