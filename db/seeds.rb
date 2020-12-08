@@ -207,7 +207,7 @@ game80 = Game.create!(name: "Team Fortress 2", price: nil, player_number_min: 1,
 #     appidlist << f["appid"]
 #   end
 
-# appidlist[200..300].each do |appid|
+# appidlist[400..500].each do |appid|
 # url = "https://store.steampowered.com/api/appdetails?appids=#{appid}"
 #   response2 = RestClient.get(url)
 #   response2 = JSON.parse(response2)
@@ -216,10 +216,11 @@ game80 = Game.create!(name: "Team Fortress 2", price: nil, player_number_min: 1,
 #   genres = data["genres"][0]["description"]
 #   name = data["name"]
 #   free = data["is_free"] == true ? "Gratuit" : scrapingmethod(appid)
-#   photosteam = data["header_image"]
- 
+#   photosteam = data["header_image"].delete_prefix('"').delete_suffix('"')
+
+#   solo = data["categories"][0]["description"] == "Single-player" ? "Un joueur" : "Multijoueur"
+#   multi = data["categories"][1]["description"] == "Multi-player" ? "Multi-player" : "Indéfini"
 #   category = Category.find_by(name: genres)
 #   category = Category.create!(name: genres) if category.nil?
-#   Game.create!(name: name, appid: appid, category_id: category.id, price: free)
-#   sleep(2)
+#   Game.create!(name: name, appid: appid, category_id: category.id, price: free, photo: photosteam, solo: solo, multi: multi)
 # end
