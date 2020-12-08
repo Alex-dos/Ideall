@@ -5,8 +5,8 @@
   background-size: cover;
   background-position: center;
   background-image: url("IDEE.png");
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   z-index: -2;
   &:hover {
     box-shadow: black;
@@ -21,36 +21,36 @@
   background-size: cover;
   background-position: center;
   background-image: url("puzzle.png");
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   z-index: -1;
 }
 
-.image-among {
-  display: flex;
-  position: absolute;
-  top: 62px;
-  right: 245px;
-  background-size: cover;
-  background-position: center;
-  background-image: url("among.png");
-  height: 80px;
-  width: 66px;
-  z-index: -1;
-}
+// .image-among {
+//   display: flex;
+//   position: absolute;
+//   top: 62px;
+//   right: 50%;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: url("among.png");
+//   height: 80px;
+//   width: 66px;
+//   z-index: -1;
+// }
 
-.image-blabla {
-  display: flex;
-  position: absolute;
-  top: 29px;
-  right: 192px;
-  background-size: cover;
-  background-position: center;
-  background-image: url("blabla.png");
-  height: 53px;
-  width: 66px;
-  z-index: -1;
-}
+// .image-blabla {
+//   display: flex;
+//   position: absolute;
+//   top: 29px;
+//   right: 47%;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: url("blabla.png");
+//   height: 53px;
+//   width: 66px;
+//   z-index: -1;
+// }
 
 .image-manette {
   display: flex;
@@ -82,40 +82,40 @@
   display: flex;
   position: absolute;
   bottom: 132px;
-  right: 135px;
+  right: 145px;
   background-size: cover;
   background-position: center;
   background-image: url("connect.png");
-  height: 40px;
-  width: 42px;
+  height: 60px;
+  width: 62px;
   z-index: -1;
 }
 
-.image-tel {
-  display: flex;
-  position: absolute;
-  bottom: 140px;
-  right: 37px;
-  background-size: cover;
-  background-position: center;
-  background-image: url("tel.png");
-  height: 79px;
-  width: 40px;
-  z-index: -1;
-}
+// .image-tel {
+//   display: flex;
+//   position: absolute;
+//   bottom: 140px;
+//   right: 37px;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: url("tel.png");
+//   height: 79px;
+//   width: 40px;
+//   z-index: -1;
+// }
 
-.image-lieu {
-  display: flex;
-  position: absolute;
-  bottom: 30px;
-  right: 200px;
-  background-size: cover;
-  background-position: center;
-  background-image: url("lieu.png");
-  height: 75px;
-  width: 50px;
-  z-index: -1;
-}
+// .image-lieu {
+//   display: flex;
+//   position: absolute;
+//   bottom: 30px;
+//   right: 200px;
+//   background-size: cover;
+//   background-position: center;
+//   background-image: url("lieu.png");
+//   height: 75px;
+//   width: 50px;
+//   z-index: -1;
+// }
 
 .image-pc {
   display: flex;
@@ -125,10 +125,55 @@
   background-size: cover;
   background-position: center;
   background-image: url("pc.png");
-  height: 100px;
-  width: 128px;
+  height: 120px;
+  width: 148px;
   z-index: -1;
 }
+
+
+
+.image-bulle {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle.png");
+  height: 390px;
+  width: 386px;
+  // z-index: -1;
+}
+
+
+.image-bulle2 {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle2.png");
+  height: 390px;
+  width: 386px;
+  // z-index: -1;
+}
+
+
+.image-bulle3 {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle3.png");
+  height: 390px;
+  width: 386px;
+  // z-index: -1;
+}
+
+
 
 // .image-bonhomme {
 //   display: flex;
