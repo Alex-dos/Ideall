@@ -16,47 +16,57 @@ Category.destroy_all
 require "open-uri"
 
 #-----------------------------------------IMG CATEGORIES---------------------------------------------------
-file1 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/action_ibektv.jpg')
-file2 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/survie_etreyj.jpg')
-file3 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/rpg_mkkbt2.jpg')
-file4 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/Strat%C3%A9gie_czf2t8.jpg')
-file5 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/simulation_snaro0.jpg')
-file6 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/2d_kmmpky.webp')
-file7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/Aventure_yc83os.jpg')
-file8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/casual_v992bk.png')
-file9 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/fps_welwgz.jpg')
+img_category_1 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/action_ibektv.jpg')
+img_category_2 = URI.open('https://images.frandroid.com/wp-content/uploads/2016/10/asphaltxtrem.png')
+img_category_3 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/rpg_mkkbt2.jpg')
+img_category_4 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/Strat%C3%A9gie_czf2t8.jpg')
+img_category_5 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/simulation_snaro0.jpg')
+img_category_6 = URI.open('https://i.jeuxactus.com/datas/jeux/w/o/world-of-warcraft-shadowlands/xl/world-of-warcraft-shado-5f0a3e14a3d55.jpg')
+img_category_7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/Aventure_yc83os.jpg')
+img_category_8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/casual_v992bk.png')
+img_category_9 = URI.open('https://static1-fr.millenium.gg/articles/5/13/22/35/@/34411-une-jeuxindes-millenium-article_m-1.jpeg')
+img_category_10 = URI.open('https://image.jeuxvideo.com/medias-md/160474/1604743581-4626-card.jpg')
 #-----------------------------------------IMG CATEGORIES END-------------------------------------------------
 
 
 
 
 #----------------------------------------------- CATEGORIES---------------------------------------------------
-category1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
-category1.photo.attach(io: file1, filename: 'Action.png', content_type: 'image/png')
+category_1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
+category_1.photo.attach(io: img_category_1, filename: 'Action.png', content_type: 'image/png')
 
-category2 = Category.create!(name: "Survie", description: "Le jeu de survie est un sous-genre du jeu d'action où généralement le joueur démarre avec un minimum de ressources dans un monde ouvert hostile, et a pour mission de collecter des ressources, fabriquer des outils, des armes, s'abriter, afin de survivre le plus longtemps possible.")
-category2.photo.attach(io: file2, filename: 'Survie.png', content_type: 'image/png')
+category_2 = Category.create!(name: "Course Automobile", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
+category_2.photo.attach(io: img_category_2, filename: 'Course_automobile.png', content_type: 'image/png')
 
-category3 = Category.create!(name: "RPG", description: "Un jeu vidéo de rôle ou simplement jeu de rôle, couramment abrégé en RPG, est un genre de jeu vidéo s'inspirant des codes et du principe des jeux de rôle sur table. Le joueur y incarne un ou plusieurs personnages qu'il fait évoluer au fil d'une quête.")
-category3.photo.attach(io: file3, filename: 'RPG.png', content_type: 'image/png')
+category_3 = Category.create!(name: "RPG", description: "Un jeu vidéo de rôle ou simplement jeu de rôle, couramment abrégé en RPG, est un genre de jeu vidéo s'inspirant des codes et du principe des jeux de rôle sur table. Le joueur y incarne un ou plusieurs personnages qu'il fait évoluer au fil d'une quête.")
+category_3.photo.attach(io: img_category_3, filename: 'RPG.png', content_type: 'image/png')
 
-category4 = Category.create!(name: "Stratégie", description: "Un jeu de stratégie peut être un jeu de société ou un jeu vidéo. Le but est de réaliser un objectif connu : augmenter sa domination spatiale, combattre un ou plusieurs ennemis sur un terrain de jeu, faire prospérer une entité… ")
-category4.photo.attach(io: file4, filename: 'Stratégie.png', content_type: 'image/png')
+category_4 = Category.create!(name: "Stratégie", description: "Un jeu de stratégie peut être un jeu de société ou un jeu vidéo. Le but est de réaliser un objectif connu : augmenter sa domination spatiale, combattre un ou plusieurs ennemis sur un terrain de jeu, faire prospérer une entité… ")
+category_4.photo.attach(io: img_category_4, filename: 'Stratégie.png', content_type: 'image/png')
 
-category5 = Category.create!(name: "Simulation", description: "Un jeu de simulation est un jeu qui reproduit une activité ou une action dans divers environnements.")
-category5.photo.attach(io: file5, filename: 'Simulation.png', content_type: 'image/png')
+category_5 = Category.create!(name: "Simulation", description: "Un jeu de simulation est un jeu qui reproduit une activité ou une action dans divers environnements.")
+category_5.photo.attach(io: img_category_5, filename: 'Simulation.png', content_type: 'image/png')
 
-category6 = Category.create!(name: "tutu", description: "Les jeux 2D utilisent des graphismes plats, appelés sprites, sans dimension tridimensionnelle.")
-category6.photo.attach(io: file6, filename: 'tutu.png', content_type: 'image/png')
+category_6 = Category.create!(name: "MMO", description: "Un jeu de rôle en ligne massivement multijoueur(en anglais, massively multiplayer online role-playing game, MMORPGa, parfois JDRMM en français3) est un genre de jeux vidéo4 associant le jeu de rôle et le jeu en ligne massivement multijoueur, permettant à un grand nombre de personnes d'interagir simultanément dans un monde virtuel.")
+category_6.photo.attach(io: img_category_6, filename: 'mmo.png', content_type: 'image/png')
 
-category7 = Category.create!(name: "Aventure", description: "Le jeu d'aventure est un genre de jeu vidéo dont l'intérêt prédominant se focalise sur la narration plutôt que sur les réflexes et l'action. Plus précisément, les jeux d'aventure mettent le plus souvent l'accent sur l'exploration, les dialogues, la résolution d'énigmes.")
-category7.photo.attach(io: file7, filename: 'Aventure.png', content_type: 'image/png')
+category_7 = Category.create!(name: "Aventure", description: "Le jeu d'aventure est un genre de jeu vidéo dont l'intérêt prédominant se focalise sur la narration plutôt que sur les réflexes et l'action. Plus précisément, les jeux d'aventure mettent le plus souvent l'accent sur l'exploration, les dialogues, la résolution d'énigmes.")
+category_7.photo.attach(io: img_category_7, filename: 'Aventure.png', content_type: 'image/png')
 
-category8 = Category.create!(name: "Casual", description: "Le casual game (littéralement « jeu occasionnel ») est un jeu vidéo destiné au large public des joueurs occasionnels (casual gamer).")
-category8.photo.attach(io: file8, filename: 'Casual.png', content_type: 'image/png')
+category_8 = Category.create!(name: "Casual", description: "Le casual game (littéralement « jeu occasionnel ») est un jeu vidéo destiné au large public des joueurs occasionnels (casual gamer).")
+category_8.photo.attach(io: img_category_8, filename: 'Casual.png', content_type: 'image/png')
 
-category9 = Category.create!(name: "FPS", description: "Jeu de tir fondé sur des combats en vision subjective,le joueur voit l'action à travers des yeux du protagoniste.")
-category9.photo.attach(io: file9, filename: 'FPS.png', content_type: 'image/png')
+category_9 = Category.create!(name: "Indépendant", description: "L'expression jeu vidéo indépendant, comme dans le secteur de la musique ou du cinéma, désigne des jeux vidéo créés sans l'aide financière d'un éditeur de jeux vidéo.")
+category_9.photo.attach(io: img_category_9, filename: 'inde.png', content_type: 'image/png')
+
+category_10 = Category.create!(name: "Sport", description: "Un jeu vidéo de sport est un genre de jeu vidéo qui simule un sport. Les jeux vidéo de course sont des jeux de sport très représentés, tout comme les jeux de football, basket-ball, hockey sur glace…")
+category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_type: 'image/png')
+
+
+
+
+
+
 #----------------------------------------------- CATEGORIES END---------------------------------------------------
 
 
@@ -119,27 +129,61 @@ action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'im
 
 
 
-# # Aventure
-# #----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
+# Aventure
+#----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
+img_aventure_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg')
+img_aventure_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg')
+img_aventure_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg')
+img_aventure_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/546560/header.jpg')
+img_aventure_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg')
+img_aventure_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
+img_aventure_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
+img_aventure_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/582500/header.jpg')
+img_aventure_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/512470/header.jpg')
+img_aventure_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
+img_aventure_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1394690/header.jpg')
+img_aventure_12 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1444750/header.jpg')
+img_aventure_13 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1427210/header.jpg')
 
+#----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
+aventure_1 = Game.create!(name: "Sea of Thieves", price: 39.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
 
+aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
 
-# #----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
-# game51 = Game.create!(name: "Sea of Thieves", price: 39.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game52 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game53 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game54 = Game.create!(name: "Half-Life: Alyx", price: 49.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game55 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game56 = Game.create!(name: "Neverwinter", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game57 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game58 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game59 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
-# game60 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
 
+aventure_4 = Game.create!(name: "Half-Life: Alyx", price: 49.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_4.photo.attach(io: img_aventure_4, filename: 'half_life.png', content_type: 'image/png')
 
+aventure_5 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_5.photo.attach(io: img_aventure_5, filename: 'Warhammer.png', content_type: 'image/png')
+
+aventure_6 = Game.create!(name: "Neverwinter", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_6.photo.attach(io: img_aventure_6, filename: 'Neverwinter.png', content_type: 'image/png')
+
+aventure_7 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_7.photo.attach(io: img_aventure_7, filename: 'Tera.png', content_type: 'image/png')
+
+aventure_8 = Game.create!(name: "We where Here", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_8.photo.attach(io: img_aventure_8, filename: 'wwh.png', content_type: 'image/png')
+
+aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
+
+aventure_10 = Game.create!(name: "Dark Deception", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
+
+aventure_11 = Game.create!(name: "Kaku", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
+
+aventure_12 = Game.create!(name: "DreamWatcher", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
+
+aventure_13 = Game.create!(name: "From the Shadows", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Aventure).ids[0])
+aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
 
 
 
