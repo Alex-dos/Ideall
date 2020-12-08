@@ -5,8 +5,8 @@
   background-size: cover;
   background-position: center;
   background-image: url("IDEE.png");
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   z-index: -2;
   &:hover {
     box-shadow: black;
@@ -129,6 +129,51 @@
   width: 128px;
   z-index: -1;
 }
+
+
+
+.image-bulle {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle.png");
+  height: 100px;
+  width: 128px;
+  // z-index: -1;
+}
+
+
+.image-bulle2 {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle2.png");
+  height: 100px;
+  width: 128px;
+  z-index: -1;
+}
+
+
+.image-bulle3 {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("bulle3.png");
+  height: 100px;
+  width: 128px;
+  z-index: -1;
+}
+
+
 
 // .image-bonhomme {
 //   display: flex;
