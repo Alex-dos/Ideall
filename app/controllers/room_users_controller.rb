@@ -7,7 +7,7 @@ class RoomUsersController < ApplicationController
       if @room_user.save
         
             RoomChannel.broadcast_to(
-      @room, current_user.name )
+      @room, {name: current_user.name}.to_json )
         redirect_to room_path(params[:test][:room_id])
       else 
         render :new

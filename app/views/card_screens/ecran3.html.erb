@@ -1,17 +1,38 @@
-<div class="container">
-  <% @categories.each do |category| %>
-    <div class="col-4">
-      <div class="card">
-        <img class="card_img"
-          src="https://i.pinimg.com/originals/c1/c5/3c/c1c53cda4fa51316d942ca91cf0d40ac.jpg">
-        <div class="card_title"><%= category.name %></div>
-          <div class="card_description">
-            <p>Lorem Ipsum copy in various charsets and languages for layouts. ... by this text-generator is
-              suitable for greeking, typesetting, layouts for websites, and ... Using dummy content or fake
-            </p>
-          </div>
-        <div class="card_vote"><%= link_to image_tag("heart1.png")%> <%= link_to image_tag("heart2.png")%><%= link_to image_tag("skull.png")%></div>
-      </div>
-    </div>
+  <div class="container-result-title">
+    <h1>Resultat</h1>
+  </div>
+
+<div class="w3-container">
+  <% @choice_categories.each do |category| %>
+<div class="w3-light-grey">
+  <% unless category.rank < 0 %>
+  <div class="w3-container w3-blue w3-center" style="width:<%= category.rank * 10 %>%"><%= category.rank * 10 %>%</div>
+  <% end %>
+  <% if category.rank < 0 %>
+  <div class="w3-container w3-blue w3-center" style="width:5%">0%</div>
   <% end %>
 </div>
+  <% end %>
+</div>
+
+
+  <div class="container-result-title">
+    <h1>Resultat</h1>
+  </div>
+
+<div class="container">
+  <% @choice_categories.each do |category| %>
+      <div class="container_results">
+        <% if category.rank == 1  %>
+        <div class="container-case-progression-result"><%= category.category.name %> = <%= category.rank %></div>
+         <% elsif category.rank > 3  %>
+         <div class="container-case-progression-result"><%= category.category.name %> = <%= category.rank %></div>
+         <% else category.rank >= -100  %>
+         <%= category.category.name %> = <%= category.rank %>
+        <% end %>
+        <% end %>
+     </div>
+</div>
+
+
+
