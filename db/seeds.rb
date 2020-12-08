@@ -145,120 +145,131 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 
 
 
-# Aventure
-#----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
-img_aventure_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg')
-img_aventure_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg')
-img_aventure_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg')
-img_aventure_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg')
-img_aventure_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg')
-img_aventure_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
-# img_aventure_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
-img_aventure_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/582500/header.jpg')
-img_aventure_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/512470/header.jpg')
-img_aventure_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
-img_aventure_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1394690/header.jpg')
-img_aventure_12 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1444750/header.jpg')
-img_aventure_13 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1427210/header.jpg')
+# # Aventure
+# #----------------------------------------------- IMG AVENTURE  ---------------------------------------------------------
+# img_aventure_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg')
+# img_aventure_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172380/header.jpg')
+# img_aventure_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/header.jpg')
+# img_aventure_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg')
+# img_aventure_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552500/header.jpg')
+# img_aventure_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
+# # img_aventure_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
+# img_aventure_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/582500/header.jpg')
+# img_aventure_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/512470/header.jpg')
+# img_aventure_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
+# img_aventure_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1394690/header.jpg')
+# img_aventure_12 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1444750/header.jpg')
+# img_aventure_13 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1427210/header.jpg')
+# #----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
 
-#----------------------------------------------- IMG AVENTURE FIN -----------------------------------------------------
-aventure_1 = Game.create!(name: "Sea of Thieves", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172620/Sea_of_Thieves/", description:"Sea of Thieves vous propose une aventure de pirate ultime avec un gameplay directement issu de l'imaginaire de la piraterie :
-  de la navigation, de l'exploration et des chasses aux trésors. Comme les rôles ne sont pas prédéfinis, vous pourrez contribuer à ce monde comme il vous plaira.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
+# aventure_1 = Game.create!(name: "Sea of Thieves", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172620/Sea_of_Thieves/", description:"Sea of Thieves vous propose une aventure de pirate ultime avec un gameplay directement issu de l'imaginaire de la piraterie :
+#   de la navigation, de l'exploration et des chasses aux trésors. Comme les rôles ne sont pas prédéfinis, vous pourrez contribuer à ce monde comme il vous plaira.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
 
-aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order/", description:"Une aventure galactique vous attend dans STAR WARS Jedi: Fallen Order, un nouveau jeu d'action-aventure à la 3e personne, développé par Respawn Entertainment.
-  Un Padawan abandonné doit terminer son entraînement, développer de nouvelles capacités de la Force et apprendre à maîtriser son sabre laser.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
+# aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order/", description:"Une aventure galactique vous attend dans STAR WARS Jedi: Fallen Order, un nouveau jeu d'action-aventure à la 3e personne, développé par Respawn Entertainment.
+#   Un Padawan abandonné doit terminer son entraînement, développer de nouvelles capacités de la Force et apprendre à maîtriser son sabre laser.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
 
-aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/", description:"Embarquez pour une nouvelle aventure dans un monde vaste et dépaysant où vous rencontrerez des ennemis
-  gigantesques et des énigmes ardues dans votre quête pour révéler la destinée d'Ori.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
+# aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/", description:"Embarquez pour une nouvelle aventure dans un monde vaste et dépaysant où vous rencontrerez des ennemis
+#   gigantesques et des énigmes ardues dans votre quête pour révéler la destinée d'Ori.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
 
-aventure_4 = Game.create!(name: "Half-Life", price: 49.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/70/HalfLife/", description:"Nommé « Jeu de l'année » par plus de 50 magazines, ce titre de Valve mêle action et aventure grâce à une
-  technologie primée et crée un monde au réalisme effrayant, où la survie des joueurs dépend de leur faculté de réflexion.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_4.photo.attach(io: img_aventure_4, filename: 'half_life.png', content_type: 'image/png')
+# aventure_4 = Game.create!(name: "Half-Life", price: 49.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/70/HalfLife/", description:"Nommé « Jeu de l'année » par plus de 50 magazines, ce titre de Valve mêle action et aventure grâce à une
+#   technologie primée et crée un monde au réalisme effrayant, où la survie des joueurs dépend de leur faculté de réflexion.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_4.photo.attach(io: img_aventure_4, filename: 'half_life.png', content_type: 'image/png')
 
-aventure_5 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"Encensé par la critique, Vermintide revient dans un jeu de mêlée révolutionnaire et visuellement étonnant,
-  repoussant les limites du jeu d'action coopératif à la première personne. Rejoignez le combat dès maintenant !
-", category_id: Category.where(name: :Aventure).ids[0])
-aventure_5.photo.attach(io: img_aventure_5, filename: 'Warhammer.png', content_type: 'image/png')
+# aventure_5 = Game.create!(name: "Warhammer: Vermintide 2", price: 27.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"Encensé par la critique, Vermintide revient dans un jeu de mêlée révolutionnaire et visuellement étonnant,
+#   repoussant les limites du jeu d'action coopératif à la première personne. Rejoignez le combat dès maintenant !
+# ", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_5.photo.attach(io: img_aventure_5, filename: 'Warhammer.png', content_type: 'image/png')
 
-#----Merge mmo----
-# aventure_6 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"", category_id: Category.where(name: :Aventure).ids[0])
-# aventure_6.photo.attach(io: img_aventure_6, filename: 'Neverwinter.png', content_type: 'image/png')
+# #----Merge mmo----
+# # aventure_6 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"", category_id: Category.where(name: :Aventure).ids[0])
+# # aventure_6.photo.attach(io: img_aventure_6, filename: 'Neverwinter.png', content_type: 'image/png')
 
-# aventure_7 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
-# aventure_7.photo.attach(io: img_aventure_7, filename: 'Tera.png', content_type: 'image/png')
+# # aventure_7 = Game.create!(name: "Tera", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Aventure).ids[0])
+# # aventure_7.photo.attach(io: img_aventure_7, filename: 'Tera.png', content_type: 'image/png')
 
-aventure_8 = Game.create!(name: "We where Here", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Perdu dans un terrain vague gelé et séparé de votre partenaire dans un château abandonné,
-  le seul bien qui vous reste est un talkie-walkie avec une voix familière à l'autre bout. Pouvez-vous tous les deux trouver votre chemin à temps?", category_id: Category.where(name: :Aventure).ids[0])
-aventure_8.photo.attach(io: img_aventure_8, filename: 'wwh.png', content_type: 'image/png')
+# aventure_8 = Game.create!(name: "We where Here", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Perdu dans un terrain vague gelé et séparé de votre partenaire dans un château abandonné,
+#   le seul bien qui vous reste est un talkie-walkie avec une voix familière à l'autre bout. Pouvez-vous tous les deux trouver votre chemin à temps?", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_8.photo.attach(io: img_aventure_8, filename: 'wwh.png', content_type: 'image/png')
 
-aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/512470/The_Pirate_Caribbean_Hunt/", description:"Salutations Capitaine!  Naviguez au cœur des Caraïbes dans l'ère de la piraterie - le temps des drapeaux noirs et des crânes blancs,
-  des vagues et des occasions en or. Hissez le Jolly Roger et saisissez la barre pour naviguer à travers des combats et des raids, rançons et trésors...", category_id: Category.where(name: :Aventure).ids[0])
-aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
+# aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/512470/The_Pirate_Caribbean_Hunt/", description:"Salutations Capitaine!  Naviguez au cœur des Caraïbes dans l'ère de la piraterie - le temps des drapeaux noirs et des crânes blancs,
+#   des vagues et des occasions en or. Hissez le Jolly Roger et saisissez la barre pour naviguer à travers des combats et des raids, rançons et trésors...", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
 
-aventure_10 = Game.create!(name: "Dark Deception", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/332950/Dark_Deception/", description:"La mort vous attend dans Dark Deception, un jeu de labyrinthe d'horreur à la première personne axé sur l'histoire.
-  Il n'y a nulle part où se cacher et nulle part où reprendre son souffle. Courez ou mourez - c'est votre choix. Pris au piège dans un royaume de labyrinthes cauchemardesques avec une femme mystérieuse, votre seul espoir de survie est de trouver un moyen d'échapper à l'obscurité.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
+# aventure_10 = Game.create!(name: "Dark Deception", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/332950/Dark_Deception/", description:"La mort vous attend dans Dark Deception, un jeu de labyrinthe d'horreur à la première personne axé sur l'histoire.
+#   Il n'y a nulle part où se cacher et nulle part où reprendre son souffle. Courez ou mourez - c'est votre choix. Pris au piège dans un royaume de labyrinthes cauchemardesques avec une femme mystérieuse, votre seul espoir de survie est de trouver un moyen d'échapper à l'obscurité.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
 
-aventure_11 = Game.create!(name: "Kaku", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1394690/KAKU_Ancient_Seal_Alpha/", description:"Kaku Ancient Seal est un jeu d'aventure facile et amusant. Vous deviendrez un adolescent avec un adorable animal de compagnie, explorerez et aventurerez dans un monde
-  fantastique ouvert. Dans ce jeu, nous avons un style artistique unique, un design de puzzle intéressant et un voyage tortueux et heureux, êtes-vous prêt pour l'Oraka", category_id: Category.where(name: :Aventure).ids[0])
-aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
+# aventure_11 = Game.create!(name: "Kaku", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1394690/KAKU_Ancient_Seal_Alpha/", description:"Kaku Ancient Seal est un jeu d'aventure facile et amusant. Vous deviendrez un adolescent avec un adorable animal de compagnie, explorerez et aventurerez dans un monde
+#   fantastique ouvert. Dans ce jeu, nous avons un style artistique unique, un design de puzzle intéressant et un voyage tortueux et heureux, êtes-vous prêt pour l'Oraka", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
 
-aventure_12 = Game.create!(name: "DreamWatcher", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"Bienvenue dans la Grande Bibliothèque des Rêves, où le chaos s’est déchaîné! Incarnez l'agente dans ce Metroidvania 3D rempli de secrets surprenants,
-  de parcours audacieux, d'énigmes déroutantes et de singes menaçants. Votre objectif : Explorer et ramener l'ordre dans la Grande Bibliothèque!", category_id: Category.where(name: :Aventure).ids[0])
-aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
+# aventure_12 = Game.create!(name: "DreamWatcher", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"Bienvenue dans la Grande Bibliothèque des Rêves, où le chaos s’est déchaîné! Incarnez l'agente dans ce Metroidvania 3D rempli de secrets surprenants,
+#   de parcours audacieux, d'énigmes déroutantes et de singes menaçants. Votre objectif : Explorer et ramener l'ordre dans la Grande Bibliothèque!", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
 
-aventure_13 = Game.create!(name: "From the Shadows", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"From the Shadows est un jeu de plateforme de puzzle coopératif dans lequel les joueurs doivent se frayer un chemin à travers un manoir mystérieux
-  en résolvant des énigmes qui tournent autour des mécanismes de la lumière et de l'ombre.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
-
-
+# aventure_13 = Game.create!(name: "From the Shadows", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"From the Shadows est un jeu de plateforme de puzzle coopératif dans lequel les joueurs doivent se frayer un chemin à travers un manoir mystérieux
+#   en résolvant des énigmes qui tournent autour des mécanismes de la lumière et de l'ombre.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
 
 
-# # Casual
-# #----------------------------------------------- IMG CASUAL  ---------------------------------------------------------
-# img_casual_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg')
-# img_casual_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/535930/header.jpg')
-# img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/420560/header.jpg')
-# img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
-# img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
-# img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
-# img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
-# img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
-# img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
-# img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
-# #----------------------------------------------- IMG CASUAL FIN -----------------------------------------------------
-# casual_1 = Game.create!(name: "Overcooked! 2", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_1.photo.attach(io: img_casual_1, filename: 'Overcooked2.png', content_type: 'image/png')
+# multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"",
 
-# casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
+# Casual
+#----------------------------------------------- IMG CASUAL  ---------------------------------------------------------
+img_casual_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg')
+img_casual_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/535930/header.jpg')
+img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/420560/header.jpg')
+img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
+img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
+img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
+img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
+img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
+img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
+img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
+#----------------------------------------------- IMG CASUAL FIN -----------------------------------------------------
 
-# casual_3 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_3.photo.attach(io: img_casual_3, filename: 'Firefighting.png', content_type: 'image/png')
+casual_1 = Game.create!(name: "Overcooked! 2", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/728880/Overcooked_2/", description:"Overcooked revient avec une toute nouvelle portion d'action culinaire chaotique ! Retournez dans le royaume Oignon et réunissez votre équipe de chefs
+  dans ce jeu de coopération locale ou en ligne jusqu'à 4 joueurs. À vos tabliers... il est l'heure de sauver le monde.", category_id: Category.where(name: :Casual).ids[0])
+casual_1.photo.attach(io: img_casual_1, filename: 'Overcooked2.png', content_type: 'image/png')
 
-# casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
+casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, solo:"Solo", link:"https://store.steampowered.com/app/535930/Two_Point_Hospital/", description:"Concevez de splendides hôpitaux, soignez d'étranges maladies et gérez des employés difficiles tandis que vous étendez votre organisation naissante
+  dans tout le Two Point County.", category_id: Category.where(name: :Casual).ids[0])
+casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
 
-# casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
+casual_3 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/420560/Firefighting_Simulator__The_Squad/", description:"Firefighting Simulator vous permet de découvrir la sensation de combattre le feu de près en tant que membre actif d'une équipe de pompiers
+ située dans une grande ville des États-Unis – ensemble avec jusqu'à trois amis en coopération multijoueur – ou en mode solo.", category_id: Category.where(name: :Casual).ids[0])
+casual_3.photo.attach(io: img_casual_3, filename: 'Firefighting.png', content_type: 'image/png')
 
-# casual_6 = Game.create!(name: "Worms Rumble", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_6.photo.attach(io: img_casual_6, filename: 'womsr.png', content_type: 'image/png')
+casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/621060/PC_Building_Simulator/", description:"Créez et développez votre propre entreprise de réparation d’ordinateurs, puis découvrez comment diagnostiquer, remettre en état et assembler des PC. À l’aide de composants
+  agréés et d’une simulation complète des matériels et logiciels, imaginez et construisez le PC ultime dont vous rêvez.", category_id: Category.where(name: :Casual).ids[0])
+casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
 
-# casual_7 = Game.create!(name: "RuneScape", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_7.photo.attach(io: img_casual_7, filename: 'runescape.png', content_type: 'image/png')
+casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/646570/Slay_the_Spire/", description:"En fusionnant les jeux de cartes avec les roguelikes, nous sommes arrivés à créer le jeu de cartes solo le plus intéressant possible. Construisez votre deck, rencontrez toutes sortes
+  d'ennemis bizarres, découvrez des reliques aux pouvoirs immenses, et éradiquez la tour!", category_id: Category.where(name: :Casual).ids[0])
+casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
 
-# casual_8 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_8.photo.attach(io: img_casual_8, filename: 'freestyle2bask.png', content_type: 'image/png')
+casual_6 = Game.create!(name: "Worms Rumble", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1186040/Worms_Rumble/", description:"Worms Rumble est un jeu de combat multiplateforme en arène à 32 joueurs en temps réel qui va révolutionner la série Worms. Préparez-vous à combattre dans les modes Mort aux asticots et
+  Dernier ver debout dans lesquels une seule sainte grenade sacrée peut vous condamner !", category_id: Category.where(name: :Casual).ids[0])
+casual_6.photo.attach(io: img_casual_6, filename: 'womsr.png', content_type: 'image/png')
 
-# casual_9 = Game.create!(name: "Mr.Mine", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
+casual_7 = Game.create!(name: "Scribble It!", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1088150/Scribble_It/", description:"Action de dessin rapide et alimentée en adrénaline. Dessinez vite, tapez plus vite et gagnez tout! DES MILLIERS de mots officiels dans 12 langues différentes + INFINIMENT plus de la communauté.
+  4 modes de jeu multijoueur et un mode solo. Nous vous ramènerons aux jeux picturaux animés que tout le monde avait à l'école!", category_id: Category.where(name: :Casual).ids[0])
+casual_7.photo.attach(io: img_casual_7, filename: 'runescape.png', content_type: 'image/png')
 
-# casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Casual).ids[0])
-# casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
+casual_8 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/339610/Freestyle_2_Street_Basketball/", description:"FreeStyle2, le MMO de Streetball, se distingue par son gameplay unique et ses graphismes dernier cri. Les joueurs choisissent leur position et s’affrontent à l’aide de mouvements
+  freestyles. Rejoignez le rang des meilleurs et poussez votre équipe à la victoire !", category_id: Category.where(name: :Casual).ids[0])
+casual_8.photo.attach(io: img_casual_8, filename: 'freestyle2bask.png', content_type: 'image/png')
+
+casual_9 = Game.create!(name: "Mr.Mine", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1397920/MrMine/", description:"Gérez un groupe de mineurs et améliorez votre foret pour vous frayer un chemin à travers les mines et découvrir des mystères et des trésors dans
+  les profondeurs ci-dessous.", category_id: Category.where(name: :Casual).ids[0])
+casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
+
+casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"L'évolution ne finit jamais. Simulez l'extraordinaire histoire de l'évolution dans ce jeu de clicker cosmique.
+", category_id: Category.where(name: :Casual).ids[0])
+casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
 
 
 
@@ -316,6 +327,8 @@ aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type:
 # mmo_2 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"", category_id: Category.where(name: :Aventure).ids[0])
 # mmo_2.photo.attach(io: img_mmo_2, filename: 'Neverwinter.png', content_type: 'image/png')
 
+# mmo_3 = Game.create!(name: "RuneScape", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"", category_id: Category.where(name: :Casual).ids[0])
+# mmo_3.photo.attach(io: img_mmo_3, filename: 'runescape.png', content_type: 'image/png')
 
 
 
