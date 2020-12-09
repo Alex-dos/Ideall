@@ -42,7 +42,56 @@
   width: 100%;
 }
 
-.loading {
+// card First
+
+.card-result-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-clip: border-box;
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  transform: translate(0px, 40px) rotate(0deg);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-color: white;
+  padding: 4px;
+  margin: 0px 50px 50px 50px;
+  overflow: hidden;
+  animation: 10s flottantt 8s linear infinite;
+}
+
+.card-result-1::before {
+  content:" ";
+  background: $bleu-ombre-ideal;
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: 1s ouverturea 6s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.card-result-1::after {
+  content:" ";
+  background: $bleu-ombre-ideal;
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  animation: 1s ouvertureb 6s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.loading-first {
   display: flex;
   z-index: 2;
   position: absolute;
@@ -60,7 +109,179 @@
   border-radius: 15px;
 }
 
-.loading2 {
+.loading2-first {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family:'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 45px;
+  animation: 2s chargementc 3s linear;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  opacity: 0;
+}
+
+// card Second
+
+.card-result-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-clip: border-box;
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  transform: translate(0px, 40px) rotate(0deg);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.card-result-2::before {
+  content:" ";
+  background: $bleu-ombre-ideal;
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: 1s ouverturea 6s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.card-result-2::after {
+  content:" ";
+  background: $bleu-ombre-ideal;
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  animation: 1s ouvertureb 6s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.loading-second {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family:'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 45px;
+  animation: 3s chargement 0s linear;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+}
+
+.loading2-second {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family:'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 45px;
+  animation: 2s chargementc 3s linear;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+  opacity: 0;
+}
+
+// card Third
+
+.card-result-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-clip: border-box;
+  height: 450px;
+  width: 300px;
+  border-radius: 20px;
+  transform: translate(0px, 40px) rotate(0deg);
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.card-result-3::before {
+  content:" ";
+  background: $bleu-ombre-ideal;
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: 1s ouverturea 6s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.card-result-3::after {
+  content:" ";
+  background: $bleu-ombre-ideal;
+  width: 100%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  animation: 1s ouvertureb 6s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.loading-third{
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family:'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 45px;
+  animation: 3s chargement 0s linear;
+  animation-fill-mode: forwards;
+  border-radius: 15px;
+}
+
+.loading2-third {
   display: flex;
   z-index: 2;
   position: absolute;

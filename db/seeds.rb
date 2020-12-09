@@ -397,61 +397,61 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 
 
 
-# Mmo
-#----------------------------------------------- IMG MMO ---------------------------------------------------------
-img_mmo_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
-img_mmo_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
-img_mmo_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
-img_mmo_4 = URI.open('https://image.jeuxvideo.com/medias-sm/152872/1528723478-8771-jaquette-avant.jpg')
-img_mmo_5 = URI.open('https://bnetproduct-a.akamaihd.net//f8e/dc72b901f29a1d3c5848802fdf31b8fc-WoW_9.0_ProductPage_Checkout_Base_MN02.jpg')
-img_mmo_6 = URI.open('https://image.jeuxvideo.com/images-sm/jaquettes/00013232/jaquette-dofus-pc-cover-avant-g-1343373661.jpg')
-img_mmo_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/304050/header.jpg')
-img_mmo_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/884660/header.jpg')
-img_mmo_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/230410/header.jpg')
-img_mmo_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/236390/header.jpg')
-#----------------------------------------------- IMG MMO FIN -----------------------------------------------------
+# # Mmo
+# #----------------------------------------------- IMG MMO ---------------------------------------------------------
+# img_mmo_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/212740/header.jpg')
+# img_mmo_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/109600/header.jpg')
+# img_mmo_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
+# img_mmo_4 = URI.open('https://image.jeuxvideo.com/medias-sm/152872/1528723478-8771-jaquette-avant.jpg')
+# img_mmo_5 = URI.open('https://bnetproduct-a.akamaihd.net//f8e/dc72b901f29a1d3c5848802fdf31b8fc-WoW_9.0_ProductPage_Checkout_Base_MN02.jpg')
+# img_mmo_6 = URI.open('https://image.jeuxvideo.com/images-sm/jaquettes/00013232/jaquette-dofus-pc-cover-avant-g-1343373661.jpg')
+# img_mmo_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/304050/header.jpg')
+# img_mmo_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/884660/header.jpg')
+# img_mmo_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/230410/header.jpg')
+# img_mmo_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/236390/header.jpg')
+# #----------------------------------------------- IMG MMO FIN -----------------------------------------------------
 
-mmo_1 = Game.create!(name: "Tera", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/212740/TERA/", description:"TERA est un MMORPG épique : maîtrisez son système de combat riche en action et imposez-vous en solo ou en équipe dans le
-  monde fabuleux d'Arborea.", category_id: Category.where(name: :MMO).ids[0])
-mmo_1.photo.attach(io: img_mmo_1, filename: 'Tera.png', content_type: 'image/png')
+# mmo_1 = Game.create!(name: "Tera", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/212740/TERA/", description:"TERA est un MMORPG épique : maîtrisez son système de combat riche en action et imposez-vous en solo ou en équipe dans le
+#   monde fabuleux d'Arborea.", category_id: Category.where(name: :MMO).ids[0])
+# mmo_1.photo.attach(io: img_mmo_1, filename: 'Tera.png', content_type: 'image/png')
 
-mmo_2 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"Neverwinter est un MMORPG basé sur le jeu de rôle sur table Donjons & Dragons. Un savant mélange d'aventures épiques,
-  de gameplay stratégique et de jeu de rôle classique attendent les héros assez courageux pour braver le monde fantastique de Neverwinter.", category_id: Category.where(name: :MMO).ids[0])
-mmo_2.photo.attach(io: img_mmo_2, filename: 'Neverwinter.png', content_type: 'image/png')
+# mmo_2 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"Neverwinter est un MMORPG basé sur le jeu de rôle sur table Donjons & Dragons. Un savant mélange d'aventures épiques,
+#   de gameplay stratégique et de jeu de rôle classique attendent les héros assez courageux pour braver le monde fantastique de Neverwinter.", category_id: Category.where(name: :MMO).ids[0])
+# mmo_2.photo.attach(io: img_mmo_2, filename: 'Neverwinter.png', content_type: 'image/png')
 
-mmo_3 = Game.create!(name: "RuneScape", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"RuneScape est un MMORPG fantastique au monde ouvert. Explorez un monde vivant qui évolue sans cesse et où de nouveaux défis,
-  compétences et quêtes vous attendent. Dans ce jeu qui offre une liberté inédite, vous décidez de la façon dont vous jouez, explorez et vous développez.", category_id: Category.where(name: :MMO).ids[0])
-mmo_3.photo.attach(io: img_mmo_3, filename: 'runescape.png', content_type: 'image/png')
+# mmo_3 = Game.create!(name: "RuneScape", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"RuneScape est un MMORPG fantastique au monde ouvert. Explorez un monde vivant qui évolue sans cesse et où de nouveaux défis,
+#   compétences et quêtes vous attendent. Dans ce jeu qui offre une liberté inédite, vous décidez de la façon dont vous jouez, explorez et vous développez.", category_id: Category.where(name: :MMO).ids[0])
+# mmo_3.photo.attach(io: img_mmo_3, filename: 'runescape.png', content_type: 'image/png')
 
-mmo_4 = Game.create!(name: "Black Desert Online", price: 9.99, multi:"Multijoueur", link:"https://www.blackdesertonline.com/shop/package", description:"MMORPG dynamique sur PC, Black Desert Online est axé sur un système sandbox à grande échelle. Le jeu prend place dans un univers médiéval-fantastique inspiré de l'Italie de la
-  Renaissance au sein duquel deux pays s'affrontent, la République de Calpheon et le royaume de Valence. La raison de leur conflit est la Pierre Noire, une source d'énergie essentielle.
-", category_id: Category.where(name: :MMO).ids[0])
-mmo_4.photo.attach(io: img_mmo_4, filename: 'bdo.png', content_type: 'image/png')
+# mmo_4 = Game.create!(name: "Black Desert Online", price: 9.99, multi:"Multijoueur", link:"https://www.blackdesertonline.com/shop/package", description:"MMORPG dynamique sur PC, Black Desert Online est axé sur un système sandbox à grande échelle. Le jeu prend place dans un univers médiéval-fantastique inspiré de l'Italie de la
+#   Renaissance au sein duquel deux pays s'affrontent, la République de Calpheon et le royaume de Valence. La raison de leur conflit est la Pierre Noire, une source d'énergie essentielle.
+# ", category_id: Category.where(name: :MMO).ids[0])
+# mmo_4.photo.attach(io: img_mmo_4, filename: 'bdo.png', content_type: 'image/png')
 
-mmo_5 = Game.create!(name: "World of Warcraft: Shadowlands", price: 39.99, multi:"Multijoueur", link:"https://eu.shop.battle.net/fr-fr/product/world-of-warcraft-shadowlands", description:"World of Warcraft: Shadowlands est la huitième extension de jeu vidéo du jeu de rôle en ligne massivement multijoueur World of Warcraft.
-  Elle a été annoncée le 1ᵉʳ novembre 2019 à la BlizzCon et a pour thème le royaume des morts de l'univers de Warcraft, l'Ombreterre", category_id: Category.where(name: :MMO).ids[0])
-mmo_5.photo.attach(io: img_mmo_5, filename: 'wow.png', content_type: 'image/png')
+# mmo_5 = Game.create!(name: "World of Warcraft: Shadowlands", price: 39.99, multi:"Multijoueur", link:"https://eu.shop.battle.net/fr-fr/product/world-of-warcraft-shadowlands", description:"World of Warcraft: Shadowlands est la huitième extension de jeu vidéo du jeu de rôle en ligne massivement multijoueur World of Warcraft.
+#   Elle a été annoncée le 1ᵉʳ novembre 2019 à la BlizzCon et a pour thème le royaume des morts de l'univers de Warcraft, l'Ombreterre", category_id: Category.where(name: :MMO).ids[0])
+# mmo_5.photo.attach(io: img_mmo_5, filename: 'wow.png', content_type: 'image/png')
 
-mmo_6 = Game.create!(name: "Dofus", price: nil, multi:"Multijoueur", link:"https://www.dofus.com/fr/prehome", description:"Dofus est un jeu de rôle en ligne massivement multijoueur français développé et édité par Ankama puis par sa filiale Ankama Games dès
-  sa création en 2004.", category_id: Category.where(name: :MMO).ids[0])
-mmo_6.photo.attach(io: img_mmo_6, filename: 'dofus.png', content_type: 'image/png')
+# mmo_6 = Game.create!(name: "Dofus", price: nil, multi:"Multijoueur", link:"https://www.dofus.com/fr/prehome", description:"Dofus est un jeu de rôle en ligne massivement multijoueur français développé et édité par Ankama puis par sa filiale Ankama Games dès
+#   sa création en 2004.", category_id: Category.where(name: :MMO).ids[0])
+# mmo_6.photo.attach(io: img_mmo_6, filename: 'dofus.png', content_type: 'image/png')
 
-mmo_7 = Game.create!(name: "Trove", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/304050/Trove/", description:"Ramenez vos potes, affûtez vos armes et partez à l’aventure dans Trove, l’ultime MMO « sand-vox » ! Combattez les forces de l’Ombre dans des mondes remplis de
-  donjons et d’objets hors du commun, créés par les joueurs comme vous. ", category_id: Category.where(name: :MMO).ids[0])
-mmo_7.photo.attach(io: img_mmo_7, filename: 'trove.png', content_type: 'image/png')
+# mmo_7 = Game.create!(name: "Trove", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/304050/Trove/", description:"Ramenez vos potes, affûtez vos armes et partez à l’aventure dans Trove, l’ultime MMO « sand-vox » ! Combattez les forces de l’Ombre dans des mondes remplis de
+#   donjons et d’objets hors du commun, créés par les joueurs comme vous. ", category_id: Category.where(name: :MMO).ids[0])
+# mmo_7.photo.attach(io: img_mmo_7, filename: 'trove.png', content_type: 'image/png')
 
-mmo_8 = Game.create!(name: "CRSED: F.O.A.D.", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/884660/CRSED_FOAD/", description:"CRSED: F.O.A.D. - est un jeu de tir MMO brutal avec des armes réalistes, des éléments de forces
-  mystiques mortelles et des super pouvoirs incroyables!", category_id: Category.where(name: :MMO).ids[0])
-mmo_8.photo.attach(io: img_mmo_8, filename: 'CRSED_FOAD.png', content_type: 'image/png')
+# mmo_8 = Game.create!(name: "CRSED: F.O.A.D.", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/884660/CRSED_FOAD/", description:"CRSED: F.O.A.D. - est un jeu de tir MMO brutal avec des armes réalistes, des éléments de forces
+#   mystiques mortelles et des super pouvoirs incroyables!", category_id: Category.where(name: :MMO).ids[0])
+# mmo_8.photo.attach(io: img_mmo_8, filename: 'CRSED_FOAD.png', content_type: 'image/png')
 
-mmo_9 = Game.create!(name: "Warframe", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/230410/Warframe/", description:"Dans le monde futuriste de Warframe, des clones grotesques et des machines capitalistes dominent notre système solaire. Combattez l'avarice et la corruption et partez à
-  la découverte de 18 mondes remplis d'horreurs techno-organiques.
-", category_id: Category.where(name: :MMO).ids[0])
-mmo_9.photo.attach(io: img_mmo_9, filename: 'warframe.png', content_type: 'image/png')
+# mmo_9 = Game.create!(name: "Warframe", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/230410/Warframe/", description:"Dans le monde futuriste de Warframe, des clones grotesques et des machines capitalistes dominent notre système solaire. Combattez l'avarice et la corruption et partez à
+#   la découverte de 18 mondes remplis d'horreurs techno-organiques.
+# ", category_id: Category.where(name: :MMO).ids[0])
+# mmo_9.photo.attach(io: img_mmo_9, filename: 'warframe.png', content_type: 'image/png')
 
-mmo_10 = Game.create!(name: "War Thunder", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
-  sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :MMO).ids[0])
-mmo_10.photo.attach(io: img_mmo_10, filename: 'war_Thunder.png', content_type: 'image/png')
+# mmo_10 = Game.create!(name: "War Thunder", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
+#   sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :MMO).ids[0])
+# mmo_10.photo.attach(io: img_mmo_10, filename: 'war_Thunder.png', content_type: 'image/png')
 
 
 
@@ -464,28 +464,62 @@ mmo_10.photo.attach(io: img_mmo_10, filename: 'war_Thunder.png', content_type: '
 
 # # RPG
 # #----------------------------------------------- IMG RPG ---------------------------------------------------------
-# img_rpg_1 = URI.open('')
-# img_rpg_2 = URI.open('')
-# img_rpg_3 = URI.open('')
-# img_rpg_4 = URI.open('')
-# img_rpg_5 = URI.open('')
-# img_rpg_6 = URI.open('')
-# img_rpg_7 = URI.open('')
-# img_rpg_8 = URI.open('')
-# img_rpg_9 = URI.open('')
-# img_rpg_10 = URI.open('')
+# img_rpg_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1199030/header.jpg')
+# img_rpg_2 = URI.open('https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/')
+# img_rpg_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg')
+# img_rpg_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg')
+# img_rpg_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/377160/header.jpg')
+# img_rpg_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/761890/header.jpg')
+# img_rpg_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/455300/header.jpg')
+# img_rpg_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/871100/header.jpg')
+# img_rpg_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1416260/header.jpg')
+# img_rpg_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1276730/header.jpg')
+# img_rpg_11 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg')
 # #----------------------------------------------- IMG RPG FIN -----------------------------------------------------
-# game11 = Game.create!(name: "Tainted Grail: Conquest", price: 16.79, player_number_min: 1, player_number_max: 4, category_id: Category.where(name: :RPG).ids[0])
-# game12 = Game.create!(name: "Divinity: Original Sin 2", price: 44.99, player_number_min: 1, player_number_max: 4, category_id: Category.where(name: :RPG).ids[0])
-# game13 = Game.create!(name: "The Witcher 3: Wild Hunt", price: 29.99, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :RPG).ids[0])
-# game14 = Game.create!(name: "Dark Souls III", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
-# game15 = Game.create!(name: "Fallout 4", price: 8.99, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :RPG).ids[0])
-# game16 = Game.create!(name: "Albion Online", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
-# game17 = Game.create!(name: "Deuterium Wars", player_number_min: 1, player_number_max: 100, category_id: Category.where(name: :RPG).ids[0])
-# game18 = Game.create!(name: "Animyst", price: nil, player_number_min: 1, player_number_max: 100, category_id: Category.where(name: :RPG).ids[0])
-# game19 = Game.create!(name: "SpellForce 3: Versus Edition", player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :RPG).ids[0])
-# game20 = Game.create!(name: "Undungeon Arena", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :RPG).ids[0])
-# game21 = Game.create!(name: "Baldur's Gate III", price: 59.99, player_number_min: 1, player_number_max: 4, category_id: Category.where(name: :RPG).ids[0])
+# rpg_1 = Game.create!(name: "Tainted Grail: Conquest", price: 16.79, multi:"Multijoueur", link:"https://store.steampowered.com/app/1199030/Tainted_Grail_Conquest/", description:"Un hybride unique, basé sur l'histoire, entre RPG et roguelikes de construction de deck. Explorez les cartes en constante évolution,
+#   combattez avec des ennemis mortels et découvrez ce qui est arrivé à l'île maudite d'Avalon.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_1.photo.attach(io: img_rpg_1, filename: 'Tainted_Grail_Conquest.png', content_type: 'image/png')
+
+# rpg_2 = Game.create!(name: "Divinity: Original Sin 2", price: 44.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/", description:"Le célèbre RPG auquel tous les autres sont comparés, par les créateurs de Baldur's Gate 3. Constituez votre groupe.
+#   Apprenez à maîtriser des phases de combat tactiques. Formez un groupe de 4 aventuriers avec d'autres joueurs.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_2.photo.attach(io: img_rpg_2, filename: 'diviniyorisin.png', content_type: 'image/png')
+
+# rpg_3 = Game.create!(name: "The Witcher 3: Wild Hunt", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/", description:"Alors que la guerre fait rage à travers les royaumes du Nord, vous acceptez le contrat de votre vie et
+#   partez à la recherche de l'enfant de la prophétie, une arme vivante capable de changer le monde.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_3.photo.attach(io: img_rpg_3, filename: 'tw3.png', content_type: 'image/png')
+
+# rpg_4 = Game.create!(name: "Dark Souls III", price: 59.99, solo:"Solo", link:"https://store.steampowered.com/app/374320/DARK_SOULS_III/", description:"Dark Souls repousse une fois de plus ses limites avec un nouveau chapitre
+#   ambitieux de la série légendaire et encensée par la critique. Préparez-vous à embrasser les ténèbres !
+# ", category_id: Category.where(name: :RPG).ids[0])
+# rpg_4.photo.attach(io: img_rpg_4, filename: 'ds3.png', content_type: 'image/png')
+
+# rpg_5 = Game.create!(name: "Fallout 4", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/377160/Fallout_4/", description:"Bethesda Game Studios, studio de développement maintes fois récompensé à l'origine de Fallout 3 et de The Elder Scrolls V: Skyrim, vous invite à découvrir Fallout 4, *
+#   leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_5.photo.attach(io: img_rpg_5, filename: 'Fallout_4.png', content_type: 'image/png')
+
+# rpg_6 = Game.create!(name: "Albion Online", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un rpgRPG fantaisie sandbox, avec économie gérée par les joueurs,
+# système de combat sans classe et batailles PvP intenses. Explorez un vaste monde ouvert rempli de dangers et d’opportunités. ", category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
+# rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/png')
+
+# rpg_7 = Game.create!(name: "Deuterium Wars", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/455300/Deuterium_Wars/", description:"Deuterium Wars est un jeu de tir 2D rapide. Créez votre propre avion et plongez-vous dans une bataille acharnée avec d'autres joueurs. Ce qui vous attend: un système de jeu de rôle complet, de l'artisanat,
+#   du trading et bien plus encore sur un seul serveur pour toutes les plateformes.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_7.photo.attach(io: img_rpg_7, filename: 'Deuterium_Wars.png', content_type: 'image/png')
+
+# rpg_8 = Game.create!(name: "Animyst", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/871100/Animyst/", description:"Réveillez-vous de la mort et maîtrisez les éléments dans un terrain vague hostile et déchiré par la guerre. Animyst est gratuit et ouvert au jeu tout en étant encore à un stade précoce de développement.
+#   Rien ne vous sera donné à la cuillère lorsque vous explorerez et construirez dans un monde brutal à serveur unique qui ne s'efface jamais.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_8.photo.attach(io: img_rpg_8, filename: 'Tera.png', content_type: 'image/png')
+
+# rpg_9 = Game.create!(name: "SpellForce 3: Versus Edition", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1416260/SpellForce_3_Versus_Edition/", description:"SpellForce 3: Versus Edition vous offre la possibilité d’accéder gratuitement aux champs de bataille d’Éo, où vous pourrez tester vos compétences en RTS
+#   contre des adversaires IA ou contre d’autres joueurs humains.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_9.photo.attach(io: img_rpg_9, filename: 'Tera.png', content_type: 'image/png')
+
+# rpg_10 = Game.create!(name: "Undungeon Arena", price: nil, solo:"Solo", link:"", description:"Devenez un gladiateur de l'espace et combattez dans plusieurs arènes dans cette expérience roguelite
+#   autonome se déroulant dans l'univers Undungeon.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_10.photo.attach(io: img_rpg_10, filename: 'Tera.png', content_type: 'image/png')
+
+# rpg_11 = Game.create!(name: "Baldur's Gate III", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1086940/Baldurs_Gate_3/", description:"Constituez votre groupe et retournez aux Royaumes Oubliés dans une histoire d'amitié, de trahison, de sacrifice et de survie, sur fond d'attrait
+#   du pouvoir absolu.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_11.photo.attach(io: img_rpg_11, filename: 'Tera.png', content_type: 'image/png')
 
 
 
@@ -494,30 +528,67 @@ mmo_10.photo.attach(io: img_mmo_10, filename: 'war_Thunder.png', content_type: '
 
 
 
+# Simulation
+#----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
+img_simulation_1 = URI.open('https://pbs.twimg.com/media/Edwqos-WsAA2tLd.jpg')
+img_simulation_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header_french.jpg')
+img_simulation_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg')
+img_simulation_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/787860/header.jpg')
+img_simulation_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/518790/header.jpg')
+img_simulation_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1258080/header.jpg')
+img_simulation_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg')
+img_simulation_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/236390/header.jpg')
+img_simulation_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/380600/header.jpg')
+img_simulation_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/442120/header.jpg')
+#----------------------------------------------- IMG SIMULTATION FIN -----------------------------------------------------
+simulation_1 = Game.create!(name: "EA SPORTS FIFA 21", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/", description:"Jouez au Jeu universel plus de 17 000 joueurs, plus de 700 équipes, dans plus de 90 stades et plus de 30 championnats du
+  monde entier.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_1.photo.attach(io: img_simulation_1, filename: 'fifa.png', content_type: 'image/png')
 
-# # Simulation
-# #----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
-# img_simulation_1 = URI.open('')
-# img_simulation_2 = URI.open('')
-# img_simulation_3 = URI.open('')
-# img_simulation_4 = URI.open('')
-# img_simulation_5 = URI.open('')
-# img_simulation_6 = URI.open('')
-# img_simulation_7 = URI.open('')
-# img_simulation_8 = URI.open('')
-# img_simulation_9 = URI.open('')
-# img_simulation_10 = URI.open('')
-# #----------------------------------------------- IMG SIMULTATION FIN -----------------------------------------------------
-# game31 = Game.create!(name: "EA SPORTS FIFA 21", price: 59.99, player_number_min: 1, player_number_max: 11, category_id: Category.where(name: :Simulation).ids[0])
-# game32 = Game.create!(name: "The Sims 4", price: 39.99, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
-# game33 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
-# game34 = Game.create!(name: "Farming Simulator 19", price: 19.99, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
-# game35 = Game.create!(name: "The Hunter: Call of the Wild", price: 60.00, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Simulation).ids[0])
-# game36 = Game.create!(name: "World of Warships", price: nil, player_number_min: 1, player_number_max: 24, category_id: Category.where(name: :Simulation).ids[0])
-# game37 = Game.create!(name: "World of Tanks", price: nil, player_number_min: 1, player_number_max: 24, category_id: Category.where(name: :Simulation).ids[0])
-# game38 = Game.create!(name: "War Thunder", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
-# game39 = Game.create!(name: "Fishing Planet", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
-# game40 = Game.create!(name: "Pinball FX3", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Simulation).ids[0])
+
+simulation_2 = Game.create!(name: "The Sims 4", price: 39.99, solo:"Solo", link:"https://store.steampowered.com/app/1222670/The_Sims_4/", description:"Profitez du pouvoir de créer et de contrôler des personnages dans un monde virtuel où il n'y a
+  aucune règle. Soyez puissant et libre, amusez-vous et jouez avec la vie !", category_id: Category.where(name: :Simulation).ids[0])
+simulation_2.photo.attach(io: img_simulation_2, filename: 'sims4.png', content_type: 'image/png')
+
+
+simulation_3 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/", description:"Voyagez à travers l'Europe en tant que roi de la route, un camionneur qui livre des marchandises importantes sur des distances impressionnantes!
+  Avec des dizaines de villes à explorer, votre endurance, vos compétences et votre vitesse seront poussées à leurs limites.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_3.photo.attach(io: img_simulation_3, filename: 'eurotrucksim.png', content_type: 'image/png')
+
+
+simulation_4 = Game.create!(name: "Farming Simulator 19", price: 19.99, multi:"multi", link:"https://store.steampowered.com/app/787860/Farming_Simulator_19/", description:"La franchise plusieurs fois millionnaire fait un bond de géant, avec une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi de visuels
+  et d'effets saisissants de réalisme, tout en offrant l'expérience de jeu farming la plus riche et complète jamais réalisée.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_4.photo.attach(io: img_simulation_4, filename: 'farmsim.png', content_type: 'image/png')
+
+
+simulation_5 = Game.create!(name: "The Hunter: Call of the Wild", price: 60.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/", description:"Découvrez un jeu de chasse à l'atmosphère inégalée prenant place dans un monde ouvert réaliste à la beauté qui vous coupera le souffle.
+  Plongez dans la campagne solo à l'ambiance captivante ou partagez cette ultime expérience de chasse avec des amis.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_5.photo.attach(io: img_simulation_5, filename: 'thehunter.png', content_type: 'image/png')
+
+
+simulation_6 = Game.create!(name: "Shop Titans : Craft et Créer", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1258080/Shop_Titans__Craft_et_Crer/", description:"Shop Titans est la simulation-JDR de magasin ultime. Fabriquez de l’équipement toujours plus puissant, approvisionnez vos rayons et vendez aux aspirants aventuriers...
+  avec un bénéfice ! Engagez des héros pour explorer des donjons et rapporter de précieux composants pour votre artisanat.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_6.photo.attach(io: img_simulation_6, filename: 'wowarships.png', content_type: 'image/png')
+
+
+simulation_7 = Game.create!(name: "World of Warships", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Participez à des combats navals épiques free-to-play à bord de plus de 300 vaisseaux historiques et profitez du superbe équilibre de stratégie et de combat en temps réel offert par World of Warships.
+  Agrémentez votre flotte de drapeaux, camouflages, modifications, commandants talentueux, et plus !", category_id: Category.where(name: :Simulation).ids[0])
+simulation_7.photo.attach(io: img_simulation_7, filename: 'world-of-warships.png', content_type: 'image/png')
+
+
+simulation_8 = Game.create!(name: "War Thunder", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
+  sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_8.photo.attach(io: img_simulation_8, filename: '.png', content_type: 'image/png')
+
+
+simulation_9 = Game.create!(name: "Fishing Planet", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/380600/Fishing_Planet/", description:"Fishing Planet est un simulateur de pêche en ligne réaliste et unique à la première personne réalisé par des pêcheurs passionnés et pour des pêcheurs. Choisissez l’équipement de pêche, attrapez les poissons,
+  explorez le monde et améliorez vos compétences dans de très nombreux lieux de pêche", category_id: Category.where(name: :Simulation).ids[0])
+simulation_9.photo.attach(io: img_simulation_9, filename: 'fushingplan.png', content_type: 'image/png')
+
+
+simulation_10 = Game.create!(name: "Pinball FX3", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/442120/Pinball_FX3/", description:"Les classiques Williams™ Pinball sont disponibles, dont Fish Tales™ GRATUITEMENT ! Pinball FX3 est le MEILLEUR jeu de flipper jamais créé possédant la communauté la plus dévouée.
+  Les duels multijoueur, les tournois et les parties de ligue offrent des possibilités infinies de s'affronter.", category_id: Category.where(name: :Simulation).ids[0])
+simulation_10.photo.attach(io: img_simulation_10, filename: 'Pinball_FX3.png', content_type: 'image/png')
 
 
 

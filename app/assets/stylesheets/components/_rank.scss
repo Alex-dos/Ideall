@@ -1,0 +1,47 @@
+.container-result-name-progress {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// .rank-container {
+//   height: 30px;
+//   border: 1px solid black;
+// }
+
+.rank {
+  display: flex;
+  height: 30px;
+  margin: 5px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background-color: $bleu-ombre-ideal;
+  text-align: left;
+  transition: 0.7s ease;
+}
+
+.result-name {
+  display: flex;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #ffffff61;
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
+}
+
+.result-image {
+  display: flex;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #ffffff61;
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
+}
+
+.result-name p {
+  display: flex;
+  align-items: center;
+  margin-top: 11px;
+}
