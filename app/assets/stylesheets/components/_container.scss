@@ -188,7 +188,6 @@
 }
 
 .container-joueurs-pret {
-  display: flex;
   border: 1px solid #2bb4e6;
   border-radius: 15px;
   background-color: rgba(104,198,231,1);
@@ -204,6 +203,7 @@
 }
 
 .container-player-on {
+  display: inline-block;
   padding: 10px;
  text-align: center;
 }
