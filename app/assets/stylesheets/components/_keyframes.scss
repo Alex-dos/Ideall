@@ -337,11 +337,11 @@ h1 .attente {
 @keyframes flottantt {
   0% {
     transform: translate(0px, 40px) rotate(0deg);
-        box-shadow: none;
+  box-shadow: 3px 3px 3px #353535,
   }
   10% {
     transform: translate(0px, 30px) rotate(0deg);
-        box-shadow: 10px 10px 10px black,
+        box-shadow: 10px 10px 10px #353535,
   }
   20% {
     transform: translate(0px, 20px) rotate(0deg);
@@ -373,11 +373,11 @@ h1 .attente {
   }
   90% {
     transform: translate(0px, 30px) rotate(0deg);
-        box-shadow: 10px 10px 10px black,
+        box-shadow: 10px 10px 10px #353535,
   }
   100% {
     transform: translate(0px, 40px) rotate(0deg);
-        box-shadow: none;
+  box-shadow: 3px 3px 3px #353535,
   }
 }
 
