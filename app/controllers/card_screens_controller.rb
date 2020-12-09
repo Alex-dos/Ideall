@@ -18,7 +18,7 @@ class CardScreensController < ApplicationController
     #   @itsok << true if @voted.each { |vote| vote.include?(room_user.user.name) }
     # end
 
-    if all_voted(@choice_categories_with_votes)
+    if all_voted_cat(@choice_categories_with_votes)
       list_games(@choice_categories_with_votes).each do |game|
         ChoiceGame.create!(game: game, room: @room, rank: 0, update_by: [])
       end
