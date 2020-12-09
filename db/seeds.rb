@@ -528,116 +528,126 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 
 
 
-# Simulation
-#----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
-img_simulation_1 = URI.open('https://pbs.twimg.com/media/Edwqos-WsAA2tLd.jpg')
-img_simulation_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header_french.jpg')
-img_simulation_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg')
-img_simulation_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/787860/header.jpg')
-img_simulation_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/518790/header.jpg')
-img_simulation_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1258080/header.jpg')
-img_simulation_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg')
-img_simulation_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/236390/header.jpg')
-img_simulation_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/380600/header.jpg')
-img_simulation_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/442120/header.jpg')
-#----------------------------------------------- IMG SIMULTATION FIN -----------------------------------------------------
-simulation_1 = Game.create!(name: "EA SPORTS FIFA 21", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/", description:"Jouez au Jeu universel plus de 17 000 joueurs, plus de 700 équipes, dans plus de 90 stades et plus de 30 championnats du
-  monde entier.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_1.photo.attach(io: img_simulation_1, filename: 'fifa.png', content_type: 'image/png')
+# # Simulation
+# #----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
+# img_simulation_1 = URI.open('https://pbs.twimg.com/media/Edwqos-WsAA2tLd.jpg')
+# img_simulation_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header_french.jpg')
+# img_simulation_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg')
+# img_simulation_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/787860/header.jpg')
+# img_simulation_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/518790/header.jpg')
+# img_simulation_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1258080/header.jpg')
+# img_simulation_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg')
+# img_simulation_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/236390/header.jpg')
+# img_simulation_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/380600/header.jpg')
+# img_simulation_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/442120/header.jpg')
+# #----------------------------------------------- IMG SIMULTATION FIN -----------------------------------------------------
+# simulation_1 = Game.create!(name: "EA SPORTS FIFA 21", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/", description:"Jouez au Jeu universel plus de 17 000 joueurs, plus de 700 équipes, dans plus de 90 stades et plus de 30 championnats du
+#   monde entier.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_1.photo.attach(io: img_simulation_1, filename: 'fifa.png', content_type: 'image/png')
 
 
-simulation_2 = Game.create!(name: "The Sims 4", price: 39.99, solo:"Solo", link:"https://store.steampowered.com/app/1222670/The_Sims_4/", description:"Profitez du pouvoir de créer et de contrôler des personnages dans un monde virtuel où il n'y a
-  aucune règle. Soyez puissant et libre, amusez-vous et jouez avec la vie !", category_id: Category.where(name: :Simulation).ids[0])
-simulation_2.photo.attach(io: img_simulation_2, filename: 'sims4.png', content_type: 'image/png')
+# simulation_2 = Game.create!(name: "The Sims 4", price: 39.99, solo:"Solo", link:"https://store.steampowered.com/app/1222670/The_Sims_4/", description:"Profitez du pouvoir de créer et de contrôler des personnages dans un monde virtuel où il n'y a
+#   aucune règle. Soyez puissant et libre, amusez-vous et jouez avec la vie !", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_2.photo.attach(io: img_simulation_2, filename: 'sims4.png', content_type: 'image/png')
 
 
-simulation_3 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/", description:"Voyagez à travers l'Europe en tant que roi de la route, un camionneur qui livre des marchandises importantes sur des distances impressionnantes!
-  Avec des dizaines de villes à explorer, votre endurance, vos compétences et votre vitesse seront poussées à leurs limites.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_3.photo.attach(io: img_simulation_3, filename: 'eurotrucksim.png', content_type: 'image/png')
+# simulation_3 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/", description:"Voyagez à travers l'Europe en tant que roi de la route, un camionneur qui livre des marchandises importantes sur des distances impressionnantes!
+#   Avec des dizaines de villes à explorer, votre endurance, vos compétences et votre vitesse seront poussées à leurs limites.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_3.photo.attach(io: img_simulation_3, filename: 'eurotrucksim.png', content_type: 'image/png')
 
 
-simulation_4 = Game.create!(name: "Farming Simulator 19", price: 19.99, multi:"multi", link:"https://store.steampowered.com/app/787860/Farming_Simulator_19/", description:"La franchise plusieurs fois millionnaire fait un bond de géant, avec une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi de visuels
-  et d'effets saisissants de réalisme, tout en offrant l'expérience de jeu farming la plus riche et complète jamais réalisée.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_4.photo.attach(io: img_simulation_4, filename: 'farmsim.png', content_type: 'image/png')
+# simulation_4 = Game.create!(name: "Farming Simulator 19", price: 19.99, multi:"multi", link:"https://store.steampowered.com/app/787860/Farming_Simulator_19/", description:"La franchise plusieurs fois millionnaire fait un bond de géant, avec une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi de visuels
+#   et d'effets saisissants de réalisme, tout en offrant l'expérience de jeu farming la plus riche et complète jamais réalisée.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_4.photo.attach(io: img_simulation_4, filename: 'farmsim.png', content_type: 'image/png')
 
 
-simulation_5 = Game.create!(name: "The Hunter: Call of the Wild", price: 60.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/", description:"Découvrez un jeu de chasse à l'atmosphère inégalée prenant place dans un monde ouvert réaliste à la beauté qui vous coupera le souffle.
-  Plongez dans la campagne solo à l'ambiance captivante ou partagez cette ultime expérience de chasse avec des amis.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_5.photo.attach(io: img_simulation_5, filename: 'thehunter.png', content_type: 'image/png')
+# simulation_5 = Game.create!(name: "The Hunter: Call of the Wild", price: 60.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/", description:"Découvrez un jeu de chasse à l'atmosphère inégalée prenant place dans un monde ouvert réaliste à la beauté qui vous coupera le souffle.
+#   Plongez dans la campagne solo à l'ambiance captivante ou partagez cette ultime expérience de chasse avec des amis.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_5.photo.attach(io: img_simulation_5, filename: 'thehunter.png', content_type: 'image/png')
 
 
-simulation_6 = Game.create!(name: "Shop Titans : Craft et Créer", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1258080/Shop_Titans__Craft_et_Crer/", description:"Shop Titans est la simulation-JDR de magasin ultime. Fabriquez de l’équipement toujours plus puissant, approvisionnez vos rayons et vendez aux aspirants aventuriers...
-  avec un bénéfice ! Engagez des héros pour explorer des donjons et rapporter de précieux composants pour votre artisanat.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_6.photo.attach(io: img_simulation_6, filename: 'wowarships.png', content_type: 'image/png')
+# simulation_6 = Game.create!(name: "Shop Titans : Craft et Créer", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1258080/Shop_Titans__Craft_et_Crer/", description:"Shop Titans est la simulation-JDR de magasin ultime. Fabriquez de l’équipement toujours plus puissant, approvisionnez vos rayons et vendez aux aspirants aventuriers...
+#   avec un bénéfice ! Engagez des héros pour explorer des donjons et rapporter de précieux composants pour votre artisanat.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_6.photo.attach(io: img_simulation_6, filename: 'wowarships.png', content_type: 'image/png')
 
 
-simulation_7 = Game.create!(name: "World of Warships", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Participez à des combats navals épiques free-to-play à bord de plus de 300 vaisseaux historiques et profitez du superbe équilibre de stratégie et de combat en temps réel offert par World of Warships.
-  Agrémentez votre flotte de drapeaux, camouflages, modifications, commandants talentueux, et plus !", category_id: Category.where(name: :Simulation).ids[0])
-simulation_7.photo.attach(io: img_simulation_7, filename: 'world-of-warships.png', content_type: 'image/png')
+# simulation_7 = Game.create!(name: "World of Warships", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Participez à des combats navals épiques free-to-play à bord de plus de 300 vaisseaux historiques et profitez du superbe équilibre de stratégie et de combat en temps réel offert par World of Warships.
+#   Agrémentez votre flotte de drapeaux, camouflages, modifications, commandants talentueux, et plus !", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_7.photo.attach(io: img_simulation_7, filename: 'world-of-warships.png', content_type: 'image/png')
 
 
-simulation_8 = Game.create!(name: "War Thunder", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
-  sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_8.photo.attach(io: img_simulation_8, filename: '.png', content_type: 'image/png')
+# simulation_8 = Game.create!(name: "War Thunder", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
+#   sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_8.photo.attach(io: img_simulation_8, filename: '.png', content_type: 'image/png')
 
 
-simulation_9 = Game.create!(name: "Fishing Planet", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/380600/Fishing_Planet/", description:"Fishing Planet est un simulateur de pêche en ligne réaliste et unique à la première personne réalisé par des pêcheurs passionnés et pour des pêcheurs. Choisissez l’équipement de pêche, attrapez les poissons,
-  explorez le monde et améliorez vos compétences dans de très nombreux lieux de pêche", category_id: Category.where(name: :Simulation).ids[0])
-simulation_9.photo.attach(io: img_simulation_9, filename: 'fushingplan.png', content_type: 'image/png')
+# simulation_9 = Game.create!(name: "Fishing Planet", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/380600/Fishing_Planet/", description:"Fishing Planet est un simulateur de pêche en ligne réaliste et unique à la première personne réalisé par des pêcheurs passionnés et pour des pêcheurs. Choisissez l’équipement de pêche, attrapez les poissons,
+#   explorez le monde et améliorez vos compétences dans de très nombreux lieux de pêche", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_9.photo.attach(io: img_simulation_9, filename: 'fushingplan.png', content_type: 'image/png')
 
 
-simulation_10 = Game.create!(name: "Pinball FX3", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/442120/Pinball_FX3/", description:"Les classiques Williams™ Pinball sont disponibles, dont Fish Tales™ GRATUITEMENT ! Pinball FX3 est le MEILLEUR jeu de flipper jamais créé possédant la communauté la plus dévouée.
-  Les duels multijoueur, les tournois et les parties de ligue offrent des possibilités infinies de s'affronter.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_10.photo.attach(io: img_simulation_10, filename: 'Pinball_FX3.png', content_type: 'image/png')
-
-
-
+# simulation_10 = Game.create!(name: "Pinball FX3", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/442120/Pinball_FX3/", description:"Les classiques Williams™ Pinball sont disponibles, dont Fish Tales™ GRATUITEMENT ! Pinball FX3 est le MEILLEUR jeu de flipper jamais créé possédant la communauté la plus dévouée.
+#   Les duels multijoueur, les tournois et les parties de ligue offrent des possibilités infinies de s'affronter.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_10.photo.attach(io: img_simulation_10, filename: 'Pinball_FX3.png', content_type: 'image/png')
 
 
 
 
-# # Sport
-# #----------------------------------------------- IMG SPORT ---------------------------------------------------------
-# img_sport_1 = URI.open('')
-# img_sport_2 = URI.open('')
-# img_sport_3 = URI.open('')
-# img_sport_4 = URI.open('')
-# img_sport_5 = URI.open('')
-# img_sport_6 = URI.open('')
-# img_sport_7 = URI.open('')
-# img_sport_8 = URI.open('')
-# img_sport_9 = URI.open('')
-# img_sport_10 = URI.open('')
-# #----------------------------------------------- IMG SPORT FIN -----------------------------------------------------
-# sport_1 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_1.photo.attach(io: img_sport_1, filename: '.png', content_type: 'image/png')
 
-# sport_2 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_2.photo.attach(io: img_sport_2, filename: '.png', content_type: 'image/png')
 
-# sport_3 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_3.photo.attach(io: img_sport_3, filename: '.png', content_type: 'image/png')
 
-# sport_4 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_4.photo.attach(io: img_sport_4, filename: '.png', content_type: 'image/png')
+# Sport
+#----------------------------------------------- IMG SPORT ---------------------------------------------------------
+img_sport_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1287590/header.jpg')
+img_sport_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1100600/header.jpg')
+img_sport_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1163550/header.jpg')
+img_sport_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1259980/header.jpg')
+img_sport_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1311330/header.jpg')
+img_sport_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1452830/header.jpg')
+img_sport_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1059110/header.jpg')
+img_sport_8 = URI.open('https://www.gwenaelgirod.com/assets/images/rocket-league.jpg')
+img_sport_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1181790/header.jpg')
+img_sport_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1332840/header.jpg')
+#----------------------------------------------- IMG SPORT FIN -----------------------------------------------------
+sport_1 = Game.create!(name: "Tour de France 2020", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1287590/Tour_de_France_2020/", description:"Affrontez le peloton sur les 21 étapes du Tour de France grâce au jeu officiel ! Pour enfiler le maillot jaune, Il vous faudra prendre des risques, attaquer, sprinter et maitriser votre tactique de course.
+  Défiez vos amis dans le mode challenge sprint ou descente !", category_id: Category.where(name: :Simulation).ids[0])
+sport_1.photo.attach(io: img_sport_1, filename: 'tourdefrance.png', content_type: 'image/png')
 
-# sport_5 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_5.photo.attach(io: img_sport_5, filename: '.png', content_type: 'image/png')
+sport_2 = Game.create!(name: "Football Manager 2020", price: 54.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1100600/Football_Manager_2020/", description:"Exprimez-vous et menez la saison comme vous l'entendez dans votre club, dès novembre. Chaque décision compte dans FM20, avec de nouvelles fonctionnalités, une mécanique de jeu améliorée, un nouveau niveau de réalisme et des
+  entraîneurs qui prennent les rênes de leur destin et de leur club.", category_id: Category.where(name: :Simulation).ids[0])
+sport_2.photo.attach(io: img_sport_2, filename: '.png', content_type: 'image/png')
 
-# sport_6 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_6.photo.attach(io: img_sport_6, filename: '.png', content_type: 'image/png')
+sport_3 = Game.create!(name: "Captain Tsubasa: Rise of New Champions", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1163550/Captain_Tsubasa_Rise_of_New_Champions/", description:"Captain Tsubasa: Rise of New Champions est un jeu de football arcade qui apporte une touche de fraîcheur au football avec de l'action palpitante et les
+  tirs surpuissants qui ont rendu la licence célèbre.", category_id: Category.where(name: :Simulation).ids[0])
+sport_3.photo.attach(io: img_sport_3, filename: 'captaintsub.png', content_type: 'image/png')
 
-# sport_7 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_7.photo.attach(io: img_sport_7, filename: '.png', content_type: 'image/png')
+sport_4 = Game.create!(name: "RIDE 4", price: 0.0, multi:"Multijoueur", link:"https://store.steampowered.com/app/1259980/RIDE_4/", description:"Êtes-vous prêt à vivre la meilleure expérience de pilotage qui soit ? RIDE 4 va réveiller votre âme de compétiteur avec ses centaines de motos,
+  ses dizaines de circuits et un niveau de réalisme encore jamais atteint.", category_id: Category.where(name: :Simulation).ids[0])
+sport_4.photo.attach(io: img_sport_4, filename: 'ride4.png', content_type: 'image/png')
 
-# sport_8 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_8.photo.attach(io: img_sport_8, filename: '.png', content_type: 'image/png')
+sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
+  avec Pro Basketball Manager 2021.", category_id: Category.where(name: :Simulation).ids[0])
+sport_5.photo.attach(io: img_sport_5, filename: 'Pro_Basketball_Manager_2021.png', content_type: 'image/png')
 
-# sport_9 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_9.photo.attach(io: img_sport_9, filename: '.png', content_type: 'image/png')
+sport_6 = Game.create!(name: "Disc Space", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1452830/Disc_Space/", description:"Disc Space est un jeu multijoueur Ultimate Frisbee avec jusqu'à 10 joueurs en ligne. Jouez avec vos amis ou trouvez-en de nouveaux.
+  Le plaisir illimité est garanti.", category_id: Category.where(name: :Simulation).ids[0])
+sport_6.photo.attach(io: img_sport_6, filename: 'Disc_Space.png', content_type: 'image/png')
 
-# sport_10 = Game.create!(name: "", price: 0.0, multi:"Multijoueur", link:"", description:"", category_id: Category.where(name: :Casual).ids[0])
-# sport_10.photo.attach(io: img_sport_10, filename: '.png', content_type: 'image/png')
+sport_7 = Game.create!(name: "Super Buckyball Tournament", price: nil, multi:"Multijoueur", link:"https://cdn.cloudflare.steamstatic.com/steam/apps/1059110/header.jpg", description:"Super Buckyball Tournament est un jeu de sports d'équipe multijoueur gratuit où vous emmenez l'un des 7 personnages uniques, chacun avec ses propres super pouvoirs, dans des matchs en
+  ligne intenses pour un jeu compétitif ou occasionnel.", category_id: Category.where(name: :Simulation).ids[0])
+sport_7.photo.attach(io: img_sport_7, filename: 'superbuck.png', content_type: 'image/png')
+
+sport_8 = Game.create!(name: "Rocket League", price: nil, multi:"Multijoueur", link:"https://www.rocketleague.com/fr/", description:"ocket League est un mélange de jeu de voiture et de jeu de Football (soccer). Par équipe ou en solo, le joueur contrôle un véhicule et peut ainsi frapper dans un ballon, avec pour objectif de marquer dans le but adverse. Le joueur peut utiliser une jauge de boost
+  pour accélérer et/ou se maintenir dans les airs, sauter pour réceptionner une balle et initier un envol pour atteindre des balles en l'air.", category_id: Category.where(name: :Simulation).ids[0])
+sport_8.photo.attach(io: img_sport_8, filename: 'rocketl.png', content_type: 'image/png')
+
+sport_9 = Game.create!(name: "Circle of Sumo: Online Rumble!", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1181790/Circle_of_Sumo_Online_Rumble/", description:"Utilisez votre ventre à votre avantage! Défiez des joueurs du monde entier et grimpez dans les classements. Combattez dans l'arène: chargez, frappez, esquivez et battez
+  les adversaires. Amusons-nous bien!", category_id: Category.where(name: :Simulation).ids[0])
+sport_9.photo.attach(io: img_sport_9, filename: 'Circle_of_Sumo_Online_Rumble.png', content_type: 'image/png')
+
+sport_10 = Game.create!(name: "Rise and Fall", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1332840/Rise_and_Fall/", description:"Rise and Fall est un jeu de sport à 4 joueurs avec des joueurs coopératifs ou IA sur un canapé.Des équipes de deux se battent sur une bombe à retardement pour marquer des buts.Échangez instantanément entre
+  3 styles de jeu", category_id: Category.where(name: :Simulation).ids[0])
+sport_10.photo.attach(io: img_sport_10, filename: 'Rise_and_Fall.png', content_type: 'image/png')
 
 
 
