@@ -61,13 +61,15 @@
     <div id="results" data-room-id="<%= choice_cat.room.id %>">
       <div class="card_vote_2" >
         <!-- <p id="result-<%= choice_cat.category.id %>"><%= choice_cat.rank %></p> -->
-        
-      </div>
 
-        <div style="width: 900px">
+      </div>
+<div class="container-result-name-progress">
+  <div class="result-name"><p><%= choice_cat.category.name %></p></div>
+        <div style="width: 900px" class="rank-container">
           <% width_rank = ( choice_cat.rank.to_f / (3 * @room.player_number) ) * 100 %>
           <% width_rank = 0 if width_rank.negative? %>
-          <div id="result-<%= choice_cat.category.id %>" class="rank" style="width: <%= width_rank %>%"><%= choice_cat.category.name %></div>
+          <div id="result-<%= choice_cat.category.id %>" class="rank" style="width: <%= width_rank %>%"></div>
+        </div>
         </div>
     <% end %>
   </div>
