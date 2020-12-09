@@ -46,12 +46,12 @@
 <div class="container">
   <div class="container-joueurs-pret">
     <% @room.room_users.each do |room_user| %>
-      <% if @voted.each { |vote| vote.include?(room_user.user.name) } %>
-        <div class="container-player-on">
+      <% if @voted[room_user.user.name] == @choice_categories_with_votes.length %>
+        <div id="<%= room_user.user.name %>" class="container-player-on">
           <i class="far fa-lightbulb"></i><div class="picto3"><%= room_user.user.name %></div>
         </div>
       <% else %>
-        <div class="container-player-off">
+        <div id="<%= room_user.user.name %>" class="container-player-off">
           <i class="far fa-lightbulb"></i><div class="picto3"><%= room_user.user.name %></div>
         </div>
       <% end %> 
@@ -69,8 +69,7 @@
 
         <div style="width: 900px">
           <% width_rank = ( choice_cat.rank.to_f / (3 * @room.player_number) ) * 100 %>
-          <% width_rank = 0 if width_rank.negative? %>
-          <div id="result-<%= choice_cat.category.id %>" class="rank" style="width: <%= width_rank %>%"><%= choice_cat.category.name %></div>
+          <div id="result-<%= choice_cat.category.id %>" class="rank" style="width: <%= [width_rank, 0].max %>%"><%= choice_cat.category.name %></div>
         </div>
     <% end %>
   </div>

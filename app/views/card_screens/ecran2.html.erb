@@ -33,10 +33,7 @@
     <% end %>
   </div>
   <% end %>
-<br>
-<br>
-<br>
-<br>
+
 
 <% unless @choice_games[0] %>
   <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
@@ -49,14 +46,17 @@
 <h1 class = "attente" style="font-size:40px">Joueurs ayant fini la selection :</h1>
 <div class="container">
   <div class="container-joueurs-pret">
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%= current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%= current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%=current_user.name%></div></div>
-  <div class="container-player-on"><i class="far fa-lightbulb"></i><div class="picto3"><%= current_user.name%></div></div>
+    <% @room.room_users.each do |room_user| %>
+      <% if @voted[room_user.user.name] == @choice_games_with_votes.length %>
+        <div id="<%= room_user.user.name %>" class="container-player-on">
+          <i class="far fa-lightbulb"></i><div class="picto3"><%= room_user.user.name %></div>
+        </div>
+      <% else %>
+        <div id="<%= room_user.user.name %>" class="container-player-off">
+          <i class="far fa-lightbulb"></i><div class="picto3"><%= room_user.user.name %></div>
+        </div>
+      <% end %> 
+    <% end %> 
   </div>
 <div class="alum"></div>
 </div>
@@ -65,14 +65,12 @@
     <% @choice_games_with_votes.each do |choice_game| %>
     <div id="results" data-room-id="<%= choice_game.room.id %>">
       <div class="card_vote_2" >
-        <%= choice_game.game.name %>
         <!-- <p id="result-<%= choice_game.game.id %>"><%= choice_game.rank %></p> -->
       </div>
 
       <div style="width: 500px; heigth:20px; position: relative">
         <% width_rank = ( choice_game.rank.to_f / (3 * @room.player_number) ) * 100 %>
-        <% width_rank = 0 if width_rank.negative? %>
-        <div id="result-<%= choice_game.game.id %>" class="rank" style="width: <%= width_rank %>%">lol</div>
+        <div id="result-<%= choice_game.game.id %>" class="rank" style="width: <%= [width_rank, 0].max %>%">lol</div>
       </div>
     <% end %>
   </div>

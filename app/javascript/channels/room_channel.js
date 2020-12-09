@@ -15,16 +15,27 @@ const initRoomCable = () => {
           const nbPlayer = json.player_number
           // console.log(json)
           // document.querySelector(categoryId).innerText = json.rank
-          let widthRank = ( json.rank / ( 3 * nbPlayer ) ) * 100
-          if ( Math.sign(widthRank) === -1 ){
-            widthRank = 0
-          }
+          let widthRank = Math.max(( json.rank / ( 3 * nbPlayer ) ) * 100, 0)
           console.log(widthRank)
           document.getElementById(categoryId).style.width = `${widthRank}%`;
         }
         if (json.head == 302 && json.path) {
-          window.location.pathname = json.path;
+          setTimeout(() => {
+            window.location.pathname = json.path;
+          }, 5000);
           // const link = `<a url="${json.path}"></a>`
+        }
+        if (json.name) {
+          const ampoule = document.querySelector(`#${json.name}`)
+          if (ampoule) {
+            ampoule.classList.remove('container-player-off')
+            ampoule.classList.add('container-player-on')
+          } else {
+            const containerPlayer = document.querySelector('.container-joueurs-pret')
+            containerPlayer.insertAdjacentHTML('beforend', `<div id="${json.name}" class="container-player-on">
+          <i class="far fa-lightbulb"></i><div class="picto3">${json.name}</div>
+        </div>`)
+          }
         }
       },
     });
