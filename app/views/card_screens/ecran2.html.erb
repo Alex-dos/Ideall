@@ -6,17 +6,17 @@
   <br>
 <div class="container">
 <div class="<%= !@choice_games[1] ? 'container_cards02' : 'container_cards' %>">
-  <% @choice_games.each do |choice_category| %>
+  <% @choice_games.each do |choice_game| %>
     <div class="col-4">
       <div class="card">
         <img class="card_img"
-          src="<%= cl_image_path choice_category.game.photo.key, height: 300, width: 400, crop: :fill %>">
-        <div class="card_title"><%= choice_category.game.name %></div>
-          <div class="card_description"><%= choice_category.game.name%>
+          src="<%= cl_image_path choice_game.game.photo.key, height: 300, width: 400, crop: :fill %>">
+        <div class="card_title"><%= choice_game.game.name %></div>
+          <div class="card_description"><%= choice_game.game.name%>
           </div>
-        <div class="card_vote"><%= link_to image_tag("heart1.png"), room_choice_game_path(id: choice_category.id, :rank => 3), :method => :patch %>
-        <%= link_to image_tag("heart2.png"), room_choice_game_path(id: choice_category.id, :rank => 1), :method => :patch %>
-        <%= link_to image_tag("skull.png"), room_choice_game_path(id: choice_category.id, :rank => -100), :method => :patch %></div>
+        <div class="card_vote"><%= link_to image_tag("heart1.png"), room_choice_game_path(id: choice_game.id, :rank => 3), :method => :patch %>
+        <%= link_to image_tag("heart2.png"), room_choice_game_path(id: choice_game.id, :rank => 1), :method => :patch %>
+        <%= link_to image_tag("skull.png"), room_choice_game_path(id: choice_game.id, :rank => -100), :method => :patch %></div>
       </div>
     </div>
   <% end %>
@@ -62,11 +62,17 @@
 </div>
 <h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
 <div class="container">
-    <% @choice_games_with_votes.each do |choice_cat| %>
-    <div id="results" data-room-id="<%= choice_cat.room.id %>">
+    <% @choice_games_with_votes.each do |choice_game| %>
+    <div id="results" data-room-id="<%= choice_game.room.id %>">
       <div class="card_vote_2" >
-        <%= choice_cat.game.name %>
-        <p id="result-<%= choice_cat.game.id %>"><%= choice_cat.rank %></p>
+        <%= choice_game.game.name %>
+        <!-- <p id="result-<%= choice_game.game.id %>"><%= choice_game.rank %></p> -->
+      </div>
+
+      <div style="width: 500px; heigth:20px; position: relative">
+        <% width_rank = ( choice_game.rank.to_f / (3 * @room.player_number) ) * 100 %>
+        <% width_rank = 0 if width_rank.negative? %>
+        <div id="result-<%= choice_game.game.id %>" class="rank" style="width: <%= width_rank %>%">lol</div>
       </div>
     <% end %>
   </div>
