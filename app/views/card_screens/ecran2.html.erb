@@ -12,7 +12,7 @@
         <img class="card_img_game"
           src="<%= cl_image_path choice_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
         <div class="card_title"><%= choice_game.game.name %></div>
-          <div class="card_description"><%= choice_game.game.name%>
+          <div class="card_description"><%= choice_game.game.description%>
           </div>
         <div class="card_vote"><%= link_to image_tag("heart1.png"), room_choice_game_path(id: choice_game.id, :rank => 3), :method => :patch %>
         <%= link_to image_tag("heart2.png"), room_choice_game_path(id: choice_game.id, :rank => 1), :method => :patch %>

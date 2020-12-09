@@ -46,8 +46,13 @@ const initRoomCable = () => {
         const json = JSON.parse(data)
         console.log(json)
         if (json.name) {
-          const categoryId = `#name`
-          document.querySelector(categoryId).insertAdjacentText('beforeend', json.name + " " );
+          const bonhommeGris = document.querySelector('.bonhomme-gris')
+          bonhommeGris.nextElementSibling.insertAdjacentText('beforeend', json.name );
+          bonhommeGris.classList.remove('bonhomme-gris')
+          bonhommeGris.classList.add('bonhomme-vert')
+        }
+        if (json.ready) {
+          document.querySelector('#ready').style.opacity = 1
         }
       }
     })
