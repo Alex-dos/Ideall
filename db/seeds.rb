@@ -102,9 +102,9 @@ img_action_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/38636
 img_action_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg')
 img_action_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
 #----------------------------------------------- IMG ACTION FIN -----------------------------------------------------
-action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo", link:"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/", description:"Vint alors l'avènement du Feu... Redécouvrez le jeu de référence salué par la critique.
-  Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
-action_1.photo.attach(io: img_action_1, filename: 'dark_souls.png', content_type: 'image/png')
+# action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo", link:"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/", description:"Vint alors l'avènement du Feu... Redécouvrez le jeu de référence salué par la critique.
+  # Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
+# action_1.photo.attach(io: img_action_1, filename: 'dark_souls.png', content_type: 'image/png')
 
 action_2 = Game.create!(name: "Doom", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/379720/DOOM/", description:"Inclut désormais les cartes, modes de jeux, armes et les trois packs de DLC premium (Unto the Evil, Hell Followed, et Bloodfall),
   ainsi que les modes Arcade et Photo. Inclut également la dernière Mise à jour 6.66 qui vient enrichir le mode multijoueur et qui améliore son mode de progression.", category_id: Category.where(name: :Action).ids[0])
@@ -118,10 +118,9 @@ action_4 = Game.create!(name: "Borderlands 3", price: 50.00, multi:"Multijoueur"
   Foncez à travers de nouveaux mondes et ennemis et sauvez votre maison des chefs de secte les plus impitoyables de la galaxie.", category_id: Category.where(name: :Action).ids[0])
 action_4.photo.attach(io: img_action_4, filename: 'border3.png', content_type: 'image/png')
 
-action_5 = Game.create!(name: "Assassin's Creed Odyssey", price: 60.00, solo:"Solo", link:"https://store.steampowered.com/app/397540/Borderlands_3/", description:"Forgez votre destin dans Assassin's Creed® Odyssey. Passez du statut de paria à celui de légende vivante au cours
-  d'une véritable odyssée durant laquelle vous lèverez les secrets sur votre passé et changerez le destin de la Grèce antique.
-", category_id: Category.where(name: :Action).ids[0])
-action_5.photo.attach(io: img_action_5, filename: 'assco.png', content_type: 'image/png')
+# action_5 = Game.create!(name: "Assassin's Creed Odyssey", price: 60.00, solo:"Solo", link:"https://store.steampowered.com/app/397540/Borderlands_3/", description:"Forgez votre destin dans Assassin's Creed® Odyssey. Passez du statut de paria à celui de légende vivante au cours
+  # d'une véritable odyssée durant laquelle vous lèverez les secrets sur votre passé et changerez le destin de la Grèce antique.", category_id: Category.where(name: :Action).ids[0])
+# action_5.photo.attach(io: img_action_5, filename: 'assco.png', content_type: 'image/png')
 
 action_6 = Game.create!(name: "Destiny 2", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1085660/Destiny_2/", description:"Destiny 2 est un MMO d'action avec un monde évolutif unique, auquel vous et vos amis pouvez jouer gratuitement, à tout moment et de n'importe où.", category_id: Category.where(name: :Action).ids[0])
 action_6.photo.attach(io: img_action_6, filename: 'destiny2.png', content_type: 'image/png')
@@ -168,9 +167,9 @@ aventure_2 = Game.create!(name: "Star Wars Jedi: Fallen Order", price: 59.99, mu
   Un Padawan abandonné doit terminer son entraînement, développer de nouvelles capacités de la Force et apprendre à maîtriser son sabre laser.", category_id: Category.where(name: :Aventure).ids[0])
 aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
 
-aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/", description:"Embarquez pour une nouvelle aventure dans un monde vaste et dépaysant où vous rencontrerez des ennemis
-  gigantesques et des énigmes ardues dans votre quête pour révéler la destinée d'Ori.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
+# aventure_3 = Game.create!(name: "Ori and the Will of the Wisps", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/", description:"Embarquez pour une nouvelle aventure dans un monde vaste et dépaysant où vous rencontrerez des ennemis
+  # gigantesques et des énigmes ardues dans votre quête pour révéler la destinée d'Ori.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_3.photo.attach(io: img_aventure_3, filename: 'ori.png', content_type: 'image/png')
 
 aventure_4 = Game.create!(name: "Half-Life", price: 49.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/70/HalfLife/", description:"Nommé « Jeu de l'année » par plus de 50 magazines, ce titre de Valve mêle action et aventure grâce à une
   technologie primée et crée un monde au réalisme effrayant, où la survie des joueurs dépend de leur faculté de réflexion.", category_id: Category.where(name: :Aventure).ids[0])
@@ -196,21 +195,21 @@ aventure_9 = Game.create!(name: "The Pirate: Caribbean Hunt", price: nil, multi:
   des vagues et des occasions en or. Hissez le Jolly Roger et saisissez la barre pour naviguer à travers des combats et des raids, rançons et trésors...", category_id: Category.where(name: :Aventure).ids[0])
 aventure_9.photo.attach(io: img_aventure_9, filename: 'tpch.png', content_type: 'image/png')
 
-aventure_10 = Game.create!(name: "Dark Deception", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/332950/Dark_Deception/", description:"La mort vous attend dans Dark Deception, un jeu de labyrinthe d'horreur à la première personne axé sur l'histoire.
-  Il n'y a nulle part où se cacher et nulle part où reprendre son souffle. Courez ou mourez - c'est votre choix. Pris au piège dans un royaume de labyrinthes cauchemardesques avec une femme mystérieuse, votre seul espoir de survie est de trouver un moyen d'échapper à l'obscurité.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
+# aventure_10 = Game.create!(name: "Dark Deception", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/332950/Dark_Deception/", description:"La mort vous attend dans Dark Deception, un jeu de labyrinthe d'horreur à la première personne axé sur l'histoire.
+  # Il n'y a nulle part où se cacher et nulle part où reprendre son souffle. Courez ou mourez - c'est votre choix. Pris au piège dans un royaume de labyrinthes cauchemardesques avec une femme mystérieuse, votre seul espoir de survie est de trouver un moyen d'échapper à l'obscurité.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_10.photo.attach(io: img_aventure_10, filename: 'darkd.png', content_type: 'image/png')
 
-aventure_11 = Game.create!(name: "Kaku", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1394690/KAKU_Ancient_Seal_Alpha/", description:"Kaku Ancient Seal est un jeu d'aventure facile et amusant. Vous deviendrez un adolescent avec un adorable animal de compagnie, explorerez et aventurerez dans un monde
-  fantastique ouvert. Dans ce jeu, nous avons un style artistique unique, un design de puzzle intéressant et un voyage tortueux et heureux, êtes-vous prêt pour l'Oraka", category_id: Category.where(name: :Aventure).ids[0])
-aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
+# aventure_11 = Game.create!(name: "Kaku", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1394690/KAKU_Ancient_Seal_Alpha/", description:"Kaku Ancient Seal est un jeu d'aventure facile et amusant. Vous deviendrez un adolescent avec un adorable animal de compagnie, explorerez et aventurerez dans un monde
+  # fantastique ouvert. Dans ce jeu, nous avons un style artistique unique, un design de puzzle intéressant et un voyage tortueux et heureux, êtes-vous prêt pour l'Oraka", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_11.photo.attach(io: img_aventure_11, filename: 'Kaku.png', content_type: 'image/png')
 
-aventure_12 = Game.create!(name: "DreamWatcher", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"Bienvenue dans la Grande Bibliothèque des Rêves, où le chaos s’est déchaîné! Incarnez l'agente dans ce Metroidvania 3D rempli de secrets surprenants,
-  de parcours audacieux, d'énigmes déroutantes et de singes menaçants. Votre objectif : Explorer et ramener l'ordre dans la Grande Bibliothèque!", category_id: Category.where(name: :Aventure).ids[0])
-aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
+# aventure_12 = Game.create!(name: "DreamWatcher", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"Bienvenue dans la Grande Bibliothèque des Rêves, où le chaos s’est déchaîné! Incarnez l'agente dans ce Metroidvania 3D rempli de secrets surprenants,
+  # de parcours audacieux, d'énigmes déroutantes et de singes menaçants. Votre objectif : Explorer et ramener l'ordre dans la Grande Bibliothèque!", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_12.photo.attach(io: img_aventure_12, filename: 'DreamWatcher.png', content_type: 'image/png')
 
-aventure_13 = Game.create!(name: "From the Shadows", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"From the Shadows est un jeu de plateforme de puzzle coopératif dans lequel les joueurs doivent se frayer un chemin à travers un manoir mystérieux
-  en résolvant des énigmes qui tournent autour des mécanismes de la lumière et de l'ombre.", category_id: Category.where(name: :Aventure).ids[0])
-aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
+# aventure_13 = Game.create!(name: "From the Shadows", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1444750/DreamWatcher/", description:"From the Shadows est un jeu de plateforme de puzzle coopératif dans lequel les joueurs doivent se frayer un chemin à travers un manoir mystérieux
+  # en résolvant des énigmes qui tournent autour des mécanismes de la lumière et de l'ombre.", category_id: Category.where(name: :Aventure).ids[0])
+# aventure_13.photo.attach(io: img_aventure_13, filename: 'fts.png', content_type: 'image/png')
 
 
 
@@ -232,21 +231,21 @@ casual_1 = Game.create!(name: "Overcooked! 2", price: 22.99, multi:"Multijoueur"
   dans ce jeu de coopération locale ou en ligne jusqu'à 4 joueurs. À vos tabliers... il est l'heure de sauver le monde.", category_id: Category.where(name: :Casual).ids[0])
 casual_1.photo.attach(io: img_casual_1, filename: 'Overcooked2.png', content_type: 'image/png')
 
-casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, solo:"Solo", link:"https://store.steampowered.com/app/535930/Two_Point_Hospital/", description:"Concevez de splendides hôpitaux, soignez d'étranges maladies et gérez des employés difficiles tandis que vous étendez votre organisation naissante
-  dans tout le Two Point County.", category_id: Category.where(name: :Casual).ids[0])
-casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
+# casual_2 = Game.create!(name: "Two Point Hospital", price: 34.99, solo:"Solo", link:"https://store.steampowered.com/app/535930/Two_Point_Hospital/", description:"Concevez de splendides hôpitaux, soignez d'étranges maladies et gérez des employés difficiles tandis que vous étendez votre organisation naissante
+  # dans tout le Two Point County.", category_id: Category.where(name: :Casual).ids[0])
+# casual_2.photo.attach(io: img_casual_2, filename: 'tph.png', content_type: 'image/png')
 
 casual_3 = Game.create!(name: "Firefighting Simulator - The Squad", price: 22.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/420560/Firefighting_Simulator__The_Squad/", description:"Firefighting Simulator vous permet de découvrir la sensation de combattre le feu de près en tant que membre actif d'une équipe de pompiers
  située dans une grande ville des États-Unis – ensemble avec jusqu'à trois amis en coopération multijoueur – ou en mode solo.", category_id: Category.where(name: :Casual).ids[0])
 casual_3.photo.attach(io: img_casual_3, filename: 'Firefighting.png', content_type: 'image/png')
 
-casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/621060/PC_Building_Simulator/", description:"Créez et développez votre propre entreprise de réparation d’ordinateurs, puis découvrez comment diagnostiquer, remettre en état et assembler des PC. À l’aide de composants
-  agréés et d’une simulation complète des matériels et logiciels, imaginez et construisez le PC ultime dont vous rêvez.", category_id: Category.where(name: :Casual).ids[0])
-casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
+# casual_4 = Game.create!(name: "PC Building Simulator", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/621060/PC_Building_Simulator/", description:"Créez et développez votre propre entreprise de réparation d’ordinateurs, puis découvrez comment diagnostiquer, remettre en état et assembler des PC. À l’aide de composants
+  # agréés et d’une simulation complète des matériels et logiciels, imaginez et construisez le PC ultime dont vous rêvez.", category_id: Category.where(name: :Casual).ids[0])
+# casual_4.photo.attach(io: img_casual_4, filename: 'pcbs.png', content_type: 'image/png')
 
-casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/646570/Slay_the_Spire/", description:"En fusionnant les jeux de cartes avec les roguelikes, nous sommes arrivés à créer le jeu de cartes solo le plus intéressant possible. Construisez votre deck, rencontrez toutes sortes
-  d'ennemis bizarres, découvrez des reliques aux pouvoirs immenses, et éradiquez la tour!", category_id: Category.where(name: :Casual).ids[0])
-casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
+# casual_5 = Game.create!(name: "Slay the Spire", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/646570/Slay_the_Spire/", description:"En fusionnant les jeux de cartes avec les roguelikes, nous sommes arrivés à créer le jeu de cartes solo le plus intéressant possible. Construisez votre deck, rencontrez toutes sortes
+  # d'ennemis bizarres, découvrez des reliques aux pouvoirs immenses, et éradiquez la tour!", category_id: Category.where(name: :Casual).ids[0])
+# casual_5.photo.attach(io: img_casual_5, filename: 'sts.png', content_type: 'image/png')
 
 casual_6 = Game.create!(name: "Worms Rumble", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1186040/Worms_Rumble/", description:"Worms Rumble est un jeu de combat multiplateforme en arène à 32 joueurs en temps réel qui va révolutionner la série Worms. Préparez-vous à combattre dans les modes Mort aux asticots et
   Dernier ver debout dans lesquels une seule sainte grenade sacrée peut vous condamner !", category_id: Category.where(name: :Casual).ids[0])
@@ -260,13 +259,13 @@ casual_8 = Game.create!(name: "Freestyle 2: Street BasketBall", price: nil, mult
   freestyles. Rejoignez le rang des meilleurs et poussez votre équipe à la victoire !", category_id: Category.where(name: :Casual).ids[0])
 casual_8.photo.attach(io: img_casual_8, filename: 'freestyle2bask.png', content_type: 'image/png')
 
-casual_9 = Game.create!(name: "Mr.Mine", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1397920/MrMine/", description:"Gérez un groupe de mineurs et améliorez votre foret pour vous frayer un chemin à travers les mines et découvrir des mystères et des trésors dans
-  les profondeurs ci-dessous.", category_id: Category.where(name: :Casual).ids[0])
-casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
+# casual_9 = Game.create!(name: "Mr.Mine", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1397920/MrMine/", description:"Gérez un groupe de mineurs et améliorez votre foret pour vous frayer un chemin à travers les mines et découvrir des mystères et des trésors dans
+  # les profondeurs ci-dessous.", category_id: Category.where(name: :Casual).ids[0])
+# casual_9.photo.attach(io: img_casual_9, filename: 'mrmine.png', content_type: 'image/png')
 
-casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"L'évolution ne finit jamais. Simulez l'extraordinaire histoire de l'évolution dans ce jeu de clicker cosmique.
-", category_id: Category.where(name: :Casual).ids[0])
-casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
+# casual_10 = Game.create!(name: "Cell to Singularity - Evolution Never Ends", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"L'évolution ne finit jamais. Simulez l'extraordinaire histoire de l'évolution dans ce jeu de clicker cosmique.
+# ", category_id: Category.where(name: :Casual).ids[0])
+# casual_10.photo.attach(io: img_casual_10, filename: 'ctsene.png', content_type: 'image/png')
 
 
 
@@ -344,9 +343,9 @@ img_inde_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1173370
 img_inde_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/219150/header.jpg')
 #----------------------------------------------- IMG INDEPENDANT FIN -----------------------------------------------------
 
-inde_1 = Game.create!(name: "Hades", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/1145360/Hades/", description:"Défiez le dieu des morts et frayez-vous un chemin hors des Enfers dans ce rogue-like en mode dungeon crawler développé par les créateurs de Bastion,
-  Transistor et Pyre.", category_id: Category.where(name: :Indépendant).ids[0])
-inde_1.photo.attach(io: img_inde_1, filename: 'hades.png', content_type: 'image/png')
+# inde_1 = Game.create!(name: "Hades", price: 20.99, solo:"Solo", link:"https://store.steampowered.com/app/1145360/Hades/", description:"Défiez le dieu des morts et frayez-vous un chemin hors des Enfers dans ce rogue-like en mode dungeon crawler développé par les créateurs de Bastion,
+  # Transistor et Pyre.", category_id: Category.where(name: :Indépendant).ids[0])
+# inde_1.photo.attach(io: img_inde_1, filename: 'hades.png', content_type: 'image/png')
 
 inde_2 = Game.create!(name: "Among Us", price: 3.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/945360/Among_Us/", description:"Un jeu de société en ligne et local de travail d'équipe et de trahison pour 4 à 10 joueurs ...
   dans l'espace!", category_id: Category.where(name: :Indépendant).ids[0])
@@ -365,18 +364,18 @@ inde_5 = Game.create!(name: "Stardew Valley", price: 13.99, multi:"Multijoueur",
   Pouvez-vous apprendre à vivre de la terre et transformer ces champs envahis par la végétation en une maison prospère?", category_id: Category.where(name: :Indépendant).ids[0])
 inde_5.photo.attach(io: img_inde_5, filename: '.png', content_type: 'image/png')
 
-inde_6 = Game.create!(name: "Shakes and Fidget", price: nil, solo:"solo", link:"https://store.steampowered.com/app/438040/Shakes_and_Fidget/", description:"Shakes et Fidget est un RPG fantasy amusant et satyrique, et a même été récompensé ! Tu n'en reviens pas ? Plus de 50 millions de joueurs ont fait de SFGAME l'un des jeux
-  en ligne les plus populaires au monde !", category_id: Category.where(name: :Indépendant).ids[0])
-inde_6.photo.attach(io: img_inde_6, filename: 'Shakes_and_Fidget.png', content_type: 'image/png')
+# inde_6 = Game.create!(name: "Shakes and Fidget", price: nil, solo:"solo", link:"https://store.steampowered.com/app/438040/Shakes_and_Fidget/", description:"Shakes et Fidget est un RPG fantasy amusant et satyrique, et a même été récompensé ! Tu n'en reviens pas ? Plus de 50 millions de joueurs ont fait de SFGAME l'un des jeux
+  # en ligne les plus populaires au monde !", category_id: Category.where(name: :Indépendant).ids[0])
+# inde_6.photo.attach(io: img_inde_6, filename: 'Shakes_and_Fidget.png', content_type: 'image/png')
 
 inde_7 = Game.create!(name: "Deceit", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/466240/Deceit/", description:"Deceit teste votre instinct et la confiance dans un jeu de tir à la première personne multijoueur rempli d'action. Vous vous réveillez dans un environnement inconnu au son de la voix du Game Master,
   entouré de cinq autres personnes. Un tiers de votre groupe a été infecté par un virus, qui va s'échapper?
 ", category_id: Category.where(name: :Indépendant).ids[0])
 inde_7.photo.attach(io: img_inde_7, filename: 'deceit.png', content_type: 'image/png')
 
-inde_8 = Game.create!(name: "The Binding of Isaac", price: 4.99, solo:"solo", link:"https://store.steampowered.com/app/113200/The_Binding_of_Isaac/?l=french", description:"The Binding of Isaac est un jeu d'action, de tir et de rôle. Suivez Isaac dans son aventure et utilisez les trésors étranges qui vont lui donner des pouvoirs spéciaux
-  pour combattre les créatures mystérieuses et trouver le chemin vers la liberté.", category_id: Category.where(name: :Indépendant).ids[0])
-inde_8.photo.attach(io: img_inde_8, filename: 'The_Binding_of_Isaac.png', content_type: 'image/png')
+# inde_8 = Game.create!(name: "The Binding of Isaac", price: 4.99, solo:"solo", link:"https://store.steampowered.com/app/113200/The_Binding_of_Isaac/?l=french", description:"The Binding of Isaac est un jeu d'action, de tir et de rôle. Suivez Isaac dans son aventure et utilisez les trésors étranges qui vont lui donner des pouvoirs spéciaux
+  # pour combattre les créatures mystérieuses et trouver le chemin vers la liberté.", category_id: Category.where(name: :Indépendant).ids[0])
+# inde_8.photo.attach(io: img_inde_8, filename: 'The_Binding_of_Isaac.png', content_type: 'image/png')
 
 inde_9 = Game.create!(name: "Slapshot: Rebound", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1173370/Slapshot_Rebound/", description:"Slapshot: Rebound est un jeu multijoueur basé sur la physique dans lequel vous jouez un match de hockey de style arcade. Pas de bouton de tir, pas de colle de rondelle, pas de RNG. C'est à vous et à votre équipe de prendre le contrôle de la rondelle, de passer,
   de tirer, de surpasser vos adversaires. Jouez avec vos amis ou faites équipe avec d'autres joueurs de Slapshot!", category_id: Category.where(name: :Indépendant).ids[0])
@@ -481,38 +480,37 @@ rpg_2 = Game.create!(name: "Divinity: Original Sin 2", price: 44.99, multi:"Mult
   Apprenez à maîtriser des phases de combat tactiques. Formez un groupe de 4 aventuriers avec d'autres joueurs.", category_id: Category.where(name: :RPG).ids[0])
 rpg_2.photo.attach(io: img_rpg_2, filename: 'diviniyorisin.png', content_type: 'image/png')
 
-rpg_3 = Game.create!(name: "The Witcher 3: Wild Hunt", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/", description:"Alors que la guerre fait rage à travers les royaumes du Nord, vous acceptez le contrat de votre vie et
-  partez à la recherche de l'enfant de la prophétie, une arme vivante capable de changer le monde.", category_id: Category.where(name: :RPG).ids[0])
-rpg_3.photo.attach(io: img_rpg_3, filename: 'tw3.png', content_type: 'image/png')
+# rpg_3 = Game.create!(name: "The Witcher 3: Wild Hunt", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/", description:"Alors que la guerre fait rage à travers les royaumes du Nord, vous acceptez le contrat de votre vie et
+  # partez à la recherche de l'enfant de la prophétie, une arme vivante capable de changer le monde.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_3.photo.attach(io: img_rpg_3, filename: 'tw3.png', content_type: 'image/png')
 
-rpg_4 = Game.create!(name: "Dark Souls III", price: 59.99, solo:"Solo", link:"https://store.steampowered.com/app/374320/DARK_SOULS_III/", description:"Dark Souls repousse une fois de plus ses limites avec un nouveau chapitre
-  ambitieux de la série légendaire et encensée par la critique. Préparez-vous à embrasser les ténèbres !
-", category_id: Category.where(name: :RPG).ids[0])
-rpg_4.photo.attach(io: img_rpg_4, filename: 'ds3.png', content_type: 'image/png')
+# rpg_4 = Game.create!(name: "Dark Souls III", price: 59.99, solo:"Solo", link:"https://store.steampowered.com/app/374320/DARK_SOULS_III/", description:"Dark Souls repousse une fois de plus ses limites avec un nouveau chapitre
+  # ambitieux de la série légendaire et encensée par la critique. Préparez-vous à embrasser les ténèbres !", category_id: Category.where(name: :RPG).ids[0])
+# rpg_4.photo.attach(io: img_rpg_4, filename: 'ds3.png', content_type: 'image/png')
 
-rpg_5 = Game.create!(name: "Fallout 4", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/377160/Fallout_4/", description:"Bethesda Game Studios, studio de développement maintes fois récompensé à l'origine de Fallout 3 et de The Elder Scrolls V: Skyrim, vous invite à découvrir Fallout 4, *
-  leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.", category_id: Category.where(name: :RPG).ids[0])
-rpg_5.photo.attach(io: img_rpg_5, filename: 'Fallout_4.png', content_type: 'image/png')
+# rpg_5 = Game.create!(name: "Fallout 4", price: 29.99, solo:"Solo", link:"https://store.steampowered.com/app/377160/Fallout_4/", description:"Bethesda Game Studios, studio de développement maintes fois récompensé à l'origine de Fallout 3 et de The Elder Scrolls V: Skyrim, vous invite à découvrir Fallout 4, *
+  # leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_5.photo.attach(io: img_rpg_5, filename: 'Fallout_4.png', content_type: 'image/png')
 
-rpg_6 = Game.create!(name: "Albion Online", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un rpgRPG fantaisie sandbox, avec économie gérée par les joueurs,
-système de combat sans classe et batailles PvP intenses. Explorez un vaste monde ouvert rempli de dangers et d’opportunités. ", category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
-rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/png')
+# rpg_6 = Game.create!(name: "Albion Online", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un rpgRPG fantaisie sandbox, avec économie gérée par les joueurs,
+# système de combat sans classe et batailles PvP intenses. Explorez un vaste monde ouvert rempli de dangers et d’opportunités. ", category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
+# rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/png')
 
-rpg_7 = Game.create!(name: "Deuterium Wars", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/455300/Deuterium_Wars/", description:"Deuterium Wars est un jeu de tir 2D rapide. Créez votre propre avion et plongez-vous dans une bataille acharnée avec d'autres joueurs. Ce qui vous attend: un système de jeu de rôle complet, de l'artisanat,
-  du trading et bien plus encore sur un seul serveur pour toutes les plateformes.", category_id: Category.where(name: :RPG).ids[0])
-rpg_7.photo.attach(io: img_rpg_7, filename: 'Deuterium_Wars.png', content_type: 'image/png')
+# rpg_7 = Game.create!(name: "Deuterium Wars", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/455300/Deuterium_Wars/", description:"Deuterium Wars est un jeu de tir 2D rapide. Créez votre propre avion et plongez-vous dans une bataille acharnée avec d'autres joueurs. Ce qui vous attend: un système de jeu de rôle complet, de l'artisanat,
+  # du trading et bien plus encore sur un seul serveur pour toutes les plateformes.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_7.photo.attach(io: img_rpg_7, filename: 'Deuterium_Wars.png', content_type: 'image/png')
 
-rpg_8 = Game.create!(name: "Animyst", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/871100/Animyst/", description:"Réveillez-vous de la mort et maîtrisez les éléments dans un terrain vague hostile et déchiré par la guerre. Animyst est gratuit et ouvert au jeu tout en étant encore à un stade précoce de développement.
-  Rien ne vous sera donné à la cuillère lorsque vous explorerez et construirez dans un monde brutal à serveur unique qui ne s'efface jamais.", category_id: Category.where(name: :RPG).ids[0])
-rpg_8.photo.attach(io: img_rpg_8, filename: 'Tera.png', content_type: 'image/png')
+# rpg_8 = Game.create!(name: "Animyst", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/871100/Animyst/", description:"Réveillez-vous de la mort et maîtrisez les éléments dans un terrain vague hostile et déchiré par la guerre. Animyst est gratuit et ouvert au jeu tout en étant encore à un stade précoce de développement.
+  # Rien ne vous sera donné à la cuillère lorsque vous explorerez et construirez dans un monde brutal à serveur unique qui ne s'efface jamais.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_8.photo.attach(io: img_rpg_8, filename: 'Tera.png', content_type: 'image/png')
 
-rpg_9 = Game.create!(name: "SpellForce 3: Versus Edition", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1416260/SpellForce_3_Versus_Edition/", description:"SpellForce 3: Versus Edition vous offre la possibilité d’accéder gratuitement aux champs de bataille d’Éo, où vous pourrez tester vos compétences en RTS
-  contre des adversaires IA ou contre d’autres joueurs humains.", category_id: Category.where(name: :RPG).ids[0])
-rpg_9.photo.attach(io: img_rpg_9, filename: 'Tera.png', content_type: 'image/png')
+# rpg_9 = Game.create!(name: "SpellForce 3: Versus Edition", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1416260/SpellForce_3_Versus_Edition/", description:"SpellForce 3: Versus Edition vous offre la possibilité d’accéder gratuitement aux champs de bataille d’Éo, où vous pourrez tester vos compétences en RTS
+  # contre des adversaires IA ou contre d’autres joueurs humains.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_9.photo.attach(io: img_rpg_9, filename: 'Tera.png', content_type: 'image/png')
 
-rpg_10 = Game.create!(name: "Undungeon Arena", price: nil, solo:"Solo", link:"", description:"Devenez un gladiateur de l'espace et combattez dans plusieurs arènes dans cette expérience roguelite
-  autonome se déroulant dans l'univers Undungeon.", category_id: Category.where(name: :RPG).ids[0])
-rpg_10.photo.attach(io: img_rpg_10, filename: 'Tera.png', content_type: 'image/png')
+# rpg_10 = Game.create!(name: "Undungeon Arena", price: nil, solo:"Solo", link:"", description:"Devenez un gladiateur de l'espace et combattez dans plusieurs arènes dans cette expérience roguelite
+  # autonome se déroulant dans l'univers Undungeon.", category_id: Category.where(name: :RPG).ids[0])
+# rpg_10.photo.attach(io: img_rpg_10, filename: 'Tera.png', content_type: 'image/png')
 
 rpg_11 = Game.create!(name: "Baldur's Gate III", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1086940/Baldurs_Gate_3/", description:"Constituez votre groupe et retournez aux Royaumes Oubliés dans une histoire d'amitié, de trahison, de sacrifice et de survie, sur fond d'attrait
   du pouvoir absolu.", category_id: Category.where(name: :RPG).ids[0])
@@ -543,14 +541,14 @@ simulation_1 = Game.create!(name: "EA SPORTS FIFA 21", price: 59.99, multi:"Mult
 simulation_1.photo.attach(io: img_simulation_1, filename: 'fifa.png', content_type: 'image/png')
 
 
-simulation_2 = Game.create!(name: "The Sims 4", price: 39.99, solo:"Solo", link:"https://store.steampowered.com/app/1222670/The_Sims_4/", description:"Profitez du pouvoir de créer et de contrôler des personnages dans un monde virtuel où il n'y a
-  aucune règle. Soyez puissant et libre, amusez-vous et jouez avec la vie !", category_id: Category.where(name: :Simulation).ids[0])
-simulation_2.photo.attach(io: img_simulation_2, filename: 'sims4.png', content_type: 'image/png')
+# simulation_2 = Game.create!(name: "The Sims 4", price: 39.99, solo:"Solo", link:"https://store.steampowered.com/app/1222670/The_Sims_4/", description:"Profitez du pouvoir de créer et de contrôler des personnages dans un monde virtuel où il n'y a
+  # aucune règle. Soyez puissant et libre, amusez-vous et jouez avec la vie !", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_2.photo.attach(io: img_simulation_2, filename: 'sims4.png', content_type: 'image/png')
 
 
-simulation_3 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/", description:"Voyagez à travers l'Europe en tant que roi de la route, un camionneur qui livre des marchandises importantes sur des distances impressionnantes!
-  Avec des dizaines de villes à explorer, votre endurance, vos compétences et votre vitesse seront poussées à leurs limites.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_3.photo.attach(io: img_simulation_3, filename: 'eurotrucksim.png', content_type: 'image/png')
+# simulation_3 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, solo:"Solo", link:"https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/", description:"Voyagez à travers l'Europe en tant que roi de la route, un camionneur qui livre des marchandises importantes sur des distances impressionnantes!
+  # Avec des dizaines de villes à explorer, votre endurance, vos compétences et votre vitesse seront poussées à leurs limites.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_3.photo.attach(io: img_simulation_3, filename: 'eurotrucksim.png', content_type: 'image/png')
 
 
 simulation_4 = Game.create!(name: "Farming Simulator 19", price: 19.99, multi:"multi", link:"https://store.steampowered.com/app/787860/Farming_Simulator_19/", description:"La franchise plusieurs fois millionnaire fait un bond de géant, avec une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi de visuels
@@ -573,14 +571,14 @@ simulation_7 = Game.create!(name: "World of Warships", price: nil, multi:"Multij
 simulation_7.photo.attach(io: img_simulation_7, filename: 'world-of-warships.png', content_type: 'image/png')
 
 
-simulation_8 = Game.create!(name: "War Thunder", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
-  sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :Simulation).ids[0])
-simulation_8.photo.attach(io: img_simulation_8, filename: '.png', content_type: 'image/png')
+# simulation_8 = Game.create!(name: "War Thunder", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/236390/War_Thunder/", description:"War Thunder est un jeu de combat MMO gratuit dédié aux véhicules militaires de la Seconde Guerre mondiale et la Guerre de Corée. Combattez dans les airs,
+  # sur terre ou sur mer avec des joueurs de toutes nations et dans un jeu en développement constant.", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_8.photo.attach(io: img_simulation_8, filename: '.png', content_type: 'image/png')
 
 
-simulation_9 = Game.create!(name: "Fishing Planet", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/380600/Fishing_Planet/", description:"Fishing Planet est un simulateur de pêche en ligne réaliste et unique à la première personne réalisé par des pêcheurs passionnés et pour des pêcheurs. Choisissez l’équipement de pêche, attrapez les poissons,
-  explorez le monde et améliorez vos compétences dans de très nombreux lieux de pêche", category_id: Category.where(name: :Simulation).ids[0])
-simulation_9.photo.attach(io: img_simulation_9, filename: 'fushingplan.png', content_type: 'image/png')
+# simulation_9 = Game.create!(name: "Fishing Planet", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/380600/Fishing_Planet/", description:"Fishing Planet est un simulateur de pêche en ligne réaliste et unique à la première personne réalisé par des pêcheurs passionnés et pour des pêcheurs. Choisissez l’équipement de pêche, attrapez les poissons,
+  # explorez le monde et améliorez vos compétences dans de très nombreux lieux de pêche", category_id: Category.where(name: :Simulation).ids[0])
+# simulation_9.photo.attach(io: img_simulation_9, filename: 'fushingplan.png', content_type: 'image/png')
 
 
 simulation_10 = Game.create!(name: "Pinball FX3", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/442120/Pinball_FX3/", description:"Les classiques Williams™ Pinball sont disponibles, dont Fish Tales™ GRATUITEMENT ! Pinball FX3 est le MEILLEUR jeu de flipper jamais créé possédant la communauté la plus dévouée.
@@ -622,9 +620,9 @@ sport_4 = Game.create!(name: "RIDE 4", price: 0.0, multi:"Multijoueur", link:"ht
   ses dizaines de circuits et un niveau de réalisme encore jamais atteint.", category_id: Category.where(name: :Simulation).ids[0])
 sport_4.photo.attach(io: img_sport_4, filename: 'ride4.png', content_type: 'image/png')
 
-sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
-  avec Pro Basketball Manager 2021.", category_id: Category.where(name: :Simulation).ids[0])
-sport_5.photo.attach(io: img_sport_5, filename: 'Pro_Basketball_Manager_2021.png', content_type: 'image/png')
+# sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
+  # avec Pro Basketball Manager 2021.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_5.photo.attach(io: img_sport_5, filename: 'Pro_Basketball_Manager_2021.png', content_type: 'image/png')
 
 sport_6 = Game.create!(name: "Disc Space", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1452830/Disc_Space/", description:"Disc Space est un jeu multijoueur Ultimate Frisbee avec jusqu'à 10 joueurs en ligne. Jouez avec vos amis ou trouvez-en de nouveaux.
   Le plaisir illimité est garanti.", category_id: Category.where(name: :Simulation).ids[0])
@@ -695,9 +693,9 @@ strategie_6 = Game.create!(name: "Crusader Kings II", price: nil, multi:"Multijo
   Crusader Kings III se dote au passage de nombreux moyens inédits pour garantir la prospérité de votre maison.", category_id: Category.where(name: :Stratégie).ids[0])
 strategie_6.photo.attach(io: img_strategie_6, filename: 'Crusader_Kings_III.png', content_type: 'image/png')
 
-strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
-  élément du jeu et en redémarrant le genre pour une nouvelle génération de joueurs.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_7.photo.attach(io: img_strategie_7, filename: 'Order_of_Battle_World_War_II.png', content_type: 'image/png')
+# strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
+  # élément du jeu et en redémarrant le genre pour une nouvelle génération de joueurs.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_7.photo.attach(io: img_strategie_7, filename: 'Order_of_Battle_World_War_II.png', content_type: 'image/png')
 
 strategie_8 = Game.create!(name: "Eternal Card Game", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/531640/Eternal_Card_Game/", description:"Les six-coups et la sorcellerie se rencontrent dans Eternal, le nouveau jeu de cartes de stratégie aux choix illimités et au plaisir inégalé. Eternal apporte un rythme et une finition AAA aux possibilités
   infinies d'un jeu de cartes de stratégie approfondi. Vous ne serez limité que par votre propre créativité.", category_id: Category.where(name: :Stratégie).ids[0])
@@ -707,9 +705,9 @@ strategie_9 = Game.create!(name: "Mythgard", price: nil, multi:"Multijoueur", li
   Les nouveaux joueurs peuvent utiliser le code WelcomeChallenger pour obtenir 20 packs gratuits et plus pour commencer leur aventure.", category_id: Category.where(name: :Stratégie).ids[0])
 strategie_9.photo.attach(io: img_strategie_9, filename: 'Mythgard.png', content_type: 'image/png')
 
-strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
-  d'histoire et de fiction.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_10.photo.attach(io: img_strategie_10, filename: 'Wyrmsun.png', content_type: 'image/png')
+# strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
+  # d'histoire et de fiction.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_10.photo.attach(io: img_strategie_10, filename: 'Wyrmsun.png', content_type: 'image/png')
 
 
 
