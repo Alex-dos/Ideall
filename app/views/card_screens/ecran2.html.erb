@@ -9,8 +9,8 @@
   <% @choice_games.each do |choice_game| %>
     <div class="col-4">
       <div class="card">
-        <img class="card_img"
-          src="<%= cl_image_path choice_game.game.photo.key, height: 300, width: 400, crop: :fill %>">
+        <img class="card_img_game"
+          src="<%= cl_image_path choice_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
         <div class="card_title"><%= choice_game.game.name %></div>
           <div class="card_description"><%= choice_game.game.name%>
           </div>
