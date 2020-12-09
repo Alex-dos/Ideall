@@ -222,7 +222,7 @@ img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/42056
 img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
 img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
 img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
-img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
+img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1088150/header.jpg')
 img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
 img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
 img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
@@ -494,7 +494,7 @@ rpg_5 = Game.create!(name: "Fallout 4", price: 29.99, solo:"Solo", link:"https:/
   leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.", category_id: Category.where(name: :RPG).ids[0])
 rpg_5.photo.attach(io: img_rpg_5, filename: 'Fallout_4.png', content_type: 'image/png')
 
-rpg_6 = Game.create!(name: "Albion Online", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un rpgRPG fantaisie sandbox, avec économie gérée par les joueurs,
+rpg_6 = Game.create!(name: "Albion Online", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un RPG fantaisie sandbox, avec économie gérée par les joueurs,
 système de combat sans classe et batailles PvP intenses. Explorez un vaste monde ouvert rempli de dangers et d’opportunités. ", category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
 rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/png')
 
@@ -527,7 +527,7 @@ rpg_11.photo.attach(io: img_rpg_11, filename: 'Tera.png', content_type: 'image/p
 
 # Simulation
 #----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
-img_simulation_1 = URI.open('https://pbs.twimg.com/media/Edwqos-WsAA2tLd.jpg')
+img_simulation_1 = URI.open('http://www.sportune.fr/wp-content/uploads/2020/09/FIFA-21.jpeg')
 img_simulation_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header_french.jpg')
 img_simulation_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg')
 img_simulation_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/787860/header.jpg')
