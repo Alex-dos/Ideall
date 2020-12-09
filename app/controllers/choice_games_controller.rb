@@ -20,10 +20,27 @@ class ChoiceGamesController < ApplicationController
     )
     end
 
+    if all_voted(@room.choice_games)
+      RoomChannel.broadcast_to(
+        @room, {
+          head: 302,
+          path: room_ecran3_path(@room)
+        }.to_json
+      )
+    end
+
     redirect_to room_ecran2_path(@room)
     end
 
     private
+
+    def all_voted(choice_array)
+    @all_voted = []
+    choice_array.each do |choice_game|
+      @all_voted << true if choice_game.update_by.length == choice_game.room.player_number
+    end
+    @all_voted.length == choice_array.length
+  end
     
     def voted(choice_array)
     count = 0

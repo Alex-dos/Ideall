@@ -40,13 +40,16 @@ class CardScreensController < ApplicationController
       end
     end
 
-    redirect_to room_ecran4_path(@room) if all_voted_games(@choice_games_with_votes)
+    redirect_to room_ecran3_path(@room) if all_voted_games(@choice_games_with_votes)
 
   end
 
   def ecran3
-    @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
-    @choice_categories_with_votes = @choice_categories
+    @choice_games = ChoiceGame.where(room_id: params[:room_id])
+    @first_game = @choice_games.sort_by { |choice_category| choice_category.rank }.last
+    @second_game = @choice_games.sort_by { |choice_category| choice_category.rank }.last(2)[0]
+    @third_game = @choice_games.sort_by { |choice_category| choice_category.rank }.last(3)[0]
+
   end
 
   private

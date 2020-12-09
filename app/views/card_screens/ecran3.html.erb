@@ -1,38 +1,41 @@
-  <div class="container-result-title">
-    <h1>Resultat</h1>
+<div class="container-screen4-result">
+  <h3>Et le resultat est ...</h3>
+</div>
+<div class="container-result">
+  <div class="card-result-2">
+      <div class="loading-second"><h1 class = "attente" style="font-size:40px">Calcul en cours</h1></div>
+      <div class="loading2-second"><h1 class = "attente" style="font-size:40px">Selection effectuee</h1></div>
+      <img class="card_img"
+        src="<%= cl_image_path @second_game.game.photo.key, height: 300, width: 400, crop: :fill %>">
+      <div class="card_title"><%= @second_game.game.name %></div>
+      <div class="card_description"><%= @second_game.game.description%></div>
+  </div>
+  <div class="card-result-1">
+      <div class="loading-first"><h1 class = "attente" style="font-size:40px">Calcul en cours</h1></div>
+      <div class="loading2-first"><h1 class = "attente" style="font-size:40px">Selection effectuee</h1></div>
+      <img class="card_img"
+        src="<%= cl_image_path @first_game.game.photo.key, height: 300, width: 400, crop: :fill %>">
+      <div class="card_title"><%= @first_game.game.name %></div>
+      <div class="card_description"><%= @first_game.game.description%></div>
   </div>
 
-<div class="w3-container">
-  <% @choice_categories.each do |category| %>
-<div class="w3-light-grey">
-  <% unless category.rank < 0 %>
-  <div class="w3-container w3-blue w3-center" style="width:<%= category.rank * 10 %>%"><%= category.rank * 10 %>%</div>
-  <% end %>
-  <% if category.rank < 0 %>
-  <div class="w3-container w3-blue w3-center" style="width:5%">0%</div>
-  <% end %>
-</div>
-  <% end %>
-</div>
-
-
-  <div class="container-result-title">
-    <h1>Resultat</h1>
+  <div class="card-result-3">
+      <div class="loading-third"><h1 class = "attente" style="font-size:40px">Calcul en cours</h1></div>
+      <div class="loading2-third"><h1 class = "attente" style="font-size:40px">Selection effectuee</h1></div>
+      <img class="card_img"
+        src="<%= cl_image_path @third_game.game.photo.key, height: 300, width: 400, crop: :fill %>">
+      <div class="card_title"><%= @third_game.game.name %></div>
+      <div class="card_description"><%= @third_game.game.description%></div>
   </div>
-
-<div class="container">
-  <% @choice_categories.each do |category| %>
-      <div class="container_results">
-        <% if category.rank == 1  %>
-        <div class="container-case-progression-result"><%= category.category.name %> = <%= category.rank %></div>
-         <% elsif category.rank > 3  %>
-         <div class="container-case-progression-result"><%= category.category.name %> = <%= category.rank %></div>
-         <% else category.rank >= -100  %>
-         <%= category.category.name %> = <%= category.rank %>
-        <% end %>
-        <% end %>
-     </div>
 </div>
+<br>
+<br>
+<!-- <div class="image-ampoule"></div>
+<div class="image-puzzle"></div>
+<div class="image-among"></div>
+<div class="image-blabla"></div> -->
+<!-- <div class="image-manette"></div> -->
+<!-- <div class="image-musique"></div> -->
 
 
 
