@@ -9,12 +9,12 @@
  Préférence de prix : <%= @room.price_filter %><br>
  Nombre de joueur(s) : <%= @room.player_number %>
 <div class="perso text-center" data-room-id="<%= @room.id %>">
-<p id="name" style="margin-bottom: 0px">
-  <% @room.room_users.each do |room_user| %>
-    <%= image_tag("PERSO2.png")%>
-    <%= room_user.user.name %>
-  <% end %>
-</p>
+  <p id="name" style="margin-bottom: 0px">
+    <% @room.room_users.each do |room_user| %>
+      <%= image_tag("PERSO.png")%>
+      <%= room_user.user.name %>
+    <% end %>
+  </p>
 <br>
 
 

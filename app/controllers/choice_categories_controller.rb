@@ -12,6 +12,14 @@ class ChoiceCategoriesController < ApplicationController
       @room, data.to_json
     )
 
+    if voted(@room.choice_categories)
+      RoomChannel.broadcast_to(
+      @room, {
+        name: current_user.name
+      }.to_json
+    )
+    end
+
     if all_voted(@room.choice_categories)
       RoomChannel.broadcast_to(
         @room, {
@@ -32,5 +40,13 @@ class ChoiceCategoriesController < ApplicationController
       @all_voted << true if choice_category.update_by.length == choice_category.room.player_number
     end
     @all_voted.length == choice_array.length
+  end
+
+  def voted(choice_array)
+    count = 0
+    choice_array.each do |choice_category|
+      count += 1 if choice_category.update_by.include?(current_user.name)
+    end
+    return count == choice_array.length
   end
 end

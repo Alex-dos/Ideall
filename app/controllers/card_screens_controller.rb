@@ -7,9 +7,11 @@ class CardScreensController < ApplicationController
 
 
     
-    @voted = []
+    @voted = {}
     @choice_categories_with_votes.each do |choice_cat|
-      @voted << choice_cat.update_by
+      choice_cat.update_by.each do |user|
+        @voted[user] ? @voted[user] += 1 : @voted[user] = 1
+      end
     end
     # @itsok = []
     # @room.room_users.each do |room_user|
@@ -22,17 +24,24 @@ class CardScreensController < ApplicationController
       end
     end
 
-    redirect_to room_ecran2_path(@room) if all_voted(@choice_categories_with_votes)
+    redirect_to room_ecran2_path(@room) if all_voted_cat(@choice_categories_with_votes)
   end
 
   def ecran2
-    @choice_categories = ChoiceCategory.where(room_id: params[:room_id])
-    @test = list_games(@choice_categories)
     @room = Room.find(params[:room_id])
     @choice_games = ChoiceGame.where(room_id: params[:room_id])
     @choice_games_with_votes = @choice_games
     @choice_games = @choice_games.select {|choice_category| choice_category unless choice_category.update_by[0] == current_user.name || choice_category.update_by[1] == current_user.name || choice_category.update_by[2] == current_user.name || choice_category.update_by[3] == current_user.name || choice_category.update_by[4] == current_user.name || choice_category.update_by[5] == current_user.name || choice_category.update_by[6] == current_user.name || choice_category.update_by[7] == current_user.name || choice_category.update_by[8] == current_user.name}[0..2]
     # raise
+    @voted = {}
+    @choice_games_with_votes.each do |choice_game|
+      choice_game.update_by.each do |user|
+        @voted[user] ? @voted[user] += 1 : @voted[user] = 1
+      end
+    end
+
+    redirect_to room_ecran4_path(@room) if all_voted_games(@choice_games_with_votes)
+
   end
 
   def ecran3
@@ -42,10 +51,18 @@ class CardScreensController < ApplicationController
 
   private
 
-  def all_voted(choice_array)
+  def all_voted_cat(choice_array)
     @all_voted = []
     choice_array.each do |choice_category|
       @all_voted << true if choice_category.update_by.length == choice_category.room.player_number
+    end
+    @all_voted.length == choice_array.length
+  end
+
+  def all_voted_games(choice_array)
+    @all_voted = []
+    choice_array.each do |choice_game|
+      @all_voted << true if choice_game.update_by.length == choice_game.room.player_number
     end
     @all_voted.length == choice_array.length
   end
