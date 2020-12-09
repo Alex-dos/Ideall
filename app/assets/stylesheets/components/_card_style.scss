@@ -17,7 +17,7 @@
   transition: 0.5s ease;
 }
 .card:hover {
-  box-shadow: 0px 0px 10px #68C6E7;
+  box-shadow: 0px 0px 10px #68c6e7;
   transform: scale(1.04);
   transition: 0.5s ease;
 }
@@ -26,6 +26,15 @@
   width: 100%;
   height: 220px;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  border: solid rgb(209, 209, 209);
+  box-shadow: 0px 0px 4px grey;
+}
+
+.card_img_game {
+  width: 100%;
+  height: 205px;
+  object-fit: none;
   border-radius: 20px 20px 0 0;
   border: solid rgb(209, 209, 209);
   box-shadow: 0px 0px 4px grey;
@@ -109,5 +118,3 @@
 }
 
 // Carte du résultat
-
-
