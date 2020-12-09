@@ -101,7 +101,6 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 # img_action_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/386360/header_french.jpg')
 # img_action_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg')
 # img_action_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
-
 # #----------------------------------------------- IMG ACTION FIN -----------------------------------------------------
 # action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo", link:"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/", description:"Vint alors l'avènement du Feu... Redécouvrez le jeu de référence salué par la critique.
 #   Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
@@ -139,10 +138,9 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 #   Et c'est gratuit! Jouez sur plusieurs plates-formes avec des millions de joueurs sur PS4, Xbox One, Nintendo Switch, iOS, Android et Steam! Mises à jour fréquentes. Plus de cinquante légendes.", category_id: Category.where(name: :Action).ids[0])
 # action_9.photo.attach(io: img_action_9, filename: 'brawlhala.png', content_type: 'image/png')
 
-# action_10 = Game.create!(name: "World of tanks", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/291550/Brawlhalla/", description:"World of Tanks est un jeu vidéo biélorusse développé par Wargaming.net. Il est publié pour Windows en 2010 en tant que free-to-play.
+# action_10 = Game.create!(name: "World of tanks", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/444200/World_of_Tanks_Blitz/", description:"World of Tanks est un jeu vidéo biélorusse développé par Wargaming.net. Il est publié pour Windows en 2010 en tant que free-to-play.
 #   Il s’agit d’un jeu de simulation de char de combat massivement multijoueur. ", category_id: Category.where(name: :Action).ids[0])
 # action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'image/png')
-
 
 
 # # Aventure
@@ -166,7 +164,7 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 #   de la navigation, de l'exploration et des chasses aux trésors. Comme les rôles ne sont pas prédéfinis, vous pourrez contribuer à ce monde comme il vous plaira.", category_id: Category.where(name: :Aventure).ids[0])
 # aventure_1.photo.attach(io: img_aventure_1, filename: 'sot.png', content_type: 'image/png')
 
-# aventure_2 = Game.create!(name: "Star Wards Jedi: Fallen Order", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order/", description:"Une aventure galactique vous attend dans STAR WARS Jedi: Fallen Order, un nouveau jeu d'action-aventure à la 3e personne, développé par Respawn Entertainment.
+# aventure_2 = Game.create!(name: "Star Wars Jedi: Fallen Order", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order/", description:"Une aventure galactique vous attend dans STAR WARS Jedi: Fallen Order, un nouveau jeu d'action-aventure à la 3e personne, développé par Respawn Entertainment.
 #   Un Padawan abandonné doit terminer son entraînement, développer de nouvelles capacités de la Force et apprendre à maîtriser son sabre laser.", category_id: Category.where(name: :Aventure).ids[0])
 # aventure_2.photo.attach(io: img_aventure_2, filename: 'swjfo.png', content_type: 'image/png')
 
@@ -596,58 +594,58 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 
 
 
-# Sport
-#----------------------------------------------- IMG SPORT ---------------------------------------------------------
-img_sport_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1287590/header.jpg')
-img_sport_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1100600/header.jpg')
-img_sport_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1163550/header.jpg')
-img_sport_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1259980/header.jpg')
-img_sport_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1311330/header.jpg')
-img_sport_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1452830/header.jpg')
-img_sport_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1059110/header.jpg')
-img_sport_8 = URI.open('https://www.gwenaelgirod.com/assets/images/rocket-league.jpg')
-img_sport_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1181790/header.jpg')
-img_sport_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1332840/header.jpg')
-#----------------------------------------------- IMG SPORT FIN -----------------------------------------------------
-sport_1 = Game.create!(name: "Tour de France 2020", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1287590/Tour_de_France_2020/", description:"Affrontez le peloton sur les 21 étapes du Tour de France grâce au jeu officiel ! Pour enfiler le maillot jaune, Il vous faudra prendre des risques, attaquer, sprinter et maitriser votre tactique de course.
-  Défiez vos amis dans le mode challenge sprint ou descente !", category_id: Category.where(name: :Simulation).ids[0])
-sport_1.photo.attach(io: img_sport_1, filename: 'tourdefrance.png', content_type: 'image/png')
+# # Sport
+# #----------------------------------------------- IMG SPORT ---------------------------------------------------------
+# img_sport_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1287590/header.jpg')
+# img_sport_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1100600/header.jpg')
+# img_sport_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1163550/header.jpg')
+# img_sport_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1259980/header.jpg')
+# img_sport_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1311330/header.jpg')
+# img_sport_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1452830/header.jpg')
+# img_sport_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1059110/header.jpg')
+# img_sport_8 = URI.open('https://www.gwenaelgirod.com/assets/images/rocket-league.jpg')
+# img_sport_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1181790/header.jpg')
+# img_sport_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1332840/header.jpg')
+# #----------------------------------------------- IMG SPORT FIN -----------------------------------------------------
+# sport_1 = Game.create!(name: "Tour de France 2020", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1287590/Tour_de_France_2020/", description:"Affrontez le peloton sur les 21 étapes du Tour de France grâce au jeu officiel ! Pour enfiler le maillot jaune, Il vous faudra prendre des risques, attaquer, sprinter et maitriser votre tactique de course.
+#   Défiez vos amis dans le mode challenge sprint ou descente !", category_id: Category.where(name: :Simulation).ids[0])
+# sport_1.photo.attach(io: img_sport_1, filename: 'tourdefrance.png', content_type: 'image/png')
 
-sport_2 = Game.create!(name: "Football Manager 2020", price: 54.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1100600/Football_Manager_2020/", description:"Exprimez-vous et menez la saison comme vous l'entendez dans votre club, dès novembre. Chaque décision compte dans FM20, avec de nouvelles fonctionnalités, une mécanique de jeu améliorée, un nouveau niveau de réalisme et des
-  entraîneurs qui prennent les rênes de leur destin et de leur club.", category_id: Category.where(name: :Simulation).ids[0])
-sport_2.photo.attach(io: img_sport_2, filename: '.png', content_type: 'image/png')
+# sport_2 = Game.create!(name: "Football Manager 2020", price: 54.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1100600/Football_Manager_2020/", description:"Exprimez-vous et menez la saison comme vous l'entendez dans votre club, dès novembre. Chaque décision compte dans FM20, avec de nouvelles fonctionnalités, une mécanique de jeu améliorée, un nouveau niveau de réalisme et des
+#   entraîneurs qui prennent les rênes de leur destin et de leur club.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_2.photo.attach(io: img_sport_2, filename: '.png', content_type: 'image/png')
 
-sport_3 = Game.create!(name: "Captain Tsubasa: Rise of New Champions", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1163550/Captain_Tsubasa_Rise_of_New_Champions/", description:"Captain Tsubasa: Rise of New Champions est un jeu de football arcade qui apporte une touche de fraîcheur au football avec de l'action palpitante et les
-  tirs surpuissants qui ont rendu la licence célèbre.", category_id: Category.where(name: :Simulation).ids[0])
-sport_3.photo.attach(io: img_sport_3, filename: 'captaintsub.png', content_type: 'image/png')
+# sport_3 = Game.create!(name: "Captain Tsubasa: Rise of New Champions", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1163550/Captain_Tsubasa_Rise_of_New_Champions/", description:"Captain Tsubasa: Rise of New Champions est un jeu de football arcade qui apporte une touche de fraîcheur au football avec de l'action palpitante et les
+#   tirs surpuissants qui ont rendu la licence célèbre.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_3.photo.attach(io: img_sport_3, filename: 'captaintsub.png', content_type: 'image/png')
 
-sport_4 = Game.create!(name: "RIDE 4", price: 0.0, multi:"Multijoueur", link:"https://store.steampowered.com/app/1259980/RIDE_4/", description:"Êtes-vous prêt à vivre la meilleure expérience de pilotage qui soit ? RIDE 4 va réveiller votre âme de compétiteur avec ses centaines de motos,
-  ses dizaines de circuits et un niveau de réalisme encore jamais atteint.", category_id: Category.where(name: :Simulation).ids[0])
-sport_4.photo.attach(io: img_sport_4, filename: 'ride4.png', content_type: 'image/png')
+# sport_4 = Game.create!(name: "RIDE 4", price: 0.0, multi:"Multijoueur", link:"https://store.steampowered.com/app/1259980/RIDE_4/", description:"Êtes-vous prêt à vivre la meilleure expérience de pilotage qui soit ? RIDE 4 va réveiller votre âme de compétiteur avec ses centaines de motos,
+#   ses dizaines de circuits et un niveau de réalisme encore jamais atteint.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_4.photo.attach(io: img_sport_4, filename: 'ride4.png', content_type: 'image/png')
 
-sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
-  avec Pro Basketball Manager 2021.", category_id: Category.where(name: :Simulation).ids[0])
-sport_5.photo.attach(io: img_sport_5, filename: 'Pro_Basketball_Manager_2021.png', content_type: 'image/png')
+# sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
+#   avec Pro Basketball Manager 2021.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_5.photo.attach(io: img_sport_5, filename: 'Pro_Basketball_Manager_2021.png', content_type: 'image/png')
 
-sport_6 = Game.create!(name: "Disc Space", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1452830/Disc_Space/", description:"Disc Space est un jeu multijoueur Ultimate Frisbee avec jusqu'à 10 joueurs en ligne. Jouez avec vos amis ou trouvez-en de nouveaux.
-  Le plaisir illimité est garanti.", category_id: Category.where(name: :Simulation).ids[0])
-sport_6.photo.attach(io: img_sport_6, filename: 'Disc_Space.png', content_type: 'image/png')
+# sport_6 = Game.create!(name: "Disc Space", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1452830/Disc_Space/", description:"Disc Space est un jeu multijoueur Ultimate Frisbee avec jusqu'à 10 joueurs en ligne. Jouez avec vos amis ou trouvez-en de nouveaux.
+#   Le plaisir illimité est garanti.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_6.photo.attach(io: img_sport_6, filename: 'Disc_Space.png', content_type: 'image/png')
 
-sport_7 = Game.create!(name: "Super Buckyball Tournament", price: nil, multi:"Multijoueur", link:"https://cdn.cloudflare.steamstatic.com/steam/apps/1059110/header.jpg", description:"Super Buckyball Tournament est un jeu de sports d'équipe multijoueur gratuit où vous emmenez l'un des 7 personnages uniques, chacun avec ses propres super pouvoirs, dans des matchs en
-  ligne intenses pour un jeu compétitif ou occasionnel.", category_id: Category.where(name: :Simulation).ids[0])
-sport_7.photo.attach(io: img_sport_7, filename: 'superbuck.png', content_type: 'image/png')
+# sport_7 = Game.create!(name: "Super Buckyball Tournament", price: nil, multi:"Multijoueur", link:"https://cdn.cloudflare.steamstatic.com/steam/apps/1059110/header.jpg", description:"Super Buckyball Tournament est un jeu de sports d'équipe multijoueur gratuit où vous emmenez l'un des 7 personnages uniques, chacun avec ses propres super pouvoirs, dans des matchs en
+#   ligne intenses pour un jeu compétitif ou occasionnel.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_7.photo.attach(io: img_sport_7, filename: 'superbuck.png', content_type: 'image/png')
 
-sport_8 = Game.create!(name: "Rocket League", price: nil, multi:"Multijoueur", link:"https://www.rocketleague.com/fr/", description:"ocket League est un mélange de jeu de voiture et de jeu de Football (soccer). Par équipe ou en solo, le joueur contrôle un véhicule et peut ainsi frapper dans un ballon, avec pour objectif de marquer dans le but adverse. Le joueur peut utiliser une jauge de boost
-  pour accélérer et/ou se maintenir dans les airs, sauter pour réceptionner une balle et initier un envol pour atteindre des balles en l'air.", category_id: Category.where(name: :Simulation).ids[0])
-sport_8.photo.attach(io: img_sport_8, filename: 'rocketl.png', content_type: 'image/png')
+# sport_8 = Game.create!(name: "Rocket League", price: nil, multi:"Multijoueur", link:"https://www.rocketleague.com/fr/", description:"ocket League est un mélange de jeu de voiture et de jeu de Football (soccer). Par équipe ou en solo, le joueur contrôle un véhicule et peut ainsi frapper dans un ballon, avec pour objectif de marquer dans le but adverse. Le joueur peut utiliser une jauge de boost
+#   pour accélérer et/ou se maintenir dans les airs, sauter pour réceptionner une balle et initier un envol pour atteindre des balles en l'air.", category_id: Category.where(name: :Simulation).ids[0])
+# sport_8.photo.attach(io: img_sport_8, filename: 'rocketl.png', content_type: 'image/png')
 
-sport_9 = Game.create!(name: "Circle of Sumo: Online Rumble!", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1181790/Circle_of_Sumo_Online_Rumble/", description:"Utilisez votre ventre à votre avantage! Défiez des joueurs du monde entier et grimpez dans les classements. Combattez dans l'arène: chargez, frappez, esquivez et battez
-  les adversaires. Amusons-nous bien!", category_id: Category.where(name: :Simulation).ids[0])
-sport_9.photo.attach(io: img_sport_9, filename: 'Circle_of_Sumo_Online_Rumble.png', content_type: 'image/png')
+# sport_9 = Game.create!(name: "Circle of Sumo: Online Rumble!", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1181790/Circle_of_Sumo_Online_Rumble/", description:"Utilisez votre ventre à votre avantage! Défiez des joueurs du monde entier et grimpez dans les classements. Combattez dans l'arène: chargez, frappez, esquivez et battez
+#   les adversaires. Amusons-nous bien!", category_id: Category.where(name: :Simulation).ids[0])
+# sport_9.photo.attach(io: img_sport_9, filename: 'Circle_of_Sumo_Online_Rumble.png', content_type: 'image/png')
 
-sport_10 = Game.create!(name: "Rise and Fall", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1332840/Rise_and_Fall/", description:"Rise and Fall est un jeu de sport à 4 joueurs avec des joueurs coopératifs ou IA sur un canapé.Des équipes de deux se battent sur une bombe à retardement pour marquer des buts.Échangez instantanément entre
-  3 styles de jeu", category_id: Category.where(name: :Simulation).ids[0])
-sport_10.photo.attach(io: img_sport_10, filename: 'Rise_and_Fall.png', content_type: 'image/png')
+# sport_10 = Game.create!(name: "Rise and Fall", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1332840/Rise_and_Fall/", description:"Rise and Fall est un jeu de sport à 4 joueurs avec des joueurs coopératifs ou IA sur un canapé.Des équipes de deux se battent sur une bombe à retardement pour marquer des buts.Échangez instantanément entre
+#   3 styles de jeu", category_id: Category.where(name: :Simulation).ids[0])
+# sport_10.photo.attach(io: img_sport_10, filename: 'Rise_and_Fall.png', content_type: 'image/png')
 
 
 
@@ -663,28 +661,56 @@ sport_10.photo.attach(io: img_sport_10, filename: 'Rise_and_Fall.png', content_t
 
 # # Stratégie
 # #----------------------------------------------- IMG STRATEGIE ---------------------------------------------------------
-# img_strategie_1 = URI.open('')
-# img_strategie_2 = URI.open('')
-# img_strategie_3 = URI.open('')
-# img_strategie_4 = URI.open('')
-# img_strategie_5 = URI.open('')
-# img_strategie_6 = URI.open('')
-# img_strategie_7 = URI.open('')
-# img_strategie_8 = URI.open('')
-# img_strategie_9 = URI.open('')
-# img_strategie_10 = URI.open('')
+# img_strategie_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/594570/header.jpg')
+# img_strategie_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header_french.jpg')
+# img_strategie_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg')
+# img_strategie_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg')
+# img_strategie_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/526870/header.jpg')
+# img_strategie_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/header.jpg')
+# img_strategie_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/312450/header.jpg')
+# img_strategie_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/531640/header_alt_assets_3_french.jpg')
+# img_strategie_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/839910/header.jpg')
+# img_strategie_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/370070/header.jpg')
 # #----------------------------------------------- IMG STRATEGIE FIN -----------------------------------------------------
-# game21 = Game.create!(name: "Total War: WARHAMMER II", price: 59.99, player_number_min: 1, player_number_max: 6, category_id: Category.where(name: :Stratégie).ids[0])
-# game22 = Game.create!(name: "Sid Meier's Civilization VI", price: 59.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Stratégie).ids[0])
-# game23 = Game.create!(name: "Age of Empires II: Definitive Edition", price: 19.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Stratégie).ids[0])
-# game24 = Game.create!(name: "Stellaris", price: 39.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Stratégie).ids[0])
-# game25 = Game.create!(name: "Satisfactory", price: 23.99, player_number_min: 1, player_number_max: 4, category_id: Category.where(name: :Stratégie).ids[0])
-# game26 = Game.create!(name: "Crusader Kings II", price: nil, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :Stratégie).ids[0])
-# game27 = Game.create!(name: "Order of Battle: World War II", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Stratégie).ids[0])
-# game28 = Game.create!(name: "Eternal Card Game", price: nil, player_number_min: 1, player_number_max: 2, category_id: Category.where(name: :Stratégie).ids[0])
-# game29 = Game.create!(name: "Mythgard", price: nil, player_number_min: 1, player_number_max: 2, category_id: Category.where(name: :Stratégie).ids[0])
-# game30 = Game.create!(name: "Wyrmsun", price: nil, player_number_min: 1, player_number_max: 1, category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_1 = Game.create!(name: "Total War: WARHAMMER II", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/", description:"Suite du titre à succès Total War: WARHAMMER, Total War: WARHAMMER II présente une campagne à couper le souffle, constituée d'exploration, d'expansion et de conquête à travers
+#   le Nouveau Monde.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_1.photo.attach(io: img_strategie_1, filename: 'totalwarwarhamer.png', content_type: 'image/png')
 
+# strategie_2 = Game.create!(name: "Sid Meier's Civilization VI", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/", description:"Choisissez votre dirigeant parmi un choix de 20 personnages historiques, incluant Catherine
+#   de Médicis.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_2.photo.attach(io: img_strategie_2, filename: 'CivilizationVI.png', content_type: 'image/png')
+
+# strategie_3 = Game.create!(name: "Age of Empires II: Definitive Edition", price: 19.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/", description:"Age of Empires II: Definitive Edition fête le 20e anniversaire de l'une des franchises de jeux de stratégie les plus populaires au monde avec des graphismes
+#   époustouflants 4K Ultra HD, une bande originale entièrement remasterisée et du contenu inédit", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_3.photo.attach(io: img_strategie_3, filename: 'Age_of_Empires_II_Definitive_Edition.png', content_type: 'image/png')
+
+# strategie_4 = Game.create!(name: "Stellaris", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/281990/Stellaris/", description:"Explorez les merveilles de la galaxie dans ce jeu de grande stratégie futuriste créé par Paradox Development Studio. Côtoyez des races extraterrestres variées,
+#   découvrez de nouveaux mondes étranges aux événements inattendus et étendez votre empire. ", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_4.photo.attach(io: img_strategie_4, filename: 'Stellaris.png', content_type: 'image/png')
+
+# strategie_5 = Game.create!(name: "Satisfactory", price: 23.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/526870/Satisfactory/", description:"Satisfactory est un jeu de construction d’usines en vue à la première personne dans un monde ouvert avec une touche d’exploration et de combats. Jouez seul ou entre amis, explorez une planète inconnue,
+#   construisez des usines à plusieurs niveaux et des tapis roulants à l’infini !", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_5.photo.attach(io: img_strategie_5, filename: 'Satisfactory.png', content_type: 'image/png')
+
+# strategie_6 = Game.create!(name: "Crusader Kings II", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1158310/Crusader_Kings_III/", description:"Paradox Development Studio vous propose la suite d'un des jeux de stratégie les plus populaires de tous les temps. Issu d'une longue lignée mêlant histoire et stratégie de grande envergure,
+#   Crusader Kings III se dote au passage de nombreux moyens inédits pour garantir la prospérité de votre maison.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_6.photo.attach(io: img_strategie_6, filename: 'Crusader_Kings_III.png', content_type: 'image/png')
+
+# strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
+#   élément du jeu et en redémarrant le genre pour une nouvelle génération de joueurs.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_7.photo.attach(io: img_strategie_7, filename: 'Order_of_Battle_World_War_II.png', content_type: 'image/png')
+
+# strategie_8 = Game.create!(name: "Eternal Card Game", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/531640/Eternal_Card_Game/", description:"Les six-coups et la sorcellerie se rencontrent dans Eternal, le nouveau jeu de cartes de stratégie aux choix illimités et au plaisir inégalé. Eternal apporte un rythme et une finition AAA aux possibilités
+#   infinies d'un jeu de cartes de stratégie approfondi. Vous ne serez limité que par votre propre créativité.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_8.photo.attach(io: img_strategie_8, filename: 'Eternal_Card_Game.png', content_type: 'image/png')
+
+# strategie_9 = Game.create!(name: "Mythgard", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/839910/Mythgard/", description:"Bienvenue à Mythgard, une CCG cyberpunk fantastique de héros, de dieux et de bêtes mythiques. Maîtrisez les systèmes uniques de voies et de mana dans votre ascension vers le sommet ou jouez en équipe avec un ami.
+#   Les nouveaux joueurs peuvent utiliser le code WelcomeChallenger pour obtenir 20 packs gratuits et plus pour commencer leur aventure.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_9.photo.attach(io: img_strategie_9, filename: 'Mythgard.png', content_type: 'image/png')
+
+# strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
+#   d'histoire et de fiction.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_10.photo.attach(io: img_strategie_10, filename: 'Wyrmsun.png', content_type: 'image/png')
 
 
 
@@ -698,7 +724,7 @@ sport_10.photo.attach(io: img_sport_10, filename: 'Rise_and_Fall.png', content_t
 
 # # 2D
 
-# game41 = Game.create!(name: "Among Us", price: 3.19, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :tutu).ids[0])
+# game41 = Game.create!(name: "Among Us", price: 3.19, multi:"Multijoueur", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"",, category_id: Category.where(name: :tutu).ids[0])
 # game42 = Game.create!(name: "Stardew Valley", price: 13.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :tutu).ids[0])
 # game43 = Game.create!(name: "Darkest Dungeon", price: 22.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :tutu).ids[0])
 # game44 = Game.create!(name: "The Binding of Isaac: Rebirth", price: 14.99, player_number_min: 1, player_number_max: 8, category_id: Category.where(name: :tutu).ids[0])
