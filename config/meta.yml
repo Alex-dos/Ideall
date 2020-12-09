@@ -1,0 +1,5 @@
+meta_product_name: "Ideall"
+meta_title: "Ideall - Find the ideal idea"
+meta_description: "Find the ideal idea"
+meta_image: "IDEE.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account" # required for Twitter Cards
