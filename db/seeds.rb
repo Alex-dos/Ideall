@@ -16,16 +16,16 @@ Category.destroy_all
 require "open-uri"
 
 #-----------------------------------------IMG CATEGORIES---------------------------------------------------
-img_category_1 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/action_ibektv.jpg')
-img_category_2 = URI.open('https://images.frandroid.com/wp-content/uploads/2016/10/asphaltxtrem.png')
-img_category_3 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/rpg_mkkbt2.jpg')
-img_category_4 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/Strat%C3%A9gie_czf2t8.jpg')
-img_category_5 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/simulation_snaro0.jpg')
-img_category_6 = URI.open('https://i.jeuxactus.com/datas/jeux/w/o/world-of-warcraft-shadowlands/xl/world-of-warcraft-shado-5f0a3e14a3d55.jpg')
-img_category_7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080779/Aventure_yc83os.jpg')
-img_category_8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607080780/casual_v992bk.png')
-img_category_9 = URI.open('https://static1-fr.millenium.gg/articles/5/13/22/35/@/34411-une-jeuxindes-millenium-article_m-1.jpeg')
-img_category_10 = URI.open('https://image.jeuxvideo.com/medias-md/160474/1604743581-4626-card.jpg')
+img_category_1 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527977/action_sv66li.jpg')
+img_category_2 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527978/course_dvvvs9.jpg')
+img_category_3 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527977/rpg_rdaodu.jpg')
+img_category_4 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527978/start_vkqxgy.jpg')
+img_category_5 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527978/simu_kyelea.jpg')
+img_category_6 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527977/mmo_ipgwku.jpg')
+img_category_7 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527977/aventure_m5l6bh.jpg')
+img_category_8 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527977/casu_tlccmc.jpg')
+img_category_9 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527977/inde_chuteg.jpg')
+img_category_10 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1607527978/sport_p0htcx.jpg')
 #-----------------------------------------IMG CATEGORIES END-------------------------------------------------
 
 
@@ -35,7 +35,7 @@ img_category_10 = URI.open('https://image.jeuxvideo.com/medias-md/160474/1604743
 category_1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
 category_1.photo.attach(io: img_category_1, filename: 'Action.png', content_type: 'image/png')
 
-category_2 = Category.create!(name: "Course_Automobile", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
+category_2 = Category.create!(name: "Course Automobile", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
 category_2.photo.attach(io: img_category_2, filename: 'Course_automobile.png', content_type: 'image/png')
 
 category_3 = Category.create!(name: "RPG", description: "Un jeu vidéo de rôle ou simplement jeu de rôle, couramment abrégé en RPG, est un genre de jeu vidéo s'inspirant des codes et du principe des jeux de rôle sur table. Le joueur y incarne un ou plusieurs personnages qu'il fait évoluer au fil d'une quête.")
