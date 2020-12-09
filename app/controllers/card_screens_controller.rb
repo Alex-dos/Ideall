@@ -13,6 +13,7 @@ class CardScreensController < ApplicationController
         @voted[user] ? @voted[user] += 1 : @voted[user] = 1
       end
     end
+    
     # @itsok = []
     # @room.room_users.each do |room_user|
     #   @itsok << true if @voted.each { |vote| vote.include?(room_user.user.name) }
@@ -25,7 +26,6 @@ class CardScreensController < ApplicationController
     end
 
     if all_voted_cat(@choice_categories_with_votes)
-      sleep 5
       redirect_to room_ecran2_path(@room)
     end
   end
