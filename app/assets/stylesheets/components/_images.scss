@@ -202,3 +202,43 @@
 //   background-repeat: none;
 //   box-sizing: border-box;
 // }
+
+.image-result-1 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(1.png);
+  height: 124px;
+  width: 134px;
+  z-index: 1000;
+}
+
+.image-result-2 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(1.png);
+  height: 124px;
+  width: 134px;
+  // z-index: -1;
+}
+
+
+.image-result-3 {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(1.png);
+  height: 124px;
+  width: 134px;
+  // z-index: -1;
+}

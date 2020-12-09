@@ -10,6 +10,7 @@
       <div class="card_description"><%= @second_game.game.description%></div>
   </div>
   <div class="card-result-1">
+<div class="image-result-1"></div>
       <div class="loading2-first"><h1 class = "attente" style="font-size:40px">Et enfin...</h1></div>
     <img class="card_img_game"
         src="<%= cl_image_path @first_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
