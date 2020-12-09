@@ -35,7 +35,7 @@ img_category_10 = URI.open('https://res.cloudinary.com/dndlxqz6p/image/upload/v1
 category_1 = Category.create!(name: "Action", description: "Le jeu d'action est un genre de jeu vidéo dont le gameplay est fondé sur des interactions en temps réel et qui fait essentiellement appel à l'habileté et aux réflexes du joueur.")
 category_1.photo.attach(io: img_category_1, filename: 'Action.png', content_type: 'image/png')
 
-category_2 = Category.create!(name: "Course Automobile", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
+category_2 = Category.create!(name: "Course", description: "Ce type de jeu met en exergue la notion de compétition et tire son intérêt des sensations de vitesse et de pilotage qu'il procure. Très populaire, le genre s'inspire souvent des sports mécaniques.")
 category_2.photo.attach(io: img_category_2, filename: 'Course_automobile.png', content_type: 'image/png')
 
 category_3 = Category.create!(name: "RPG", description: "Un jeu vidéo de rôle ou simplement jeu de rôle, couramment abrégé en RPG, est un genre de jeu vidéo s'inspirant des codes et du principe des jeux de rôle sur table. Le joueur y incarne un ou plusieurs personnages qu'il fait évoluer au fil d'une quête.")
@@ -287,43 +287,43 @@ img_course_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1102
 # ----------------------------------------------- IMG COURSE AUTOMOBILE FIN -----------------------------------------------------
 
 course_1 = Game.create!(name: "Assetto Corsa", price: 19.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/244210/Assetto_Corsa/", description:"Jeu de simulation de courses sur PC, Assetto Corsa se démarque par son contenu exclusif notamment pour les voitures proposées.
-  Le joueur pourra y retrouver les plus célèbres circuits dans un environnement toujours plus réaliste.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  Le joueur pourra y retrouver les plus célèbres circuits dans un environnement toujours plus réaliste.", category_id: Category.where(name: :Course).ids[0])
 course_1.photo.attach(io: img_course_1, filename: 'Assetto_Corsa.png', content_type: 'image/png')
 
 course_2 = Game.create!(name: "F1 2020", price: 54.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1080110/F1_2020/", description:"F1 2020 vous permet pour la 1re fois de créer votre écurie de F1 et d’affronter les écuries et pilotes officiels.
-  Défiez aussi vos amis en écran partagé lors de courses personnalisables, juste pour le plaisir. Affrontez 22 circuits, avec du contenu classique et actualisé.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  Défiez aussi vos amis en écran partagé lors de courses personnalisables, juste pour le plaisir. Affrontez 22 circuits, avec du contenu classique et actualisé.", category_id: Category.where(name: :Course).ids[0])
 course_2.photo.attach(io: img_course_2, filename: 'f1.png', content_type: 'image/png')
 
 course_3 = Game.create!(name: "The Crew 2", price: 49.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/646910/The_Crew_2/", description:"Bienvenue à Motornation ! Relevez le challenge sur terre, sur l’eau et dans les airs et jouez dans un gigantesque monde ouvert entièrement
-  réimaginé ! À vous la gloire !", category_id: Category.where(name: :Course_Automobile).ids[0])
+  réimaginé ! À vous la gloire !", category_id: Category.where(name: :Course).ids[0])
 course_3.photo.attach(io: img_course_3, filename: 'tc2.png', content_type: 'image/png')
 
 course_4 = Game.create!(name: "Wreckfest", price: 29.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/228380/Wreckfest/", description:"Préparez-vous à des accidents monstrueux, des combats acharnés jusqu'à la ligne d'arrivée et des envolées de tôles froissées ! C'est uniquement possible dans Wreckfest, avec sa simulation physique réaliste
-  proposée par le célèbre développeur Bugbear, créateur du FlatOut 1 et 2 !", category_id: Category.where(name: :Course_Automobile).ids[0])
+  proposée par le célèbre développeur Bugbear, créateur du FlatOut 1 et 2 !", category_id: Category.where(name: :Course).ids[0])
 course_4.photo.attach(io: img_course_4, filename: 'wreckfest.png', content_type: 'image/png')
 
 course_5 = Game.create!(name: "DiRT Rally 2.0", price: 20.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/690790/DiRT_Rally_20/", description:"DiRT Rally 2.0 vous invite à arpenter les circuits de rallye les plus emblématiques du globe, dans les véhicules tout-terrain les plus puissants jamais conçus.
-  Mais n'oubliez pas que la moindre erreur peut mettre fin à votre étape.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  Mais n'oubliez pas que la moindre erreur peut mettre fin à votre étape.", category_id: Category.where(name: :Course).ids[0])
 course_5.photo.attach(io: img_course_5, filename: 'dr2.png', content_type: 'image/png')
 
 course_6 = Game.create!(name: "Crossout", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/386180/Crossout/", description:"Participez à la bêta de Crossout, le MMO post-apocalyptique! Créez vos machines de combat à partir de dizaines de pièces,
-  combattez avec et détruisez vos adversaires dans des batailles en PvP explosives!", category_id: Category.where(name: :Course_Automobile).ids[0])
+  combattez avec et détruisez vos adversaires dans des batailles en PvP explosives!", category_id: Category.where(name: :Course).ids[0])
 course_6.photo.attach(io: img_course_6, filename: 'Crossout.png', content_type: 'image/png')
 
 course_7 = Game.create!(name: "Inertial Drift: Sunset Prologue", price: nil, solo: "Solo", link:"https://store.steampowered.com/app/1302110/Inertial_Drift_Sunset_Prologue/", description:"Plongé dans l'ambiance rétrofuturiste des années 1990, Inertial Drift propose une expérience de conduite absolument unique en son genre,
-  ainsi que des mécaniques de dérapage à deux joysticks si incroyables qu'elles méritent d'être vécues.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  ainsi que des mécaniques de dérapage à deux joysticks si incroyables qu'elles méritent d'être vécues.", category_id: Category.where(name: :Course).ids[0])
 course_7.photo.attach(io: img_course_7, filename: 'Inertial_drift.png', content_type: 'image/png')
 
 course_8 = Game.create!(name: "High Octane Drift", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/457330/High_Octane_Drift/", description:"Entrez dans le monde de la compétition professionnelle et gagnez des séries en ligne parmi des centaines d'autres joueurs pour devenir la légende vivante. Achetez, accordez,
-  échangez, unissez et conquérez la scène de la dérive.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  échangez, unissez et conquérez la scène de la dérive.", category_id: Category.where(name: :Course).ids[0])
 course_8.photo.attach(io: img_course_8, filename: 'hod.png', content_type: 'image/png')
 
 course_9 = Game.create!(name: "Project Torque", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1112400/Project_Torque__Free_2_Play_MMO_Racing_Game/", description:"Le MMO Racer classique gratuit de la fin des années 2000
-  revient en ligne avec tous vos modes de jeu préférés comme Sim, Drift, Drag, CTF et Thunder Alley.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  revient en ligne avec tous vos modes de jeu préférés comme Sim, Drift, Drag, CTF et Thunder Alley.", category_id: Category.where(name: :Course).ids[0])
 course_9.photo.attach(io: img_course_9, filename: 'project_torque.png', content_type: 'image/png')
 
 course_10 = Game.create!(name: "TrackMania Nations Forever", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/11020/TrackMania_Nations_Forever/", description:"Un jeu gratuit dans le vrai sens du terme, TrackMania Nations Forever vous met aux commandes de bolides surpuissants avec
-  lesquels vous allez défier la gravité et le sens commun en mode solo comme en mode multijoueur.", category_id: Category.where(name: :Course_Automobile).ids[0])
+  lesquels vous allez défier la gravité et le sens commun en mode solo comme en mode multijoueur.", category_id: Category.where(name: :Course).ids[0])
 course_10.photo.attach(io: img_course_10, filename: 'trackmanian.png', content_type: 'image/png')
 
 
