@@ -10,10 +10,14 @@
  Nombre de joueur(s) : <%= @room.player_number %>
 <div class="perso text-center" data-room-id="<%= @room.id %>">
   <p id="name" style="margin-bottom: 0px">
-    <% @room.room_users.each do |room_user| %>
-      <%= image_tag("PERSO.png")%>
-      <%= room_user.user.name %>
-    <% end %>
+      <% @room.player_number.times do |i| %>
+        <div class="<%= ( i + 1 <= @room.room_users.count ) ? 'bonhomme-vert' : 'bonhomme-gris' %>"></div>
+        <div class="username">
+          <% if ( i + 1 <= @room.room_users.count ) %>
+            <%= @room.room_users[i].user.name %>
+          <% end %>
+        </div>
+      <% end %>
   </p>
 <br>
 
@@ -26,7 +30,7 @@
 <br>
 <div class="container-letsgo">
 <%= link_to room_ecran1_path(@room) do %>
-  <div class="btn btn-julien02">C'est parti !</div>
+  <div id="ready" class="btn btn-julien02" style="opacity: 0; transition: all 1s ease">C'est parti !</div>
   <% end  %>
 </div>
 
