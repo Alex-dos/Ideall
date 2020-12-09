@@ -221,7 +221,7 @@ img_casual_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/42056
 img_casual_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/621060/header.jpg')
 img_casual_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/646570/header.jpg')
 img_casual_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1186040/header.jpg')
-img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1343400/header.jpg')
+img_casual_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1088150/header.jpg')
 img_casual_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/339610/header.jpg')
 img_casual_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1397920/header.jpg')
 img_casual_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/977400/header.jpg')
@@ -309,9 +309,9 @@ course_6 = Game.create!(name: "Crossout", price: nil, multi:"Multijoueur", link:
   combattez avec et détruisez vos adversaires dans des batailles en PvP explosives!", category_id: Category.where(name: :Course).ids[0])
 course_6.photo.attach(io: img_course_6, filename: 'Crossout.png', content_type: 'image/png')
 
-course_7 = Game.create!(name: "Inertial Drift: Sunset Prologue", price: nil, solo: "Solo", link:"https://store.steampowered.com/app/1302110/Inertial_Drift_Sunset_Prologue/", description:"Plongé dans l'ambiance rétrofuturiste des années 1990, Inertial Drift propose une expérience de conduite absolument unique en son genre,
-  ainsi que des mécaniques de dérapage à deux joysticks si incroyables qu'elles méritent d'être vécues.", category_id: Category.where(name: :Course).ids[0])
-course_7.photo.attach(io: img_course_7, filename: 'Inertial_drift.png', content_type: 'image/png')
+#course_7 = Game.create!(name: "Inertial Drift: Sunset Prologue", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/1302110/Inertial_Drift_Sunset_Prologue/", description:"Plongé dans l'ambiance rétrofuturiste des années 1990, Inertial Drift propose une expérience de conduite absolument unique en son genre,
+ # ainsi que des mécaniques de dérapage à deux joysticks si incroyables qu'elles méritent d'être vécues.", category_id: Category.where(name: :Course).ids[0])
+#course_7.photo.attach(io: img_course_7, filename: 'Inertial_drift.png', content_type: 'image/png')
 
 course_8 = Game.create!(name: "High Octane Drift", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/457330/High_Octane_Drift/", description:"Entrez dans le monde de la compétition professionnelle et gagnez des séries en ligne parmi des centaines d'autres joueurs pour devenir la légende vivante. Achetez, accordez,
   échangez, unissez et conquérez la scène de la dérive.", category_id: Category.where(name: :Course).ids[0])
@@ -492,9 +492,11 @@ rpg_2.photo.attach(io: img_rpg_2, filename: 'diviniyorisin.png', content_type: '
   # leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.", category_id: Category.where(name: :RPG).ids[0])
 # rpg_5.photo.attach(io: img_rpg_5, filename: 'Fallout_4.png', content_type: 'image/png')
 
-# rpg_6 = Game.create!(name: "Albion Online", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un rpgRPG fantaisie sandbox, avec économie gérée par les joueurs,
-# système de combat sans classe et batailles PvP intenses. Explorez un vaste monde ouvert rempli de dangers et d’opportunités. ", category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
-# rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/png')
+
+rpg_6 = Game.create!(name: "Albion Online", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/761890/Albion_Online/", description:"Albion Online est un RPG fantaisie sandbox, avec économie gérée par les joueurs,
+système de combat sans classe et batailles PvP intenses. Explorez un vaste monde ouvert rempli de dangers et d’opportunités. ", category_id: Category.where(name: :RPG).ids[0]) # Verifier le nb de joueurs
+rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/png')
+
 
 # rpg_7 = Game.create!(name: "Deuterium Wars", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/455300/Deuterium_Wars/", description:"Deuterium Wars est un jeu de tir 2D rapide. Créez votre propre avion et plongez-vous dans une bataille acharnée avec d'autres joueurs. Ce qui vous attend: un système de jeu de rôle complet, de l'artisanat,
   # du trading et bien plus encore sur un seul serveur pour toutes les plateformes.", category_id: Category.where(name: :RPG).ids[0])
@@ -525,7 +527,7 @@ rpg_11.photo.attach(io: img_rpg_11, filename: 'Tera.png', content_type: 'image/p
 
 # Simulation
 #----------------------------------------------- IMG SIMULTATION ---------------------------------------------------------
-img_simulation_1 = URI.open('https://pbs.twimg.com/media/Edwqos-WsAA2tLd.jpg')
+img_simulation_1 = URI.open('http://www.sportune.fr/wp-content/uploads/2020/09/FIFA-21.jpeg')
 img_simulation_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header_french.jpg')
 img_simulation_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg')
 img_simulation_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/787860/header.jpg')
