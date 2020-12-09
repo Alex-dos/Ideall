@@ -24,7 +24,10 @@ class CardScreensController < ApplicationController
       end
     end
 
-    redirect_to room_ecran2_path(@room) if all_voted_cat(@choice_categories_with_votes)
+    if all_voted_cat(@choice_categories_with_votes)
+      sleep 5
+      redirect_to room_ecran2_path(@room)
+    end
   end
 
   def ecran2
@@ -73,7 +76,11 @@ class CardScreensController < ApplicationController
   def list_games(choice_array)
     @result_category = choice_array.sort_by { |choice_category| choice_category.rank }[7..8]
     @result1 = @result_category.map do |result|
-      result.category.games.where(price: nil).map { |game| game }
+      if @room.price_filter == "Gratuit"
+        result.category.games.where(price: nil).map { |game| game }
+      else
+        result.category.games.map { |game| game }
+      end
     end
     return @result1.flatten
   end
