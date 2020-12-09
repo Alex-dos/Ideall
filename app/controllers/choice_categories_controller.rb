@@ -15,8 +15,8 @@ class ChoiceCategoriesController < ApplicationController
     if all_voted(@room.choice_categories)
       RoomChannel.broadcast_to(
         @room, {
-          head: 302, # redirection code, just to make it clear what you're doing
-          path: room_ecran2_path(@room) # you'll need to use url_helpers, so include them in your file
+          head: 302,
+          path: room_ecran2_path(@room)
         }.to_json
       )
     end
