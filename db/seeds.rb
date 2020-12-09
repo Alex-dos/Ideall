@@ -101,7 +101,6 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 # img_action_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/386360/header_french.jpg')
 # img_action_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg')
 # img_action_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
-
 # #----------------------------------------------- IMG ACTION FIN -----------------------------------------------------
 # action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo", link:"https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/", description:"Vint alors l'avènement du Feu... Redécouvrez le jeu de référence salué par la critique.
 #   Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
@@ -139,10 +138,9 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 #   Et c'est gratuit! Jouez sur plusieurs plates-formes avec des millions de joueurs sur PS4, Xbox One, Nintendo Switch, iOS, Android et Steam! Mises à jour fréquentes. Plus de cinquante légendes.", category_id: Category.where(name: :Action).ids[0])
 # action_9.photo.attach(io: img_action_9, filename: 'brawlhala.png', content_type: 'image/png')
 
-# action_10 = Game.create!(name: "World of tanks", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/291550/Brawlhalla/", description:"World of Tanks est un jeu vidéo biélorusse développé par Wargaming.net. Il est publié pour Windows en 2010 en tant que free-to-play.
+# action_10 = Game.create!(name: "World of tanks", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/444200/World_of_Tanks_Blitz/", description:"World of Tanks est un jeu vidéo biélorusse développé par Wargaming.net. Il est publié pour Windows en 2010 en tant que free-to-play.
 #   Il s’agit d’un jeu de simulation de char de combat massivement multijoueur. ", category_id: Category.where(name: :Action).ids[0])
 # action_10.photo.attach(io: img_action_10, filename: 'wot.png', content_type: 'image/png')
-
 
 
 # # Aventure
@@ -661,58 +659,58 @@ category_10.photo.attach(io: img_category_10, filename: 'Sport.png', content_typ
 
 
 
-# Stratégie
-#----------------------------------------------- IMG STRATEGIE ---------------------------------------------------------
-img_strategie_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/594570/header.jpg')
-img_strategie_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header_french.jpg')
-img_strategie_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg')
-img_strategie_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg')
-img_strategie_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/526870/header.jpg')
-img_strategie_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/header.jpg')
-img_strategie_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/312450/header.jpg')
-img_strategie_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/531640/header_alt_assets_3_french.jpg')
-img_strategie_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/839910/header.jpg')
-img_strategie_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/370070/header.jpg')
-#----------------------------------------------- IMG STRATEGIE FIN -----------------------------------------------------
-strategie_1 = Game.create!(name: "Total War: WARHAMMER II", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/", description:"Suite du titre à succès Total War: WARHAMMER, Total War: WARHAMMER II présente une campagne à couper le souffle, constituée d'exploration, d'expansion et de conquête à travers
-  le Nouveau Monde.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_1.photo.attach(io: img_strategie_1, filename: 'totalwarwarhamer.png', content_type: 'image/png')
+# # Stratégie
+# #----------------------------------------------- IMG STRATEGIE ---------------------------------------------------------
+# img_strategie_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/594570/header.jpg')
+# img_strategie_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header_french.jpg')
+# img_strategie_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg')
+# img_strategie_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/281990/header.jpg')
+# img_strategie_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/526870/header.jpg')
+# img_strategie_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/header.jpg')
+# img_strategie_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/312450/header.jpg')
+# img_strategie_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/531640/header_alt_assets_3_french.jpg')
+# img_strategie_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/839910/header.jpg')
+# img_strategie_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/370070/header.jpg')
+# #----------------------------------------------- IMG STRATEGIE FIN -----------------------------------------------------
+# strategie_1 = Game.create!(name: "Total War: WARHAMMER II", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/", description:"Suite du titre à succès Total War: WARHAMMER, Total War: WARHAMMER II présente une campagne à couper le souffle, constituée d'exploration, d'expansion et de conquête à travers
+#   le Nouveau Monde.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_1.photo.attach(io: img_strategie_1, filename: 'totalwarwarhamer.png', content_type: 'image/png')
 
-strategie_2 = Game.create!(name: "Sid Meier's Civilization VI", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/", description:"Choisissez votre dirigeant parmi un choix de 20 personnages historiques, incluant Catherine
-  de Médicis.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_2.photo.attach(io: img_strategie_2, filename: 'CivilizationVI.png', content_type: 'image/png')
+# strategie_2 = Game.create!(name: "Sid Meier's Civilization VI", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/", description:"Choisissez votre dirigeant parmi un choix de 20 personnages historiques, incluant Catherine
+#   de Médicis.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_2.photo.attach(io: img_strategie_2, filename: 'CivilizationVI.png', content_type: 'image/png')
 
-strategie_3 = Game.create!(name: "Age of Empires II: Definitive Edition", price: 19.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/", description:"Age of Empires II: Definitive Edition fête le 20e anniversaire de l'une des franchises de jeux de stratégie les plus populaires au monde avec des graphismes
-  époustouflants 4K Ultra HD, une bande originale entièrement remasterisée et du contenu inédit", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_3.photo.attach(io: img_strategie_3, filename: 'Age_of_Empires_II_Definitive_Edition.png', content_type: 'image/png')
+# strategie_3 = Game.create!(name: "Age of Empires II: Definitive Edition", price: 19.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/", description:"Age of Empires II: Definitive Edition fête le 20e anniversaire de l'une des franchises de jeux de stratégie les plus populaires au monde avec des graphismes
+#   époustouflants 4K Ultra HD, une bande originale entièrement remasterisée et du contenu inédit", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_3.photo.attach(io: img_strategie_3, filename: 'Age_of_Empires_II_Definitive_Edition.png', content_type: 'image/png')
 
-strategie_4 = Game.create!(name: "Stellaris", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/281990/Stellaris/", description:"Explorez les merveilles de la galaxie dans ce jeu de grande stratégie futuriste créé par Paradox Development Studio. Côtoyez des races extraterrestres variées,
-  découvrez de nouveaux mondes étranges aux événements inattendus et étendez votre empire. ", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_4.photo.attach(io: img_strategie_4, filename: 'Stellaris.png', content_type: 'image/png')
+# strategie_4 = Game.create!(name: "Stellaris", price: 39.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/281990/Stellaris/", description:"Explorez les merveilles de la galaxie dans ce jeu de grande stratégie futuriste créé par Paradox Development Studio. Côtoyez des races extraterrestres variées,
+#   découvrez de nouveaux mondes étranges aux événements inattendus et étendez votre empire. ", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_4.photo.attach(io: img_strategie_4, filename: 'Stellaris.png', content_type: 'image/png')
 
-strategie_5 = Game.create!(name: "Satisfactory", price: 23.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/526870/Satisfactory/", description:"Satisfactory est un jeu de construction d’usines en vue à la première personne dans un monde ouvert avec une touche d’exploration et de combats. Jouez seul ou entre amis, explorez une planète inconnue,
-  construisez des usines à plusieurs niveaux et des tapis roulants à l’infini !", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_5.photo.attach(io: img_strategie_5, filename: 'Satisfactory.png', content_type: 'image/png')
+# strategie_5 = Game.create!(name: "Satisfactory", price: 23.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/526870/Satisfactory/", description:"Satisfactory est un jeu de construction d’usines en vue à la première personne dans un monde ouvert avec une touche d’exploration et de combats. Jouez seul ou entre amis, explorez une planète inconnue,
+#   construisez des usines à plusieurs niveaux et des tapis roulants à l’infini !", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_5.photo.attach(io: img_strategie_5, filename: 'Satisfactory.png', content_type: 'image/png')
 
-strategie_6 = Game.create!(name: "Crusader Kings II", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1158310/Crusader_Kings_III/", description:"Paradox Development Studio vous propose la suite d'un des jeux de stratégie les plus populaires de tous les temps. Issu d'une longue lignée mêlant histoire et stratégie de grande envergure,
-  Crusader Kings III se dote au passage de nombreux moyens inédits pour garantir la prospérité de votre maison.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_6.photo.attach(io: img_strategie_6, filename: 'Crusader_Kings_III.png', content_type: 'image/png')
+# strategie_6 = Game.create!(name: "Crusader Kings II", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/1158310/Crusader_Kings_III/", description:"Paradox Development Studio vous propose la suite d'un des jeux de stratégie les plus populaires de tous les temps. Issu d'une longue lignée mêlant histoire et stratégie de grande envergure,
+#   Crusader Kings III se dote au passage de nombreux moyens inédits pour garantir la prospérité de votre maison.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_6.photo.attach(io: img_strategie_6, filename: 'Crusader_Kings_III.png', content_type: 'image/png')
 
-strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
-  élément du jeu et en redémarrant le genre pour une nouvelle génération de joueurs.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_7.photo.attach(io: img_strategie_7, filename: 'Order_of_Battle_World_War_II.png', content_type: 'image/png')
+# strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
+#   élément du jeu et en redémarrant le genre pour une nouvelle génération de joueurs.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_7.photo.attach(io: img_strategie_7, filename: 'Order_of_Battle_World_War_II.png', content_type: 'image/png')
 
-strategie_8 = Game.create!(name: "Eternal Card Game", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/531640/Eternal_Card_Game/", description:"Les six-coups et la sorcellerie se rencontrent dans Eternal, le nouveau jeu de cartes de stratégie aux choix illimités et au plaisir inégalé. Eternal apporte un rythme et une finition AAA aux possibilités
-  infinies d'un jeu de cartes de stratégie approfondi. Vous ne serez limité que par votre propre créativité.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_8.photo.attach(io: img_strategie_8, filename: 'Eternal_Card_Game.png', content_type: 'image/png')
+# strategie_8 = Game.create!(name: "Eternal Card Game", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/531640/Eternal_Card_Game/", description:"Les six-coups et la sorcellerie se rencontrent dans Eternal, le nouveau jeu de cartes de stratégie aux choix illimités et au plaisir inégalé. Eternal apporte un rythme et une finition AAA aux possibilités
+#   infinies d'un jeu de cartes de stratégie approfondi. Vous ne serez limité que par votre propre créativité.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_8.photo.attach(io: img_strategie_8, filename: 'Eternal_Card_Game.png', content_type: 'image/png')
 
-strategie_9 = Game.create!(name: "Mythgard", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/839910/Mythgard/", description:"Bienvenue à Mythgard, une CCG cyberpunk fantastique de héros, de dieux et de bêtes mythiques. Maîtrisez les systèmes uniques de voies et de mana dans votre ascension vers le sommet ou jouez en équipe avec un ami.
-  Les nouveaux joueurs peuvent utiliser le code WelcomeChallenger pour obtenir 20 packs gratuits et plus pour commencer leur aventure.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_9.photo.attach(io: img_strategie_9, filename: 'Mythgard.png', content_type: 'image/png')
+# strategie_9 = Game.create!(name: "Mythgard", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/839910/Mythgard/", description:"Bienvenue à Mythgard, une CCG cyberpunk fantastique de héros, de dieux et de bêtes mythiques. Maîtrisez les systèmes uniques de voies et de mana dans votre ascension vers le sommet ou jouez en équipe avec un ami.
+#   Les nouveaux joueurs peuvent utiliser le code WelcomeChallenger pour obtenir 20 packs gratuits et plus pour commencer leur aventure.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_9.photo.attach(io: img_strategie_9, filename: 'Mythgard.png', content_type: 'image/png')
 
-strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
-  d'histoire et de fiction.", category_id: Category.where(name: :Stratégie).ids[0])
-strategie_10.photo.attach(io: img_strategie_10, filename: 'Wyrmsun.png', content_type: 'image/png')
+# strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
+#   d'histoire et de fiction.", category_id: Category.where(name: :Stratégie).ids[0])
+# strategie_10.photo.attach(io: img_strategie_10, filename: 'Wyrmsun.png', content_type: 'image/png')
 
 
 
