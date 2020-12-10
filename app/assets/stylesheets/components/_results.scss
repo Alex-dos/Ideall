@@ -32,6 +32,7 @@
 
 .container-screen4-result h3 {
   font-size: 80px;
+  margin-bottom: 20px !important;
 }
 
 .container-result {
@@ -104,7 +105,7 @@
   font-size: 40px;
   text-align: center;
   line-height: 45px;
-  animation: 3s chargement 0s linear;
+  animation: 3s chargement 10s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
 }
@@ -190,7 +191,7 @@
   font-size: 40px;
   text-align: center;
   line-height: 45px;
-  animation: 3s chargement 0s linear;
+  animation: 3s chargement 5s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
 }
@@ -276,7 +277,7 @@
   font-size: 40px;
   text-align: center;
   line-height: 45px;
-  animation: 3s chargement 1s linear;
+  animation: 3s chargement 0s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
 }
@@ -303,7 +304,7 @@
 
 .image-medaille-1 {
   opacity: 0%;
-  animation: 5.5s medaille 10s linear ;
+  animation: 5s medaille 10s linear ;
   display: flex;
   position: absolute;
   top: 0px;
@@ -318,7 +319,7 @@
 
 .image-medaille-2 {
   opacity: 0%;
-  animation: 5.5s medaille 5s linear ;
+  animation: 5s medaille 5s linear ;
   display: flex;
   position: absolute;
   top: 0px;
@@ -334,7 +335,7 @@
 
 .image-medaille-3 {
   opacity: 0%;
-  animation: 5.5s medaille 0s linear ;
+  animation: 4s medaille 1s linear ;
   display: flex;
   position: absolute;
   top: 0px;
