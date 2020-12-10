@@ -47,7 +47,8 @@ const initRoomCable = () => {
         console.log(json)
         if (json.name) {
           const bonhommeGris = document.querySelector('.bonhomme-gris')
-          bonhommeGris.nextElementSibling.insertAdjacentText('beforeend', json.name );
+          const bonhommeVert = document.querySelector('.bonhomme-vert')
+          bonhommeVert.nextElementSibling.insertAdjacentText('beforeend', json.name );
           bonhommeGris.classList.remove('bonhomme-gris')
           bonhommeGris.classList.add('bonhomme-vert')
         }
