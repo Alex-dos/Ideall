@@ -11,11 +11,12 @@
 <div class="perso text-center" data-room-id="<%= @room.id %>">
   <p id="name" style="margin-bottom: 0px">
       <% @room.player_number.times do |i| %>
-        <div class="<%= ( i + 1 <= @room.room_users.count ) ? 'bonhomme-vert' : 'bonhomme-gris' %>"></div>
+        <div class="<%= ( i + 1 <= @room.room_users.count ) ? 'bonhomme-vert' : 'bonhomme-gris' %>">
         <div class="username">
           <% if ( i + 1 <= @room.room_users.count ) %>
-            <%= @room.room_users[i].user.name %>
+            <p><%= @room.room_users[i].user.name %></p>
           <% end %>
+        </div>
         </div>
       <% end %>
   </p>
