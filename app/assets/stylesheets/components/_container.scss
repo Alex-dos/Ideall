@@ -6,6 +6,15 @@
   width: 100%;
 }
 
+.container-bonhomme {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: baseline;
+}
+
 .container-loading {
   position: relative;
   display: flex;

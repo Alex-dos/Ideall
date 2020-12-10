@@ -37,13 +37,20 @@
 
 <% unless @choice_games[0] %>
   <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
-
+<br>
+<br>
 <div class="container-loading">
 <h4 class="picto2"><div class="game">C</div></h4><h4 class="picto2"><div class="pc">G</div></h4><h4 class="picto2"><div class="joy">z</div></h4><h4 class="picto2"><div class="fantome">Z</div></h4>
+<br>
 <!-- <div class="pacman"></div>
 <div class="dot"></div> -->
 </div>
+<br>
+<br>
+<br>
 <h1 class = "attente" style="font-size:40px">Joueurs ayant fini la selection :</h1>
+<br>
+<br>
 <div class="container">
   <div class="container-joueurs-pret">
     <% @room.room_users.each do |room_user| %>
@@ -60,12 +67,11 @@
   </div>
 <!--  <div class="alum"></div> -->
 </div>
-<h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
+<!-- <h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
 <div class="container">
     <% @choice_games_with_votes.each do |choice_game| %>
     <div id="results" data-room-id="<%= choice_game.room.id %>">
       <div class="card_vote_2" >
-        <!-- <p id="result-<%= choice_game.game.id %>"><%= choice_game.rank %></p> -->
       </div>
 
       <div style="width: 500px; heigth:20px; position: relative">
@@ -74,7 +80,7 @@
       </div>
     <% end %>
   </div>
-</div>
+</div> -->
 <% end %>
 
 
