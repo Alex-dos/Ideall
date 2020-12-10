@@ -40,17 +40,36 @@
   box-shadow: 0px 0px 4px grey;
 }
 
+
 .card_title {
   text-align: center;
   font-size: 27px;
   border-bottom: 2px solid lightgrey;
-  margin: 0 10px 0 10px;
+  margin: 2px 10px 0 10px;
+}
+
+
+@media screen and (min-width: 700px ) {
+  div.card_title {
+    font-size: 24px;
+  }
 }
 
 .card_description {
   text-align: center;
-  font-size: 10px;
+  font-size: 16px;
   margin: 20px 10px 0 10px;
+  overflow: auto;
+  margin-bottom: 52px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+::-ms-overflow-style{
+  scrollbar-width: none;  /* Firefox */
 }
 
 .card_vote_2 {
@@ -124,3 +143,4 @@
 }
 
 // Carte du résultat
+
