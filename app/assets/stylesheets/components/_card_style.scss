@@ -13,7 +13,6 @@
   background-color: white;
   box-shadow: 0px 0px 20px grey;
   padding: 4px;
-  margin-bottom: 50px;
   transition: 0.5s ease;
 }
 .card:hover {
@@ -40,7 +39,6 @@
   box-shadow: 0px 0px 4px grey;
 }
 
-
 .card_title {
   text-align: center;
   font-size: 27px;
@@ -48,8 +46,7 @@
   margin: 2px 10px 0 10px;
 }
 
-
-@media screen and (min-width: 700px ) {
+@media screen and (min-width: 700px) {
   div.card_title {
     font-size: 24px;
   }
@@ -57,8 +54,8 @@
 
 .card_description {
   text-align: center;
-  font-size: 16px;
-  margin: 20px 10px 0 10px;
+  font-size: 15px;
+  margin: 15px 10px 0 10px;
   overflow: auto;
   margin-bottom: 52px;
 }
@@ -68,8 +65,8 @@
   background: transparent; /* make scrollbar transparent */
 }
 
-::-ms-overflow-style{
-  scrollbar-width: none;  /* Firefox */
+::-ms-overflow-style {
+  scrollbar-width: none; /* Firefox */
 }
 
 .card_vote_2 {
@@ -138,7 +135,7 @@
   position: absolute;
   justify-content: center;
   margin-top: 30px;
-  bottom: 10px;
+  bottom: 8px;
   right: 30px;
 }
 
