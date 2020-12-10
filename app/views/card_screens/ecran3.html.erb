@@ -9,6 +9,7 @@
         src="<%= cl_image_path @second_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
       <div class="card_title"><%= @second_game.game.name %></div>
       <div class="card_description"><%= @second_game.game.description%></div>
+       <div class="btn btn-game-link"><%= link_to "Plus d'infos", @second_game.game.link, :target => "_blank"%></div>
   </div>
   <div class="card-result-1">
 <div class="image-medaille-1"></div>
@@ -17,6 +18,7 @@
         src="<%= cl_image_path @first_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
       <div class="card_title"><%= @first_game.game.name %></div>
       <div class="card_description"><%= @first_game.game.description%></div>
+       <div class="btn btn-game-link"><%= link_to "Plus d'infos", @first_game.game.link, :target => "_blank"%></div>
   </div>
 
   <div class="card-result-3">
@@ -26,6 +28,7 @@
         src="<%= cl_image_path @third_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
       <div class="card_title"><%= @third_game.game.name %></div>
       <div class="card_description"><%= @third_game.game.description%></div>
+      <div class="btn btn-game-link"><%= link_to "Plus d'infos", @third_game.game.link, :target => "_blank"%></div>
   </div>
 </div>
 <br>
