@@ -14,7 +14,7 @@ class ChoiceGamesController < ApplicationController
       @room, data.to_json
     )
 
-    if voted(@room.choice_categories)
+    if voted(@room.choice_games)
       RoomChannel.broadcast_to(
       @room, {
         name: current_user.name
