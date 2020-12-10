@@ -3,9 +3,11 @@ class ChoiceCategoriesController < ApplicationController
     @room = Room.find(params[:room_id])
     @choice_category = ChoiceCategory.find(params[:id])
     @rank = params[:rank]
-    @choice_category.rank += @rank.to_i
-    @choice_category.update_by << current_user.name
-    @choice_category.save
+    unless @choice_category.update_by.include?(current_user.name)
+      @choice_category.rank += @rank.to_i
+      @choice_category.update_by << current_user.name
+      @choice_category.save
+    end
     data = { category: @choice_category.category.id, rank: @choice_category.rank, player_number: @room.player_number }
 
     RoomChannel.broadcast_to(

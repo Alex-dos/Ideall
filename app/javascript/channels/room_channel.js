@@ -11,13 +11,13 @@ const initRoomCable = () => {
         const json = JSON.parse(data)
         // console.log(typeof data)
         if (json.category) { 
-          const categoryId = `result-${json.category}`
+          const categoryId = `#result-${json.category}`
           const nbPlayer = json.player_number
           // console.log(json)
           // document.querySelector(categoryId).innerText = json.rank
           let widthRank = Math.max(( json.rank / ( 3 * nbPlayer ) ) * 100, 0)
           console.log(widthRank)
-          document.getElementById(categoryId).style.width = `${widthRank}%`;
+          document.querySelector(categoryId).style.width = `${widthRank}%`;
         }
         if (json.head == 302 && json.path) {
           setTimeout(() => {
