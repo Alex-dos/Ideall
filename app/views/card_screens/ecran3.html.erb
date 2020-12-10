@@ -4,7 +4,7 @@
 <div class="container-result">
   <div class="card-result-2">
     <div class="image-medaille-2"></div>
-      <div class="loading2-second"><h1 class = "attente" style="font-size:40px">En Seconde position...</h1></div>
+      <div class="loading-second"><h1 class = "attente" style="font-size:40px">Calcul en cours...</h1></div>
             <img class="card_img_game"
         src="<%= cl_image_path @second_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
       <div class="card_title"><%= @second_game.game.name %></div>
@@ -13,7 +13,7 @@
   </div>
   <div class="card-result-1">
 <div class="image-medaille-1"></div>
-      <div class="loading2-first"><h1 class = "attente" style="font-size:40px">Et enfin...</h1></div>
+      <div class="loading-first"><h1 class = "attente" style="font-size:40px">Calcul en cours...</h1></div>
     <img class="card_img_game"
         src="<%= cl_image_path @first_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
       <div class="card_title"><%= @first_game.game.name %></div>
@@ -23,7 +23,7 @@
 
   <div class="card-result-3">
     <div class="image-medaille-3"></div>
-      <div class="loading2-third"><h1 class = "attente" style="font-size:40px">En troisieme position...</h1></div>
+      <div class="loading-third"><h1 class = "attente" style="font-size:40px">Calcul en cours...</h1></div>
       <img class="card_img_game"
         src="<%= cl_image_path @third_game.game.photo.key, height: 200, width: 292, crop: :scale %>">
       <div class="card_title"><%= @third_game.game.name %></div>
