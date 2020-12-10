@@ -49,6 +49,21 @@
   </div>
 <!--  <div class="alum"></div> -->
 </div>
+<h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
+<div class="container">
+    <% @choice_games_with_votes.each do |choice_game| %>
+    <div id="results" data-room-id="<%= choice_game.room.id %>">
+      <div class="card_vote_3" >
+        <p id="result-<%= choice_game.game.id %>"><%= choice_game.rank %></p>
+      </div>
+
+      <div style="width: 500px; heigth:20px; position: relative">
+        <% width_rank = ( choice_game.rank.to_f / (3 * @room.player_number) ) * 100 %>
+        <div id="result-<%= choice_game.game.id %>" class="rank" style="width: <%= [width_rank, 0].max %>%">lol</div>
+      </div>
+    <% end %>
+  </div>
+</div>
 <% end %>
 
 
