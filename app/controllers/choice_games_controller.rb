@@ -8,11 +8,11 @@ class ChoiceGamesController < ApplicationController
       @choice_game.update_by << current_user.name
       @choice_game.save
     end
-    data = { category: @choice_game.game.id, rank: @choice_game.rank, player_number: @room.player_number }
+    # data = { category: @choice_game.game.id, rank: @choice_game.rank, player_number: @room.player_number }
 
-    RoomChannel.broadcast_to(
-      @room, data.to_json
-    )
+    # RoomChannel.broadcast_to(
+    #   @room, data.to_json
+    # )
 
     if voted(@room.choice_games)
       RoomChannel.broadcast_to(

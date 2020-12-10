@@ -87,7 +87,8 @@
 .container-rooms-join-titre-preference {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
 }
 
 .container-rooms-join-titre {
@@ -100,12 +101,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 60px;
+  margin-bottom: 5%;
 }
 
 .container_cards02 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 60px;
+  margin-bottom: 5%;
 }
 
 .container-description-room {

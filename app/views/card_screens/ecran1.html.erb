@@ -33,7 +33,7 @@
   <% end %>
 
 <% unless @choice_categories[0] %>
-  <h1 class = "attente" style="font-size:70px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
+  <h1 class = "attente" style="font-size:60px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
 
 <div class="container-loading">
 <h4 class="picto2"><div class="game">C</div></h4><h4 class="picto2"><div class="pc">G</div></h4><h4 class="picto2"><div class="joy">z</div></h4><h4 class="picto2"><div class="fantome">Z</div></h4>
@@ -60,7 +60,7 @@
 <h1 class = "attente" style="font-size:40px">Details des votes :</h1>
 <div class="container">
     <% @choice_categories_with_votes.each do |choice_cat| %>
-    <div id="results" data-room-id="<%= choice_cat.room.id %>">
+    <div id="results" class="mb-4" data-room-id="<%= choice_cat.room.id %>">
       <div class="card_vote_3" >
         <!-- <p id="result-<%= choice_cat.category.id %>"><%= choice_cat.rank %></p> -->
 

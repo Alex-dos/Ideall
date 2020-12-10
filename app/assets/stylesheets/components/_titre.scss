@@ -14,7 +14,7 @@
 .container-rooms-new-titre {
   display: flex;
   justify-content: center;
-  color: white;;
+  color: white;
   text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 5s ideall 1s linear infinite;
@@ -23,7 +23,7 @@
 .container-rooms-numero {
   display: flex;
   justify-content: center;
-  color: white;;
+  color: white;
   text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 5s ideall 1s linear infinite;
@@ -41,7 +41,7 @@
   &:hover {
     text-shadow: 5px 2px 0px $bleu-ombre-ideal;
     transition: 0.5s ease;
-}
+  }
 }
 
 .container-rooms-join-titre h1 {
@@ -54,11 +54,10 @@
 
 .container-rooms-join-titre-preference h1 {
   display: flex;
-  font-size: 70px;
+  font-size: 50px;
   justify-content: center;
   color: white;
   text-shadow: 2px 2px 0px $bleu-ombre-ideal;
-  margin-bottom: 3%;
 }
 
 .container-result-title h1 {
@@ -68,7 +67,6 @@
   color: white;
   text-shadow: 2px 2px 0px $bleu-ombre-ideal;
 }
-
 
 .attente {
   text-align: center;
@@ -88,14 +86,14 @@
 }
 
 .slogan {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   right: 200px;
   top: 219px;
   margin-top: 10px;
   font-size: 40px;
   color: white;
-  text-shadow: #68C6E8 2px 0 0px;
+  text-shadow: #68c6e8 2px 0 0px;
   font-weight: bold;
-  transition:  2.0s ease;
+  transition: 2s ease;
 }
