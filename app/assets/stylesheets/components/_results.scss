@@ -28,6 +28,7 @@
   text-shadow: 2px 2px 0px $bleu-ombre-ideal;
   transition: 0.5s ease;
   animation: 5s ideall 1s linear infinite;
+  margin-top: 20px;
 }
 
 .container-screen4-result h3 {
@@ -298,4 +299,51 @@
   animation-fill-mode: forwards;
   border-radius: 15px;
   opacity: 0;
+}
+
+
+.image-medaille-1 {
+  opacity: 0%;
+  animation: 5.5s medaille 10s linear ;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(1.png);
+  height: 130px;
+  width: 144px;
+  z-index: 1000;
+}
+
+.image-medaille-2 {
+  opacity: 0%;
+  animation: 5.5s medaille 5s linear ;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(2.png);
+  height: 130px;
+  width: 144px;
+  z-index: 1000;
+}
+
+
+.image-medaille-3 {
+  opacity: 0%;
+  animation: 5.5s medaille 0s linear ;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(3.png);
+  height: 130px;
+  width: 144px;
+  z-index: 1000;
 }
