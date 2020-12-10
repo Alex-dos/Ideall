@@ -364,7 +364,7 @@ inde_5 = Game.create!(name: "Stardew Valley", price: 13.99, multi:"Multijoueur",
   Pouvez-vous apprendre à vivre de la terre et transformer ces champs envahis par la végétation en une maison prospère?", category_id: Category.where(name: :Indépendant).ids[0])
 inde_5.photo.attach(io: img_inde_5, filename: '.png', content_type: 'image/png')
 
-inde_6 = Game.create!(name: "Shakes and Fidget", price: nil, solo:"solo", link:"https://store.steampowered.com/app/438040/Shakes_and_Fidget/", description:"Shakes et Fidget est un RPG fantasy amusant et satyrique, et a même été récompensé ! Tu n'en reviens pas ? Plus de 50 millions de joueurs ont fait de SFGAME l'un des jeux
+inde_6 = Game.create!(name: "Shakes and Fidget", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/438040/Shakes_and_Fidget/", description:"Shakes et Fidget est un RPG fantasy amusant et satyrique, et a même été récompensé ! Tu n'en reviens pas ? Plus de 50 millions de joueurs ont fait de SFGAME l'un des jeux
   en ligne les plus populaires au monde !", category_id: Category.where(name: :Indépendant).ids[0])
 inde_6.photo.attach(io: img_inde_6, filename: 'Shakes_and_Fidget.png', content_type: 'image/png')
 
@@ -373,7 +373,7 @@ inde_7 = Game.create!(name: "Deceit", price: nil, multi:"Multijoueur", link:"htt
 ", category_id: Category.where(name: :Indépendant).ids[0])
 inde_7.photo.attach(io: img_inde_7, filename: 'deceit.png', content_type: 'image/png')
 
-inde_8 = Game.create!(name: "The Binding of Isaac", price: 4.99, solo:"solo", link:"https://store.steampowered.com/app/113200/The_Binding_of_Isaac/?l=french", description:"The Binding of Isaac est un jeu d'action, de tir et de rôle. Suivez Isaac dans son aventure et utilisez les trésors étranges qui vont lui donner des pouvoirs spéciaux
+inde_8 = Game.create!(name: "The Binding of Isaac", price: 4.99, solo:"Solo", link:"https://store.steampowered.com/app/113200/The_Binding_of_Isaac/?l=french", description:"The Binding of Isaac est un jeu d'action, de tir et de rôle. Suivez Isaac dans son aventure et utilisez les trésors étranges qui vont lui donner des pouvoirs spéciaux
   pour combattre les créatures mystérieuses et trouver le chemin vers la liberté.", category_id: Category.where(name: :Indépendant).ids[0])
 inde_8.photo.attach(io: img_inde_8, filename: 'The_Binding_of_Isaac.png', content_type: 'image/png')
 
@@ -622,7 +622,7 @@ sport_4 = Game.create!(name: "RIDE 4", price: 0.0, multi:"Multijoueur", link:"ht
   ses dizaines de circuits et un niveau de réalisme encore jamais atteint.", category_id: Category.where(name: :Simulation).ids[0])
 sport_4.photo.attach(io: img_sport_4, filename: 'ride4.png', content_type: 'image/png')
 
-sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
+sport_5 = Game.create!(name: "Pro Basketball Manager 2021", price: 26.50, solo:"Solo", link:"https://store.steampowered.com/app/1311330/Pro_Basketball_Manager_2021/", description:"Le jeu de management de basketball le plus complet est de retour ! Endossez le rôle d’entraîneur de votre propre équipe
   avec Pro Basketball Manager 2021.", category_id: Category.where(name: :Simulation).ids[0])
 sport_5.photo.attach(io: img_sport_5, filename: 'Pro_Basketball_Manager_2021.png', content_type: 'image/png')
 
@@ -695,7 +695,7 @@ strategie_6 = Game.create!(name: "Crusader Kings II", price: nil, multi:"Multijo
   Crusader Kings III se dote au passage de nombreux moyens inédits pour garantir la prospérité de votre maison.", category_id: Category.where(name: :Stratégie).ids[0])
 strategie_6.photo.attach(io: img_strategie_6, filename: 'Crusader_Kings_III.png', content_type: 'image/png')
 
-strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
+strategie_7 = Game.create!(name: "Order of Battle: World War II", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/312450/Order_of_Battle_World_War_II/", description:"Order of Battle: World War II est une bouffée d'air frais pour tous les fans de stratégie. C'est un jeu qui élève le wargaming à un nouveau niveau en améliorant chaque
   élément du jeu et en redémarrant le genre pour une nouvelle génération de joueurs.", category_id: Category.where(name: :Stratégie).ids[0])
 strategie_7.photo.attach(io: img_strategie_7, filename: 'Order_of_Battle_World_War_II.png', content_type: 'image/png')
 
@@ -707,7 +707,7 @@ strategie_9 = Game.create!(name: "Mythgard", price: nil, multi:"Multijoueur", li
   Les nouveaux joueurs peuvent utiliser le code WelcomeChallenger pour obtenir 20 packs gratuits et plus pour commencer leur aventure.", category_id: Category.where(name: :Stratégie).ids[0])
 strategie_9.photo.attach(io: img_strategie_9, filename: 'Mythgard.png', content_type: 'image/png')
 
-strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
+strategie_10 = Game.create!(name: "Wyrmsun", price: nil, solo:"Solo", link:"https://store.steampowered.com/app/582500/We_Were_Here/", description:"Wyrmsun est un jeu de stratégie en temps réel qui présente des éléments de mythologie,
   d'histoire et de fiction.", category_id: Category.where(name: :Stratégie).ids[0])
 strategie_10.photo.attach(io: img_strategie_10, filename: 'Wyrmsun.png', content_type: 'image/png')
 
