@@ -98,7 +98,7 @@ img_action_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/39754
 img_action_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/812140/header.jpg')
 img_action_6 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/header_french.jpg')
 img_action_7 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg')
-img_action_8 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/386360/header_french.jpg')
+img_action_8 = URI.open('https://i.ytimg.com/vi/xAPsmI_zDZs/maxresdefault.jpg')
 img_action_9 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg')
 img_action_10 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/444200/header.jpg')
 #----------------------------------------------- IMG ACTION FIN -----------------------------------------------------
@@ -106,8 +106,8 @@ action_1 = Game.create!(name: "Dark souls: REMASTERED", price: 14.99, solo:"Solo
   Dans cette splendide version remastérisée, retrouvez Lordran et ses décors époustouflants en haute définition et en 60 fps.", category_id: Category.where(name: :Action).ids[0])
 action_1.photo.attach(io: img_action_1, filename: 'dark_souls.png', content_type: 'image/png')
 
-action_2 = Game.create!(name: "Doom", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/379720/DOOM/", description:"Inclut désormais les cartes, modes de jeux, armes et les trois packs de DLC premium (Unto the Evil, Hell Followed, et Bloodfall),
-  ainsi que les modes Arcade et Photo. Inclut également la dernière Mise à jour 6.66 qui vient enrichir le mode multijoueur et qui améliore son mode de progression.", category_id: Category.where(name: :Action).ids[0])
+action_2 = Game.create!(name: "Doom", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/379720/DOOM/", description:"Doom est un reboot de la licence culte d'id Software allant puiser dans le style des deux premiers opus. Vous y incarnez ainsi un Marine obligé de repousser une invasion de démons sur Mars,
+ à l'aide d'un arsenal allant du fusil à pompe au lance-roquette.", category_id: Category.where(name: :Action).ids[0])
 action_2.photo.attach(io: img_action_2, filename: 'doom.png', content_type: 'image/png')
 
 action_3 = Game.create!(name: "Red Dead Redemption 2", price: 50.00, multi:"Multijoueur", link:"https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/", description:"Red Dead Redemption 2, le jeu épique en monde ouvert de Rockstar Games acclamé par la critique et
@@ -411,7 +411,7 @@ mmo_1 = Game.create!(name: "Tera", price: nil, multi:"Multijoueur", link:"https:
   monde fabuleux d'Arborea.", category_id: Category.where(name: :MMO).ids[0])
 mmo_1.photo.attach(io: img_mmo_1, filename: 'Tera.png', content_type: 'image/png')
 
-mmo_2 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/", description:"Neverwinter est un MMORPG basé sur le jeu de rôle sur table Donjons & Dragons. Un savant mélange d'aventures épiques,
+mmo_2 = Game.create!(name: "Neverwinter", price: nil, multi:"Multijoueur", link:"https://store.steampowered.com/app/109600/Neverwinter/", description:"Neverwinter est un MMORPG basé sur le jeu de rôle sur table Donjons & Dragons. Un savant mélange d'aventures épiques,
   de gameplay stratégique et de jeu de rôle classique attendent les héros assez courageux pour braver le monde fantastique de Neverwinter.", category_id: Category.where(name: :MMO).ids[0])
 mmo_2.photo.attach(io: img_mmo_2, filename: 'Neverwinter.png', content_type: 'image/png')
 
