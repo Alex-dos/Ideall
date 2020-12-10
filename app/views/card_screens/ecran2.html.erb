@@ -24,7 +24,7 @@
 </div>
 <br>
 
-<% if @choice_games[0] %>
+<!-- <% if @choice_games[0] %>
   <div class="container container-barre-progression">
     <% @choice_games_with_votes.each do |card| %>
       <% if card.update_by[0] == current_user.name || card.update_by[1] == current_user.name || card.update_by[2] == current_user.name || card.update_by[3] == current_user.name || card.update_by[4] == current_user.name || card.update_by[5] == current_user.name || card.update_by[6] == current_user.name || card.update_by[7] == current_user.name || card.update_by[8] == current_user.name %>
@@ -32,8 +32,7 @@
       <% end %>
     <% end %>
   </div>
-  <% end %>
-
+  <% end %> -->
 
 <% unless @choice_games[0] %>
   <h1 class = "attente" style="font-size:80px">EN ATTENTE DES AUTRES JOUEURS ...</h1>
@@ -60,12 +59,12 @@
   </div>
 <!--  <div class="alum"></div> -->
 </div>
-<h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
+<!-- <h1 class = "attente" style="font-size:40px">Resume de votre selection :</h1>
 <div class="container">
     <% @choice_games_with_votes.each do |choice_game| %>
     <div id="results" data-room-id="<%= choice_game.room.id %>">
       <div class="card_vote_3" >
-        <!-- <p id="result-<%= choice_game.game.id %>"><%= choice_game.rank %></p> -->
+        <p id="result-<%= choice_game.game.id %>"><%= choice_game.rank %></p>
       </div>
 
       <div style="width: 500px; heigth:20px; position: relative">
@@ -74,7 +73,7 @@
       </div>
     <% end %>
   </div>
-</div>
+</div> -->
 <% end %>
 
 
