@@ -461,7 +461,7 @@ mmo_10.photo.attach(io: img_mmo_10, filename: 'war_Thunder.png', content_type: '
 # RPG
 #----------------------------------------------- IMG RPG ---------------------------------------------------------
 img_rpg_1 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/1199030/header.jpg')
-img_rpg_2 = URI.open('https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/')
+img_rpg_2 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/435150/header.jpg')
 img_rpg_3 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg')
 img_rpg_4 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg')
 img_rpg_5 = URI.open('https://cdn.cloudflare.steamstatic.com/steam/apps/377160/header.jpg')
@@ -515,7 +515,7 @@ rpg_6.photo.attach(io: img_rpg_6, filename: 'albion.png', content_type: 'image/p
 # rpg_10.photo.attach(io: img_rpg_10, filename: 'Tera.png', content_type: 'image/png')
 
 rpg_11 = Game.create!(name: "Baldur's Gate III", price: 59.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/1086940/Baldurs_Gate_3/", description:"Constituez votre groupe et retournez aux Royaumes Oubliés dans une histoire d'amitié, de trahison, de sacrifice et de survie, sur fond d'attrait
-  du pouvoir absolu.", category_id: Category.where(name: :RPG).ids[0])
+ du pouvoir absolu.", category_id: Category.where(name: :RPG).ids[0])
 rpg_11.photo.attach(io: img_rpg_11, filename: 'Tera.png', content_type: 'image/png')
 
 
