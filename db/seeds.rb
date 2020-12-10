@@ -553,7 +553,7 @@ simulation_3 = Game.create!(name: "Euro Truck Simulator 2", price: 19.99, solo:"
 simulation_3.photo.attach(io: img_simulation_3, filename: 'eurotrucksim.png', content_type: 'image/png')
 
 
-simulation_4 = Game.create!(name: "Farming Simulator 19", price: 19.99, multi:"multi", link:"https://store.steampowered.com/app/787860/Farming_Simulator_19/", description:"La franchise plusieurs fois millionnaire fait un bond de géant, avec une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi de visuels
+simulation_4 = Game.create!(name: "Farming Simulator 19", price: 19.99, multi:"Multijoueur", link:"https://store.steampowered.com/app/787860/Farming_Simulator_19/", description:"La franchise plusieurs fois millionnaire fait un bond de géant, avec une révision totale de son moteur graphique. La simulation agricole ultime se pare ainsi de visuels
   et d'effets saisissants de réalisme, tout en offrant l'expérience de jeu farming la plus riche et complète jamais réalisée.", category_id: Category.where(name: :Simulation).ids[0])
 simulation_4.photo.attach(io: img_simulation_4, filename: 'farmsim.png', content_type: 'image/png')
 
