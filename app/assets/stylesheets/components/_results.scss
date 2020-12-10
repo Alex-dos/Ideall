@@ -96,7 +96,7 @@
   display: flex;
   z-index: 2;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-family:'Ubuntu', sans-serif;
@@ -108,6 +108,7 @@
   animation: 3s chargement 10s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
+  opacity: 0.7;
 }
 
 .loading2-first {
@@ -182,7 +183,7 @@
   display: flex;
   z-index: 2;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-family:'Ubuntu', sans-serif;
@@ -194,6 +195,7 @@
   animation: 3s chargement 5s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
+  opacity: 0.7;
 }
 
 .loading2-second {
@@ -268,7 +270,7 @@
   display: flex;
   z-index: 2;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-family:'Ubuntu', sans-serif;
@@ -280,6 +282,7 @@
   animation: 3s chargement 0s linear;
   animation-fill-mode: forwards;
   border-radius: 15px;
+  opacity: 0.8;
 }
 
 .loading2-third {
