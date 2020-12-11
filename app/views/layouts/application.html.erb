@@ -14,6 +14,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <% content_for :meta_image, 'https://i.imgur.com/iwVDCgj.png' %>
 
       <!-- Facebook Open Graph data -->
       <meta property="og:title" content="<%= meta_title %>" />
